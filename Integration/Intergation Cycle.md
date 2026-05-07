@@ -35,7 +35,7 @@ A valid report must have the the folowing.
 - conclution
 - signature
 
-report template can be found at TODO(Test Raport.md)
+report template can be found at [Test Raport.md](Test%20Raport.md)
 
 # Changelog
 |Name|Date|Change|
