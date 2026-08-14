@@ -1,0 +1,83 @@
+% ---------------------------------------------------------------------------
+% Cover / title page for rapport-class documents.
+%
+% Usage (after \documentclass{rapport} and before \begin{document}):
+%   \input{../cover/rapport-cover}
+%   \missionpatch{path/to/patch}      % optional circular mission/team patch
+%   \coverkind{Vedtekter}             % optional small line above the name
+%   \reportsubtitle{Optional subtitle line}
+%   \orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
+%   \reportlocation{Ås, Norge}
+%   \date{3. oktober 2022}            % optional, defaults to \today
+%   \contactinfo{Contact: post@eclipsenmbu.no}  % optional, shown at the bottom
+%
+% Then, as the first thing inside \begin{document}:
+%   \makecoverpage
+%
+% The large title line shows \projectname (falling back to \reporttitle if
+% \coverkind is not set), so a document typically sets both:
+%   \projectname{Eclipse NMBU}
+%   \coverkind{Vedtekter}
+% ---------------------------------------------------------------------------
+
+\makeatletter
+\def\@missionpatch{}
+\newcommand{\missionpatch}[1]{\def\@missionpatch{#1}}
+
+\def\@coverkind{}
+\newcommand{\coverkind}[1]{\def\@coverkind{#1}}
+
+\def\@reportsubtitle{}
+\newcommand{\reportsubtitle}[1]{\def\@reportsubtitle{#1}}
+
+\def\@orgnameone{}
+\def\@orgnametwo{}
+\newcommand{\orgname}[2]{\def\@orgnameone{#1}\def\@orgnametwo{#2}}
+
+\def\@reportlocation{}
+\newcommand{\reportlocation}[1]{\def\@reportlocation{#1}}
+
+\def\@contactinfo{}
+\newcommand{\contactinfo}[1]{\def\@contactinfo{#1}}
+
+\newcommand{\makecoverpage}{%
+  \begingroup
+  \thispagestyle{empty}
+  \begin{center}
+  \ifx\@missionpatch\@empty\else
+    \includegraphics[width=6.5cm]{\@missionpatch}\par
+    \vspace{3.4cm}
+  \fi
+  \ifx\@coverkind\@empty
+    {\sffamily\Huge\bfseries \@reporttitle \par}
+  \else
+    {\sffamily\Huge\bfseries \@coverkind \par}
+    {\sffamily\Huge\bfseries \@projectname \par}
+  \fi
+  \ifx\@reportsubtitle\@empty\else
+    \vspace{1.6cm}
+    {\sffamily\bfseries \@reportsubtitle \par}
+  \fi
+  \vspace{2cm}
+  \includegraphics[height=1.3cm]{\@orglogo}\par
+  \vspace{0.6cm}
+  \@orgnameone \\
+  \@orgnametwo \par
+  \vspace{0.6cm}
+  \ifx\@reportlocation\@empty
+    \@date
+  \else
+    \@reportlocation, \@date
+  \fi
+  \par
+  \vfill
+  \ifx\@contactinfo\@empty\else
+    {\small \@contactinfo \par}
+  \fi
+  \end{center}
+  \endgroup
+  \newpage
+  \pagenumbering{roman}
+  \pagestyle{plain}
+}
+\makeatother
