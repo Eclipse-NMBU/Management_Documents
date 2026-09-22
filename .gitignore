@@ -1,1 +1,15 @@
 Orginisation*
+
+# LaTeX build intermediates
+*.aux
+*.bcf
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv

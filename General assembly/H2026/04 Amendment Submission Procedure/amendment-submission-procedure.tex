@@ -2,7 +2,8 @@
 \def\rap@fontpath{../../../Common/}
 \makeatother
 \documentclass{../../../Common/Latex/Templates/rapport}
-\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
 
 \reporttitle{Amendment Submission Procedure}
 \projectname{Eclipse NMBU}
@@ -19,51 +20,35 @@
 
 \begin{document}
 
-\makecoverpage
-\tableofcontents
 \reportmainmatter
+\small
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
 
-\noindent\textbf{Document ID:} ECL-H2026-PROC-01\\
-\textbf{Governing Bylaws:} Old Bylaws (in force for this meeting). The Old Bylaws do not regulate Amendments (endringsforslag) as a distinct concept; this procedure operationalises the general submission and voting rules in Old Bylaws \S4.5--\S4.7, and is written for consistency with the equivalent, more detailed New Bylaws \S9.5--\S9.6, without assuming the New Bylaws are already in force.
+\begin{center}
+  {\Large\bfseries Amendment Submission}\par
+  \vspace{0.15cm}
+  {\normalsize General Assembly -- ECL-H2026-PROC-01}\par
+\end{center}
 
-\vsection{1. Who has Right to Propose (forslagsrett)}
-Under the Old Bylaws, the members entitled to vote at the General Assembly are Board Members (styremedlemmer), Core Members (kjernemedlemmer) and Active Members (aktive medlemmer) (Old Bylaws \S10.2.1). The Old Bylaws do not separately define a ``Right to Propose'' distinct from voting rights, and do not extend proposal rights to Inactive Members. Accordingly, for this General Assembly, \textbf{Right to Propose is held by the same members who hold voting rights}: Board Members, Core Members and Active Members. \textit{(Under the New Bylaws, \S5.5.3, Right to Propose also extends to Mentors; Mentors do not exist as a tier under the Old Bylaws and so have no Right to Propose at this meeting.)}
+\vspace{0.2cm}
+\textbf{Use one form per amendment.} Quote the current wording exactly and write the complete replacement wording. Submit the completed form to the Board by the deadline stated in the Notice of Meeting. Only members with the right to propose may submit an amendment.
 
-Only members with Right to Propose may submit an Amendment.
+\vspace{0.4cm}
+\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{3.7cm}|X|}
+  \hline
+  Which case?           & \rule{0pt}{1.2cm}Case number, Document ID and title.          \\
+  \hline
+  What it says now      & \rule{0pt}{3.2cm}Quote the exact text that should be changed. \\
+  \hline
+  What I want it to say & \rule{0pt}{3.2cm}Write the exact replacement text.            \\
+  \hline
+  Sender                & \rule{0pt}{1.2cm}Full name and signature, if required.        \\
+  \hline
+\end{tabularx}
 
-\vsection{2. What an Amendment is}
-An Amendment (endringsforslag) is a proposal to change the Proposed Resolution of a Case already on the Agenda -- including the Bylaw Amendment Case, ECL-H2026-CASE-07A. It is not a new, independent Case; it must reference the Case it amends.
-
-\vsection{3. Required wording/format}
-An Amendment must state, in writing:
-\begin{enumerate}
-  \item The Document ID and title of the Case it applies to.
-  \item The exact text to be changed (quoting the current Proposed Resolution or Bylaw section affected).
-  \item The exact replacement text.
-  \item The name of the proposer.
-\end{enumerate}
-Amendments that do not identify a specific Case, or that do not give exact replacement wording, will not be accepted.
-
-\vsection{4. Which Case it applies to}
-Any Case on the published Agenda may be amended, including Standard Case Papers and the Bylaw Amendment.
-
-\vsection{5. How the proposer is identified}
-The proposer's full name must appear on the Amendment. Anonymous Amendments are not accepted.
-
-\vsection{6. Submission deadline}
-\textit{Note: the Old Bylaws do not fix a separate deadline for Amendments -- only for the Notice (two weeks, \S4.5), the Case Papers (one week, \S4.5), and the Bylaw Amendment proposal itself reaching the Board (one week, \S4.6). Pending Board confirmation, this procedure uses the Case Papers deadline as the Amendment deadline, since Case Papers (against which Amendments are drafted) are not available to members before that date.}
-
-\textbf{Amendments must be submitted no later than one week before the General Assembly}, i.e. on the same date the Case Papers are published (see Notice of Meeting, ECL-H2026-NOT-01, \S3).
-
-\textbf{There are no late Amendments after this deadline.} The Old Bylaws provide no mechanism for accepting late Amendments, so none is created here.
-
-\vsection{7. Where/how Amendments are delivered}
-Amendments must be submitted in writing to the Board, by the channel stated in the Notice of Meeting. \textit{[Exact delivery channel -- e.g. a specific email address or form -- TBD by the Board.]}
-
-\vsection{8. How submitted Amendments are presented to the General Assembly}
-Each Amendment is presented together with the Case it applies to, immediately before that Case is discussed, per the order in Old Bylaws \S4.8 / the Agenda (ECL-H2026-AGD-01). The Meeting Chair reads or has read the Amendment's exact text before discussion of the underlying Case continues. Where a Case has more than one submitted Amendment, they are presented and, where the Voting Order requires, voted on in the order the Meeting Chair proposes for approval by the General Assembly (see Voting Order, ECL-H2026-VOTORD-01).
-
-\vsection{9. Floor Amendments (benkeforslag)}
-As used in this document set, ``Floor Amendment'' (benkeforslag) refers only to a new \emph{candidate} nominated from the floor during an election Case, consistent with the New Bylaws' use of the term (\S11.3) and the Glossary (ECL-H2026-GLOSS-01). It does \emph{not} refer to last-minute changes to a Case's proposed text: no such changes are permitted after the deadline in \S6 above. A member wishing to nominate a candidate from the floor may do so during the presentation and discussion of the relevant election Case, and is entitled to a short speech (benketale) explaining the nomination.
+\vfill
+\textbf{Submission note:} Amendments must identify one specific case and include exact replacement wording. Anonymous or late amendments are not accepted under this procedure.
 
 \end{document}

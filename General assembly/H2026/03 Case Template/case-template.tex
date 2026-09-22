@@ -2,7 +2,8 @@
 \def\rap@fontpath{../../../Common/}
 \makeatother
 \documentclass{../../../Common/Latex/Templates/rapport}
-\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
 
 \reporttitle{Case Template}
 \projectname{Eclipse NMBU}
@@ -19,31 +20,29 @@
 
 \begin{document}
 
-\makecoverpage
-\tableofcontents
 \reportmainmatter
+\small
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
 
-\noindent\textbf{Document ID:} ECL-H2026-TPL-01\\
-\textbf{Purpose:} Reusable template for every Case Paper (sakspapir) in this document set and future General Assemblies. Copy this template per Case; do not edit it in place.
+\begin{center}
+  {\Large\bfseries Case Template}\par
+  \vspace{0.15cm}
+  {\normalsize ECL-H2026-TPL-01}\par
+\end{center}
 
-\vsection{How to use this template}
-Every Case submitted to the General Assembly must use a Case Paper in this format. Fields marked \emph{(if applicable)} may be omitted with a one-line note explaining why (e.g. ``Financial Consequences: none''), rather than left blank.
-
-\vsection{Case Paper fields}
-
-\begin{description}[leftmargin=4cm, style=nextline]
-  \item[Document ID] \underline{\hspace{8cm}} \\ Stable identifier, format \texttt{ECL-H2026-CASE-NN}, assigned when the Case is received. Used for cross-referencing from the Agenda, Amendments, the Protocol, and any follow-on Responsibility Contract or Board record.
-  \item[Case number] \underline{\hspace{4cm}} \\ Assigned only once the final Agenda is published (see ECL-H2026-AGD-01). Leave as ``[TBD]'' until then.
-  \item[Title] \underline{\hspace{8cm}}
-  \item[Proposer] \underline{\hspace{8cm}} \\ Name and, if applicable, the capacity in which the Case is proposed (e.g. ``on behalf of the Board''). Must be a member with Right to Propose (forslagsrett) -- see ECL-H2026-PROC-01, \S1.
-  \item[Background] \\ What situation or problem the Case addresses, and any relevant history.
-  \item[Proposed Resolution] \\ The exact wording the General Assembly is being asked to adopt. This is the text that Amendments (endringsforslag) will target -- keep it precise and self-contained.
-  \item[Recommendation] \emph{(if applicable)} \\ The Board's or proposer's recommendation on how to vote, and why.
-  \item[Financial Consequences] \\ State the cost/benefit, or ``None.''
-  \item[Attachments] \emph{(if applicable)} \\ List any supporting documents, with their own Document IDs where they exist.
-\end{description}
-
-\vsection{Fields required by these Bylaws beyond the Master Drafting Prompt's baseline list}
-None identified: Old Bylaws \S4.8 and New Bylaws \S8.6/\S9.4 describe how Cases are presented and discussed, but do not prescribe additional mandatory fields on the Case Paper itself beyond what is listed above.
+\vspace{0.3cm}
+\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{4.2cm}|X|}
+  \hline
+  C-suite deliberation & \rule{0pt}{4.1cm}Relevant discussion, positions, concerns, and conclusion.             \\
+  \hline
+  Background           & \rule{0pt}{4.1cm}Situation, problem, and relevant history.                             \\
+  \hline
+  Proposal             & \rule{0pt}{4.1cm}Proposed action or change, in clear practical terms.                  \\
+  \hline
+  External information & \rule{0pt}{4.1cm}Sources, facts, links, requirements, or other supporting information. \\
+  \hline
+\end{tabularx}
 
 \end{document}
