@@ -1,0 +1,56 @@
+\makeatletter
+\def\rap@fontpath{../../../Common/}
+\makeatother
+\documentclass{../../../Common/Latex/Templates/rapport}
+\usepackage{enumitem}
+
+\reporttitle{Voting Order}
+\projectname{Eclipse NMBU}
+\orglogo{../../../Common/Eclipse Images/EclipseFullText}
+
+\input{../../../Common/Latex/cover/rapport-cover}
+\missionpatch{../../../Common/Eclipse Images/EclipsePlack}
+\coverkind{Voting Order (voteringsorden)}
+\reportsubtitle{General Assembly -- ECL-H2026-VOTORD-01}
+\orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
+\reportlocation{Ås}
+\date{[DATE OF GENERAL ASSEMBLY -- TBD]}
+\contactinfo{Contact: post@eclipsenmbu.no}
+
+\begin{document}
+
+\makecoverpage
+\tableofcontents
+\reportmainmatter
+
+\noindent\textbf{Document ID:} ECL-H2026-VOTORD-01\\
+\textbf{Purpose:} proposed by the Meeting Chair at the General Assembly (per proposed New Bylaws \S9.6.1, applied here as good practice since the Old Bylaws do not name who proposes the Voting Order) and approved by the General Assembly before voting on Cases begins. This document sets the \emph{default} order for this meeting; the Meeting Chair may propose adjustments at the meeting, subject to the General Assembly's approval.
+
+\vsection{Principle}
+The Voting Order is structured to require as few separate votes as possible while still resolving every proposal unambiguously -- see Master Drafting Prompt \S14. Concretely: Amendments are voted before the proposal they amend; where several Amendments target the same point, the most far-reaching is voted first (if adopted, it typically supersedes the need to vote on narrower alternatives to the same point); and the Bylaw Amendment follows its own two-stage sequence rather than being folded into the general Case order.
+
+\vsection{1. Standard Cases and submitted Cases}
+For each Case in turn (Constitution; Financial Statements; Budget; Semester Report; each submitted Case, in Agenda order):
+\begin{enumerate}
+  \item Any Amendments to that Case are voted on first, most far-reaching first, against the current proposal (not against each other), simple majority unless the Case itself carries a different threshold.
+  \item Once all Amendments to that Case are resolved, the (possibly amended) Proposed Resolution is voted on as a whole.
+\end{enumerate}
+
+\vsection{2. Bylaw Amendment (ECL-H2026-CASE-07A/07B/07C)}
+Per the two-stage procedure in ECL-H2026-CASE-07C:
+\begin{enumerate}
+  \item \textbf{Stage 1:} vote on whether to adopt New Bylaws at all -- 2/3 of all members.
+  \item \textbf{Only if Stage 1 passes -- Stage 2:} vote on each submitted Amendment to the proposed text, in the order submitted unless several target the same clause (in which case, most far-reaching first), simple majority each.
+  \item No separate final ratification vote -- Stage 1's ``Yes'' is the adoption, of the text as it stands once Stage 2 concludes.
+\end{enumerate}
+
+\vsection{3. Transitional C-suite Case (ECL-H2026-CASE-08)}
+No separate vote is required: this Case resolves automatically from the result of \S2 above (Stage 1 of the Bylaw Amendment). It is presented for the record, not voted on as an independent proposal, unless an Amendment has been submitted against it.
+
+\vsection{4. Election of Board Members (ECL-H2026-CASE-06)}
+One vote per role, in the order CEO, then CTO, then CBO/CFO, then CPO/CMO (i.e. the order the roles are listed in \S12.1 of the proposed New Bylaws, or \S5.1 of the Old Bylaws if the Amendment failed), using the election ballots (ECL-H2026-BALLOT-02A / -02B) and Old Bylaws \S4.7 mechanics. Each round (first round, and any second round per \S4.7.2) is its own vote.
+
+\vsection{5. Other business}
+Matters submitted under Old Bylaws \S4.8(i) / proposed New Bylaws \S9.7 are voted on last, one at a time, simple majority. No vote on Bylaw Amendments, elections, financial dispositions or dissolution may be taken here.
+
+\end{document}

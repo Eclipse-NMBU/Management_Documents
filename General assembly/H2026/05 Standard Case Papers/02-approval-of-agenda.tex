@@ -1,0 +1,46 @@
+\makeatletter
+\def\rap@fontpath{../../../Common/}
+\makeatother
+\documentclass{../../../Common/Latex/Templates/rapport}
+\usepackage{array}
+\usepackage{tabularx}
+
+\reporttitle{Case: Approval of Agenda}
+\projectname{Eclipse NMBU}
+\orglogo{../../../Common/Eclipse Images/EclipseFullText}
+
+\input{../../../Common/Latex/cover/rapport-cover}
+\missionpatch{../../../Common/Eclipse Images/EclipsePlack}
+\coverkind{Case Paper}
+\reportsubtitle{Approval of Agenda -- ECL-H2026-CASE-02}
+\orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
+\reportlocation{Ås}
+\date{[DATE OF GENERAL ASSEMBLY -- TBD]}
+\contactinfo{Contact: post@eclipsenmbu.no}
+
+\begin{document}
+
+\reportmainmatter
+\small
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+
+\begin{center}
+  {\Large\bfseries Approval of Agenda (godkjenning av saksliste)}\par
+  \vspace{0.15cm}
+  {\normalsize ECL-H2026-CASE-02 \quad Case [TBD] \quad Proposed by: the Board}\par
+\end{center}
+
+\vspace{0.3cm}
+\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{4.2cm}|X|}
+  \hline
+  Background & The Agenda, ECL-H2026-AGD-01, was compiled once all Cases were received by the submission deadline, following the fixed order in Old Bylaws \S4.8. \\
+  \hline
+  Proposal & The General Assembly resolves that the Agenda, ECL-H2026-AGD-01, is approved as the order of business for this meeting. \\
+  \hline
+  External information & Attachment: Agenda (ECL-H2026-AGD-01). \\
+  \hline
+\end{tabularx}
+
+\end{document}

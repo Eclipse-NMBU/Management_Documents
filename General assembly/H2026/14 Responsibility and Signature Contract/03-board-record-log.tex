@@ -1,0 +1,61 @@
+\makeatletter
+\def\rap@fontpath{../../../Common/}
+\makeatother
+\documentclass{../../../Common/Latex/Templates/rapport}
+\usepackage{array}
+\usepackage{tabularx}
+
+\reporttitle{Board Record -- Responsibility Transfer}
+\projectname{Eclipse NMBU}
+\orglogo{../../../Common/Eclipse Images/EclipseFullText}
+
+\input{../../../Common/Latex/cover/rapport-cover}
+\missionpatch{../../../Common/Eclipse Images/EclipsePlack}
+\coverkind{Board Record}
+\reportsubtitle{Responsibility transfer log -- ECL-H2026-RESP-02}
+\orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
+\reportlocation{Ås}
+\date{\today}
+\contactinfo{Contact: post@eclipsenmbu.no}
+
+\begin{document}
+
+\reportmainmatter
+\small
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+
+\begin{center}
+  {\Large\bfseries Board Record -- Responsibility Transfer}\par
+  \vspace{0.15cm}
+  {\normalsize ECL-H2026-RESP-02}\par
+\end{center}
+
+\vspace{0.2cm}
+One entry per signed Responsibility \& Signature Contract (ECL-H2026-RESP-01A or -01B). This log is the Board's record that the transfer took place; per proposed New Bylaws \S14/\S5.1, the transfer is effective on signature by From and To, and is considered approved by default -- this log does not itself approve the transfer, it records it.
+
+\vspace{0.4cm}
+\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{4cm}|X|}
+  \hline
+  Responsibility Contract Document ID & \rule{0pt}{1cm} \\
+  \hline
+  Date signed & \rule{0pt}{0.9cm} \\
+  \hline
+  From (name, role) & \rule{0pt}{0.9cm} \\
+  \hline
+  To (name, role) & \rule{0pt}{0.9cm} \\
+  \hline
+  Scope (one line) & \rule{0pt}{1cm} \\
+  \hline
+  Signature Right included & \rule{0pt}{0.9cm} \\
+  \hline
+  Recipient's new tier (e.g.\ Core Member) & \rule{0pt}{0.9cm} \\
+  \hline
+  Logged by (Board member) and date & \rule{0pt}{1.2cm} \\
+  \hline
+  Notes / irregularities flagged & \rule{0pt}{1.6cm} \\
+  \hline
+\end{tabularx}
+
+\end{document}
