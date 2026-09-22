@@ -9,45 +9,45 @@
 \contentsline {subsection}{§ 4.1 Øverste organ}{1}{}%
 \contentsline {subsection}{§ 4.2 Hyppighet og tidsrammer}{1}{}%
 \contentsline {subsection}{§ 4.3 Vedtaksførhet og stemmegivening}{1}{}%
-\contentsline {subsection}{§ 4.4 Ekstraordinær generalforsamling}{2}{}%
+\contentsline {subsection}{§ 4.4 Ekstraordinær generalforsamling}{1}{}%
 \contentsline {subsection}{§ 4.5 Innkallingsfrister og sakspapirer}{2}{}%
 \contentsline {subsection}{§ 4.6 Vedtektsendringer}{2}{}%
 \contentsline {subsection}{§ 4.7 Valg av styremedlemmer}{2}{}%
 \contentsline {subsection}{§ 4.8 Saksliste}{2}{}%
-\contentsline {section}{§ 5 STYRET}{3}{}%
-\contentsline {subsection}{§ 5.1 Styrets sammensetning}{3}{}%
+\contentsline {section}{§ 5 STYRET}{2}{}%
+\contentsline {subsection}{§ 5.1 Styrets sammensetning}{2}{}%
 \contentsline {subsection}{§ 5.2 Styreleder (CEO -- Chief Executive Officer)}{3}{}%
 \contentsline {subsection}{§ 5.3 Teknisk Ansvarlig (CTO -- Chief Technology Officer)}{3}{}%
 \contentsline {subsection}{§ 5.4 Økonomi ansvarlig (CFO -- Chief Financial Officer)}{3}{}%
-\contentsline {subsection}{§ 5.5 Marknadsførings ansvarlig (CMO -- Chief Marketing Officer)}{4}{}%
-\contentsline {subsection}{§ 5.6 Konstituering av fratreden}{4}{}%
+\contentsline {subsection}{§ 5.5 Marknadsførings ansvarlig (CMO -- Chief Marketing Officer)}{3}{}%
+\contentsline {subsection}{§ 5.6 Konstituering av fratreden}{3}{}%
 \contentsline {subsection}{§ 5.7 Erfaringsoverføring}{4}{}%
 \contentsline {subsection}{§ 5.8 Stemmegivning i styret}{4}{}%
 \contentsline {section}{§ 6 START AV PROSJEKTER}{4}{}%
 \contentsline {subsection}{§ 6.1 Beslutningsprosess for prosjekter}{4}{}%
 \contentsline {section}{§ 7 ETIKK OG MILJØ}{4}{}%
 \contentsline {subsection}{§ 7.1 Bærekraft og etiske hensyn}{4}{}%
-\contentsline {section}{§ 8 VARSLING OG HÅNDTERING AV KRITIKKVERDIG FORHOLD}{5}{}%
-\contentsline {subsection}{§ 8.1 Definisjon av varsling}{5}{}%
+\contentsline {section}{§ 8 VARSLING OG HÅNDTERING AV KRITIKKVERDIG FORHOLD}{4}{}%
+\contentsline {subsection}{§ 8.1 Definisjon av varsling}{4}{}%
 \contentsline {subsection}{§ 8.2 Lovbrudd og saksbehandling}{5}{}%
 \contentsline {subsection}{§ 8.3 Vedtak om reaksjoner}{5}{}%
 \contentsline {subsection}{§ 8.4 Habilitet og sanksjoner}{5}{}%
-\contentsline {section}{§ 9 PERSONVERN}{6}{}%
-\contentsline {subsection}{§ 9.1 Behandling av personopplysninger}{6}{}%
-\contentsline {section}{§ 10 RETTIGHETER OG PLIKTER KNYTTET TIL MEDLEMSKAPET}{6}{}%
-\contentsline {subsection}{§ 10.1 Definisjon av medlemsnivåer}{6}{}%
+\contentsline {section}{§ 9 PERSONVERN}{5}{}%
+\contentsline {subsection}{§ 9.1 Behandling av personopplysninger}{5}{}%
+\contentsline {section}{§ 10 RETTIGHETER OG PLIKTER KNYTTET TIL MEDLEMSKAPET}{5}{}%
+\contentsline {subsection}{§ 10.1 Definisjon av medlemsnivåer}{5}{}%
 \contentsline {subsection}{§ 10.2 Rettigheter og stemmerett}{6}{}%
 \contentsline {subsection}{§ 10.3 Medlemmenes plikter}{6}{}%
-\contentsline {subsection}{§ 10.4 Poengsystem}{7}{}%
-\contentsline {subsection}{§ 10.5 Styrets fullmakter vedrørende medlemskap}{7}{}%
+\contentsline {subsection}{§ 10.4 Poengsystem}{6}{}%
+\contentsline {subsection}{§ 10.5 Styrets fullmakter vedrørende medlemskap}{6}{}%
 \contentsline {section}{§ 11 SIGNATURRETT}{7}{}%
 \contentsline {subsection}{§ 11.1 Utøvelse av signaturrett}{7}{}%
 \contentsline {section}{§ 12 ØKONOMI}{7}{}%
 \contentsline {subsection}{§ 12.1 Bruk av midler}{7}{}%
-\contentsline {subsection}{§ 12.2 Budsjett og regnskap}{8}{}%
-\contentsline {subsection}{§ 12.3 Godkjenning av utbetalinger}{8}{}%
-\contentsline {subsection}{§ 12.4 Økonomiske investeringer}{8}{}%
-\contentsline {subsection}{§ 12.5 Økonomisk ansvar}{8}{}%
-\contentsline {section}{§ 13 OPPHØR}{8}{}%
-\contentsline {subsection}{§ 13.1 Prosedyrer for oppløsning}{8}{}%
-\contentsline {subsection}{§ 13.2 Disponering av eiendeler}{8}{}%
+\contentsline {subsection}{§ 12.2 Budsjett og regnskap}{7}{}%
+\contentsline {subsection}{§ 12.3 Godkjenning av utbetalinger}{7}{}%
+\contentsline {subsection}{§ 12.4 Økonomiske investeringer}{7}{}%
+\contentsline {subsection}{§ 12.5 Økonomisk ansvar}{7}{}%
+\contentsline {section}{§ 13 OPPHØR}{7}{}%
+\contentsline {subsection}{§ 13.1 Prosedyrer for oppløsning}{7}{}%
+\contentsline {subsection}{§ 13.2 Disponering av eiendeler}{7}{}%

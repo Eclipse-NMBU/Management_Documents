@@ -1,0 +1,209 @@
+\makeatletter
+\def\rap@fontpath{../../../Common/}
+\makeatother
+\documentclass{../../../Common/Latex/Templates/rapport}
+\usepackage{enumitem}
+
+\reporttitle{Organisational Glossary}
+\projectname{Eclipse NMBU}
+\orglogo{../../../Common/Eclipse Images/EclipseFullText}
+
+\input{../../../Common/Latex/cover/rapport-cover}
+\missionpatch{../../../Common/Eclipse Images/EclipsePlack}
+\coverkind{Multilingual Organisational Glossary}
+\reportsubtitle{Flerspråklig organisasjonsordliste -- ECL-H2026-GLOSS-01}
+\orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
+\reportlocation{Ås}
+\date{[DATE -- TBD]}
+\contactinfo{Contact: post@eclipsenmbu.no}
+
+\newcommand{\term}[1]{\vsubsection{#1}}
+\newcommand{\enDef}[1]{\noindent\textbf{EN:} #1\par}
+\newcommand{\noDef}[1]{\noindent\textbf{NO:} #1\par\vspace{0.4cm}}
+
+\begin{document}
+
+\makecoverpage
+\tableofcontents
+\reportmainmatter
+
+\noindent\textbf{Document ID:} ECL-H2026-GLOSS-01\\
+\textbf{Status:} Living reference document -- update whenever a new organisational term is adopted.\\
+\textbf{Scope:} Applies to all Eclipse NMBU governance documents, including this General Assembly's document set (ECL-H2026-*). Where the Old and New Bylaws use the same Norwegian term with different meaning, both are noted.
+
+\vsection{How to use this glossary}
+Every organisational document should write technical terminology as \textbf{English (Norwegian)} on first use per section, e.g. ``General Assembly (generalforsamling)''. This glossary is the authoritative source for that pairing. If a term is not listed here, propose an addition rather than inventing an ad-hoc translation.
+
+\vsection{Organs and bodies}
+
+\term{General Assembly (generalforsamling)}
+\enDef{The organisation's supreme decision-making body, made up of its members.}
+\noDef{Foreningens øverste organ, sammensatt av medlemmene.}
+
+\term{Board (styret)}
+\enDef{The organisation's highest organ between General Assemblies.}
+\noDef{Foreningens øverste organ mellom generalforsamlingene.}
+
+\term{Election and Control Committee (valg- og kontrollkomit\'e)}
+\enDef{A three-member committee elected by the General Assembly (New Bylaws only) that finds candidates, runs elections to elected offices, and oversees Bylaw compliance. Does not exist under the Old Bylaws.}
+\noDef{Komit\'e p\r{a} tre medlemmer valgt av generalforsamlingen (kun Nye Vedtekter) som finner kandidater, gjennomfører valg til tillitsverv, og p\r{a}ser at vedtektene blir fulgt.}
+
+\vsection{Roles (C-suite)}
+
+\term{CEO -- Chief Executive Officer (Styreleder)}
+\enDef{Overall administrative leadership and external representation. Under the New Bylaws, sole holder of Signature Right, with a duty to delegate Authority to the other Board members.}
+\noDef{Overordnet administrativ ledelse og ekstern representasjon. Under Nye Vedtekter eneinnehaver av signaturrett, med plikt til \r{a} delegere fullmakt til de øvrige styremedlemmene.}
+
+\term{CTO -- Chief Technology Officer / Chief Technical Officer (Teknisk ansvarlig)}
+\enDef{Responsible for all technical projects, system integration and technical safety. Under the New Bylaws, also Deputy Chair (nestleder) who assumes the CEO's responsibilities when the CEO is unavailable.}
+\noDef{Ansvarlig for alle tekniske prosjekt, systemintegrasjon og teknisk sikkerhet. Under Nye Vedtekter ogs\r{a} nestleder, som overtar CEOs ansvar n\r{a}r CEO er fraværende.}
+
+\term{CFO -- Chief Financial Officer (Økonomiansvarlig)}
+\enDef{Old Bylaws role: financial planning, bookkeeping, budget control. Replaced by CBO under the New Bylaws.}
+\noDef{Rolle under Gamle Vedtekter: finansiell planlegging, bokføring, budsjettkontroll. Erstattes av CBO under Nye Vedtekter.}
+
+\term{CMO -- Chief Marketing Officer (Markedsføringsansvarlig)}
+\enDef{Old Bylaws role: recruitment, branding, sponsor relations, external communication. Folded into CBO under the New Bylaws.}
+\noDef{Rolle under Gamle Vedtekter: rekruttering, merkevarebygging, sponsorrelasjoner, ekstern kommunikasjon. Sl\r{a}s sammen med CBO under Nye Vedtekter.}
+
+\term{CBO -- Chief Business Officer (Forretnings- og økonomiansvarlig)}
+\enDef{New Bylaws role only. Holds full authority over the organisation's economy (undelegated from the CEO) plus sponsor relations, branding and external digital communication -- effectively merging the Old Bylaws' CFO and CMO roles.}
+\noDef{Kun en rolle under Nye Vedtekter. Har full myndighet over foreningens økonomi (ikke delegert fra CEO), samt sponsorrelasjoner, merkevarebygging og ekstern digital kommunikasjon -- sl\r{a}r i praksis sammen CFO- og CMO-rollene fra Gamle Vedtekter.}
+
+\term{CPO -- Chief People Officer (Personal- og medlemsansvarlig)}
+\enDef{New Bylaws role only. Responsible for members and internal organisation: recruitment, onboarding, membership-tier administration, internal communication, and handling of whistleblowing cases together with the CEO.}
+\noDef{Kun en rolle under Nye Vedtekter. Ansvarlig for medlemmer og intern organisasjon: rekruttering, opptak, forvaltning av medlemsniv\r{a}er, internkommunikasjon, og saksbehandling av varsler sammen med CEO.}
+
+\term{Project Lead (prosjektleder)}
+\enDef{Member with overall responsibility for carrying out a project. Reports to the CTO for technical projects, otherwise to the Board member responsible for that subject area.}
+\noDef{Medlem med det overordnede ansvaret for gjennomføringen av et prosjekt. Rapporterer til CTO i tekniske prosjekter, ellers til ansvarlig styremedlem.}
+
+\term{Team Lead (teamleder)}
+\enDef{Member with responsibility for a team -- a cross-project subject-matter group. Reports to the Project Lead of the relevant project, or to the responsible Board member.}
+\noDef{Medlem med ansvar for et team, det vil si en faggruppe som g\r{a}r p\r{a} tvers av prosjekter. Rapporterer til prosjektlederen i det aktuelle prosjektet, eller til ansvarlig styremedlem.}
+
+\term{Nearest Leader (nærmeste leder)}
+\enDef{The role a member reports to in the organisation's governance structure -- e.g. a Team Lead for an ordinary member, a Project Lead for a Team Lead. Used to determine escalation when a Responsibility holder is unavailable.}
+\noDef{Den rollen et medlem rapporterer til i foreningens styringsstruktur. Brukes for \r{a} avgjøre eskalering n\r{a}r en ansvarshaver er fraværende.}
+
+\vsection{Membership tiers}
+
+\term{Board Member (styremedlem)}
+\enDef{Holds the legal and administrative responsibility for the organisation. Highest membership tier.}
+\noDef{Innehar det juridiske og administrative ansvaret for foreningen. Høyeste medlemsniv\r{a}.}
+
+\term{Core Member (kjernemedlem)}
+\enDef{A member who has been assigned a genuine Responsibility Role by the Board or a Board member, e.g. as Project Lead or Team Lead.}
+\noDef{Medlem som er tildelt et ansvarsverv av styret eller et styremedlem, f.eks. som prosjektleder eller teamleder.}
+
+\term{Active Member (aktivt medlem)}
+\enDef{A member admitted under the ordinary admission process (New Bylaws \S5.2); has voting rights and is eligible for office. Under the Old Bylaws, an active member is instead defined by meeting a points-earning requirement.}
+\noDef{Medlem tatt opp etter ordinær opptaksprosess (Nye Vedtekter \S5.2); har stemmerett og er valgbar. Under Gamle Vedtekter defineres aktivt medlem i stedet av oppfylt poengkrav.}
+
+\term{Mentor (mentor)}
+\enDef{New Bylaws only. A membership tier for people, including non-members, on the organisation's mentor list.}
+\noDef{Kun under Nye Vedtekter. Medlemsniv\r{a} for personer, ogs\r{a} utenfor foreningen, som st\r{a}r p\r{a} foreningens mentorliste.}
+
+\term{Inactive Member (inaktivt medlem)}
+\enDef{Registered member who does not meet the requirements for active participation. Has meeting and speaking rights but no voting rights or eligibility for office.}
+\noDef{Registrert medlem som ikke oppfyller kravene til aktiv deltakelse. Har møte- og talerett, men ikke stemmerett eller valgbarhet.}
+
+\term{Alumni (alumni)}
+\enDef{New Bylaws only. A member whose Membership Contract ended without being renewed, automatically receives Alumni status.}
+\noDef{Kun under Nye Vedtekter. Et medlem hvis medlemskontrakt er avsluttet uten \r{a} bli fornyet, f\r{a}r automatisk alumnistatus.}
+
+\vsection{Governance, responsibility, delegation, signature}
+
+\term{Responsibility (ansvar)}
+\enDef{A genuine leadership obligation assigned to a member, distinct from an ordinary task. Receiving Responsibility makes a member a Core Member.}
+\noDef{En reell lederforpliktelse tildelt et medlem, til forskjell fra en ordinær oppgave. \r{a} motta ansvar gjør et medlem til kjernemedlem.}
+
+\term{Responsibility Letter / Contract (ansvarsbrev / ansvarskontrakt)}
+\enDef{The signed document that transfers a Responsibility from one person (``From'') to another (``To''), logged afterwards by the Board.}
+\noDef{Det signerte dokumentet som overfører et ansvar fra en person (``Fra'') til en annen (``Til''), som deretter logges av styret.}
+
+\term{Authority / Mandate (fullmakt)}
+\enDef{The right to make decisions and bind the organisation on the CEO's behalf, within an assigned area of responsibility.}
+\noDef{Retten til \r{a} treffe beslutninger og forplikte foreningen p\r{a} vegne av CEO innenfor et angitt ansvarsomr\r{a}de.}
+
+\term{Delegation (delegasjon)}
+\enDef{Transfer of Authority from the CEO to another Board member (New Bylaws \S14.2), or onward from a Board member to a Project Lead or Team Lead for defined tasks (\S14.6).}
+\noDef{Overføring av fullmakt fra CEO til et annet styremedlem (Nye Vedtekter \S14.2), eller videre fra et styremedlem til en prosjektleder eller teamleder for definerte oppgaver (\S14.6).}
+
+\term{Signature Right (signaturrett)}
+\enDef{The right to sign binding agreements on the organisation's behalf. Old Bylaws: held jointly by the Board. New Bylaws: held solely by the CEO, who may delegate it directly to other Board members.}
+\noDef{Retten til \r{a} signere bindende avtaler p\r{a} vegne av foreningen. Gamle Vedtekter: innehas i fellesskap av styret. Nye Vedtekter: innehas alene av CEO, som kan delegere den direkte til andre styremedlemmer.}
+
+\vsection{Meetings and voting}
+
+\term{Meeting Chair (ordstyrer)}
+\enDef{Chairs the General Assembly, manages the speakers' list and enforces meeting procedure.}
+\noDef{Leder generalforsamlingen, fører taleliste og h\r{a}ndhever møtereglene.}
+
+\term{Secretary / Minutes Taker (referent)}
+\enDef{Records the Protocol of the General Assembly.}
+\noDef{Fører protokoll fra generalforsamlingen.}
+
+\term{Vote Counters (tellekorps)}
+\enDef{Two neutral members who count votes not otherwise counted by the Election and Control Committee, and record the number of eligible voters present.}
+\noDef{To nøytrale medlemmer som teller stemmer som ikke telles av valg- og kontrollkomiteen, og registrerer antall fremmøtte stemmeberettigede.}
+
+\term{Protocol Signers (protokollunderskrivere)}
+\enDef{Two members elected to check and sign the Protocol as an accurate record of the General Assembly.}
+\noDef{To medlemmer valgt til \r{a} kontrollere og signere protokollen som en korrekt fremstilling av generalforsamlingen.}
+
+\term{Case (sak)}
+\enDef{An item on the Agenda to be presented, discussed and resolved by the General Assembly.}
+\noDef{Et punkt p\r{a} sakslisten som skal presenteres, diskuteres og avgjøres av generalforsamlingen.}
+
+\term{Case Paper (sakspapir)}
+\enDef{The written document prepared for a Case, following the Case Template.}
+\noDef{Det skriftlige dokumentet utarbeidet for en sak, etter saksmalen.}
+
+\term{Right to Propose (forslagsrett)}
+\enDef{The right to submit Cases and Amendments to the General Assembly. Held by all members with voting rights, and by Mentors.}
+\noDef{Retten til \r{a} melde inn saker og fremme endringsforslag til generalforsamlingen. Innehas av alle medlemmer med stemmerett, samt mentorer.}
+
+\term{Amendment (endringsforslag)}
+\enDef{A proposal to change a Case already on the Agenda, submitted in writing before the deadline.}
+\noDef{Forslag om endring av en sak som allerede st\r{a}r p\r{a} sakslisten, fremmet skriftlig før fristen.}
+
+\term{Floor Amendment (benkeforslag)}
+\enDef{At the General Assembly itself: (a) in the ordinary sense, a new candidate nominated from the floor during a Case's presentation and discussion, per New Bylaws \S11.3; the term is not used in these documents for last-minute changes to Case text, which are not permitted after the Amendment deadline.}
+\noDef{P\r{a} selve generalforsamlingen: (a) i vanlig forstand, en ny kandidat nominert fra salen under presentasjon og diskusjon av en sak, jf. Nye Vedtekter \S11.3; begrepet brukes ikke i disse dokumentene om sist-liten endringer i saksteksten, som ikke er tillatt etter fristen for endringsforslag.}
+
+\term{Advance Nomination (forhåndsbenking)}
+\enDef{Nomination of a candidate before the General Assembly, in response to the Election and Control Committee's (or, under the Old Bylaws, the Board's) call for candidates.}
+\noDef{Nominasjon av en kandidat før generalforsamlingen, som svar p\r{a} valg- og kontrollkomiteens (eller, under Gamle Vedtekter, styrets) oppfordring til forh\r{a}ndsbenking.}
+
+\term{Eligible Voter (stemmeberettiget)}
+\enDef{A member with voting rights at the General Assembly: Board Members, Core Members and Active Members.}
+\noDef{Et medlem med stemmerett p\r{a} generalforsamlingen: styremedlemmer, kjernemedlemmer og aktive medlemmer.}
+
+\term{Voting Order (voteringsorden)}
+\enDef{The sequence in which proposals on a Case are put to a vote, structured to require as few individual votes as possible while resolving every proposal unambiguously.}
+\noDef{Rekkefølgen forslagene til en sak stemmes over i, strukturert for \r{a} kreve s\r{a} f\r{a} enkeltavstemninger som mulig, samtidig som hvert forslag avgjøres entydig.}
+
+\term{Constitution of the Meeting (konstituering)}
+\enDef{The opening case of the General Assembly: election of Meeting Chair, Secretary, Vote Counters and Protocol Signers, approval of the Notice and Agenda, and verification of eligible voters present.}
+\noDef{\r{A}pningssaken p\r{a} generalforsamlingen: valg av ordstyrer, referent, tellekorps og protokollunderskrivere, godkjenning av innkalling og saksliste, og verifisering av fremmøtte stemmeberettigede.}
+
+\vsection{Other}
+
+\term{Bylaws (vedtekter)}
+\enDef{The organisation's founding governance document. See ``Old Bylaws'' and ``New Bylaws''.}
+\noDef{Foreningens grunnleggende styringsdokument. Se ``Gamle vedtekter'' og ``Nye vedtekter''.}
+
+\term{Old Bylaws (gamle vedtekter)}
+\enDef{The Bylaws in force immediately before this General Assembly, in 13 sections (\S\S1--13).}
+\noDef{Vedtektene som gjelder umiddelbart før denne generalforsamlingen, i 13 paragrafer (\S\S1--13).}
+
+\term{New Bylaws (nye vedtekter)}
+\enDef{The proposed restructured Bylaws, in 18 sections across five parts (\S\S1--18), submitted for adoption at this General Assembly.}
+\noDef{De foresl\r{a}tte omstrukturerte vedtektene, i 18 paragrafer fordelt p\r{a} fem deler (\S\S1--18), fremmet for vedtak p\r{a} denne generalforsamlingen.}
+
+\term{Document ID (dokument-ID)}
+\enDef{The stable identifier assigned to every document in this set, format \texttt{ECL-H2026-<TYPE>-<NN>}, allowing documents to cross-reference each other regardless of final Case numbering.}
+\noDef{Den stabile identifikatoren tildelt hvert dokument i dette settet, p\r{a} formatet \texttt{ECL-H2026-<TYPE>-<NN>}, som gjør det mulig for dokumenter \r{a} referere til hverandre uavhengig av endelig saksnummerering.}
+
+\end{document}

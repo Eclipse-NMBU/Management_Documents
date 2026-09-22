@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.8.13)  14 AUG 2026 01:37
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2026.8.21)  22 SEP 2026 11:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./example-report.tex
 (example-report.tex
-LaTeX2e <2026-06-01>
-L3 programming layer <2026-07-20>
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-06>
 (rapport.cls
 Document Class: rapport 2026/08/13 Eclipse NMBU report class
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -13,30 +13,30 @@ Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count276
-\c@section=\count277
-\c@subsection=\count278
-\c@subsubsection=\count279
-\c@paragraph=\count280
-\c@subparagraph=\count281
-\c@figure=\count282
-\c@table=\count283
+\c@part=\count271
+\c@section=\count272
+\c@subsection=\count273
+\c@subsubsection=\count274
+\c@paragraph=\count275
+\c@subparagraph=\count276
+\c@figure=\count277
+\c@table=\count278
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen150
+\bibindent=\dimen148
 )
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 )
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2026-05-17 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
-Package: keyval 2026-05-17 v1.15 key=value parser (DPC)
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2026-05-17 v1.4h Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
@@ -45,13 +45,13 @@ Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 106.
+Package graphics Info: Driver file: xetex.def on input line 106.
 
-(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xetex.def
+File: xetex.def 2025/11/01 v5.0p Graphics/color driver for xetex
 ))
-\Gin@req@height=\dimen151
-\Gin@req@width=\dimen152
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
 )
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
@@ -82,54 +82,126 @@ MM)
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpagemodern
 .sty
 Package: lastpagemodern 2025-08-14 v2.1h Refers to last page's name (HMM; JPG)
-\c@lastpagecount=\count284
+\c@lastpagecount=\count279
 ) 
 ))
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
-Package: geometry 2026/03/07 v6.0 Page Geometry
+Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count285
-\Gm@cntv=\count286
-\c@Gm@tempcnt=\count287
-\Gm@bindingoffset=\dimen153
-\Gm@wd@mp=\dimen154
-\Gm@odd@mp=\dimen155
-\Gm@even@mp=\dimen156
-\Gm@layoutwidth=\dimen157
-\Gm@layoutheight=\dimen158
-\Gm@layouthoffset=\dimen159
-\Gm@layoutvoffset=\dimen160
+\Gm@cnth=\count280
+\Gm@cntv=\count281
+\c@Gm@tempcnt=\count282
+\Gm@bindingoffset=\dimen151
+\Gm@wd@mp=\dimen152
+\Gm@odd@mp=\dimen153
+\Gm@even@mp=\dimen154
+\Gm@layoutwidth=\dimen155
+\Gm@layoutheight=\dimen156
+\Gm@layouthoffset=\dimen157
+\Gm@layoutvoffset=\dimen158
 \Gm@dimlist=\toks19
 
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
-Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks20
-\inpenc@posthook=\toks21
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/currfile\currfile.sty
+Package: currfile 2024/03/14 v1.0 Provides the file path elements of the curren
+t input file
+
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/filehook\filehook.sty
+Package: filehook 2022/10/25 v0.8b Hooks for input files
+
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/filehook\filehook-2020.
+sty
+Package: filehook-2020 2022/10/25 v0.8b Hooks for input files
+))
+\c@currfiledepth=\count283
+)
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.sty
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-11-06 L3 programming layer (loader) 
+
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xet
+ex.def
+File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
+\g__graphics_track_int=\count284
+\g__pdfannot_backend_int=\count285
+\g__pdfannot_backend_link_int=\count286
+))
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec-xetex
+.sty
+Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count287
+\l__fontspec_language_int=\count288
+\l__fontspec_strnum_int=\count289
+\l__fontspec_tmp_int=\count290
+\l__fontspec_tmpa_int=\count291
+\l__fontspec_tmpb_int=\count292
+\l__fontspec_tmpc_int=\count293
+\l__fontspec_em_int=\count294
+\l__fontspec_emdef_int=\count295
+\l__fontspec_strong_int=\count296
+\l__fontspec_strongdef_int=\count297
+\l__fontspec_tmpa_dim=\dimen159
+\l__fontspec_tmpb_dim=\dimen160
+\l__fontspec_tmpc_dim=\dimen161
+ (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 )
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.cfg))
+)
+
+Package fontspec Info: 
+(fontspec)             Font family 'Genos(0)' created for font 'Genos' with
+(fontspec)             options [Ligatures=TeX,Path = ../../,Extension =
+(fontspec)             .ttf,UprightFont = *-Regular,BoldFont =
+(fontspec)             *-Bold,ItalicFont = *-Italic,BoldItalicFont =
+(fontspec)             *-BoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[../../Genos-Regular.ttf]/OT:script=latn;language=df
+lt;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[../../Genos-Bold.ttf]/OT:script=latn;language=dflt;
+mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[../../Genos-Italic.ttf]/OT:script=latn;language=dfl
+t;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[../../Genos-BoldItalic.ttf]/OT:script=latn;language
+=dflt;mapping=tex-text;"
+
 \rap@logoheight=\skip65
 )
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip66
-\enit@outerparindent=\dimen161
-\enit@toks=\toks22
+\enit@outerparindent=\dimen162
+\enit@toks=\toks20
 \enit@inbox=\box53
-\enit@count@id=\count288
-\enitdp@description=\count289
+\enit@count@id=\count298
+\enitdp@description=\count299
 )
-(../cover/rapport-cover.tex)
-(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2026-07-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count290
-) (example-report.aux)
+(../cover/rapport-cover.tex) (example-report.aux)
 \openout1 = `example-report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -142,40 +214,17 @@ LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 
-(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count291
-\scratchdimen=\dimen162
-\scratchbox=\box54
-\nofMPsegments=\count292
-\nofMParguments=\count293
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count294
-\MPscratchDim=\dimen163
-\MPnumerator=\count295
-\makeMPintoPDFobject=\count296
-\everyMPtoPDFconversion=\toks24
-)
-(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
-fg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-))
 *geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: xetex
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -206,23 +255,71 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<../../Eclipse Images/EclipsePlack.png, id=1, 158.2713pt x 203.3196pt>
-File: ../../Eclipse Images/EclipsePlack.png Graphic file (type png)
-<use ../../Eclipse Images/EclipsePlack.png>
-Package pdftex.def Info: ../../Eclipse Images/EclipsePlack.png  used on input l
-ine 20.
-(pdftex.def)             Requested size: 184.9429pt x 237.58823pt.
-<../../Eclipse Images/EclipseFullText.png, id=3, 773.0481pt x 94.4328pt>
-File: ../../Eclipse Images/EclipseFullText.png Graphic file (type png)
-<use ../../Eclipse Images/EclipseFullText.png>
-Package pdftex.def Info: ../../Eclipse Images/EclipseFullText.png  used on inpu
-t line 20.
-(pdftex.def)             Requested size: 302.79688pt x 36.98866pt.
+
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 18.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 18.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 18.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 18.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 18.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 18.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 18.
+LaTeX Font Info:    Redeclaring math accent \check on input line 18.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 18.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 18.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 18.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 18.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 18.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/Genos(0)/m/n on input line 18.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 18.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/Genos(0)/m/n on input line 18.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/Genos(0)/m/n --> TU/Genos(0)/m/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/Genos(0)/m/it on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/Genos(0)/b/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/Genos(0)/m/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 18.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/Genos(0)/m/n --> TU/Genos(0)/b/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/Genos(0)/b/it on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/Genos(0)/b/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 18.
+File: ../../Eclipse Images/EclipsePlack.png Graphic file (type bmp)
+<../../Eclipse Images/EclipsePlack.png>
+File: ../../Eclipse Images/EclipseFullText.png Graphic file (type bmp)
+<../../Eclipse Images/EclipseFullText.png>
 [1
 
-{C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <../../Eclips
-e Images/EclipsePlack.png> <../../Eclipse Images/EclipseFullText.png>]
-(example-report.toc
+] (example-report.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -234,95 +331,99 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `example-report.toc'.
 
  [2]
-File: ../../Eclipse Images/EclipseFullText.png Graphic file (type png)
-<use ../../Eclipse Images/EclipseFullText.png>
-Package pdftex.def Info: ../../Eclipse Images/EclipseFullText.png  used on inpu
-t line 67.
-(pdftex.def)             Requested size: 81.34348pt x 9.93758pt.
- [1]
-File: ../../Eclipse Images/EclipseFullText.png Graphic file (type png)
-<use ../../Eclipse Images/EclipseFullText.png>
-Package pdftex.def Info: ../../Eclipse Images/EclipseFullText.png  used on inpu
-t line 109.
-(pdftex.def)             Requested size: 81.34348pt x 9.93758pt.
- [2]
-Overfull \hbox (11.26811pt too wide) in paragraph at lines 151--155
-[]\T1/cmr/bx/n/12 Ansvar: \T1/cmr/m/n/12 Rekrut-ter-ing, merke-vare-byg-ging, s
-pon-sor-re-lasjon og ek-stern kom-mu-nikasjon.
+Overfull \hbox (4.54126pt too wide) in paragraph at lines 46--49
+\TU/Genos(0)/m/n/12 Foreningen er en frittstående juridisk person med medlemmer
+ og er selveiende. At den er selveiende
  []
 
-File: ../../Eclipse Images/EclipseFullText.png Graphic file (type png)
-<use ../../Eclipse Images/EclipseFullText.png>
-Package pdftex.def Info: ../../Eclipse Images/EclipseFullText.png  used on inpu
-t line 155.
-(pdftex.def)             Requested size: 81.34348pt x 9.93758pt.
+File: ../../Eclipse Images/EclipseFullText.png Graphic file (type bmp)
+<../../Eclipse Images/EclipseFullText.png>
+
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 71.
+
+[1]
+File: ../../Eclipse Images/EclipseFullText.png Graphic file (type bmp)
+<../../Eclipse Images/EclipseFullText.png>
+
+
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 121.
+
+[2]
+Overfull \hbox (1.16083pt too wide) in paragraph at lines 129--133
+[]\TU/Genos(0)/b/n/12 Ansvar: \TU/Genos(0)/m/n/12 Ansvarlig for alle tekniske p
+rosjekt. Ansvarlig for systemintegrasjon, teknisk sikker-
+ []
+
+
+Overfull \hbox (3.10648pt too wide) in paragraph at lines 151--155
+[]\TU/Genos(0)/b/n/12 Ansvar: \TU/Genos(0)/m/n/12 Rekruttering, merkevarebyggin
+g, sponsorrelasjon og ekstern kommunikasjon. CMO
+ []
+
+File: ../../Eclipse Images/EclipseFullText.png Graphic file (type bmp)
+<../../Eclipse Images/EclipseFullText.png>
+
+LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 169.
+
 [3]
-Overfull \hbox (32.1962pt too wide) in paragraph at lines 192--192
-[]\T1/cmr/bx/n/17.28 � 8 VARSLING OG H�ND-TER-ING AV KRI-TIKKVERDIG
+Overfull \hbox (10.59933pt too wide) in paragraph at lines 192--192
+[]\TU/Genos(0)/b/n/17.28 § 8 VARSLING OG HÅNDTERING AV KRITIKKVERDIG FORHOLD 
  []
 
-File: ../../Eclipse Images/EclipseFullText.png Graphic file (type png)
-<use ../../Eclipse Images/EclipseFullText.png>
-Package pdftex.def Info: ../../Eclipse Images/EclipseFullText.png  used on inpu
-t line 199.
-(pdftex.def)             Requested size: 81.34348pt x 9.93758pt.
+File: ../../Eclipse Images/EclipseFullText.png Graphic file (type bmp)
+<../../Eclipse Images/EclipseFullText.png>
+
+LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 212.
+
 [4]
-File: ../../Eclipse Images/EclipseFullText.png Graphic file (type png)
-<use ../../Eclipse Images/EclipseFullText.png>
-Package pdftex.def Info: ../../Eclipse Images/EclipseFullText.png  used on inpu
-t line 237.
-(pdftex.def)             Requested size: 81.34348pt x 9.93758pt.
- [5]
-File: ../../Eclipse Images/EclipseFullText.png Graphic file (type png)
-<use ../../Eclipse Images/EclipseFullText.png>
-Package pdftex.def Info: ../../Eclipse Images/EclipseFullText.png  used on inpu
-t line 275.
-(pdftex.def)             Requested size: 81.34348pt x 9.93758pt.
- [6]
-Overfull \hbox (1.32085pt too wide) in paragraph at lines 290--292
-[]\T1/cmr/bx/n/12 Forvaltning: \T1/cmr/m/n/12 Styret fast-set-ter og an-non-ser
-er po-engsatser og grenser for hele forenin-
+Overfull \hbox (23.54204pt too wide) in paragraph at lines 238--238
+[]\TU/Genos(0)/b/n/17.28 § 10 RETTIGHETER OG PLIKTER KNYTTET TIL MEDLEMSKAPET 
  []
 
-File: ../../Eclipse Images/EclipseFullText.png Graphic file (type png)
-<use ../../Eclipse Images/EclipseFullText.png>
-Package pdftex.def Info: ../../Eclipse Images/EclipseFullText.png  used on inpu
-t line 324.
-(pdftex.def)             Requested size: 81.34348pt x 9.93758pt.
-[7]
-File: ../../Eclipse Images/EclipseFullText.png Graphic file (type png)
-<use ../../Eclipse Images/EclipseFullText.png>
-Package pdftex.def Info: ../../Eclipse Images/EclipseFullText.png  used on inpu
-t line 347.
-(pdftex.def)             Requested size: 81.34348pt x 9.93758pt.
- [8] 
+File: ../../Eclipse Images/EclipseFullText.png Graphic file (type bmp)
+<../../Eclipse Images/EclipseFullText.png>
+
+LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 259.
+
+[5]
+File: ../../Eclipse Images/EclipseFullText.png Graphic file (type bmp)
+<../../Eclipse Images/EclipseFullText.png>
+
+
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 314.
+
+[6]
+File: ../../Eclipse Images/EclipseFullText.png Graphic file (type bmp)
+<../../Eclipse Images/EclipseFullText.png>
+
+
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 347.
+
+[7] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (example-report.aux)
  ***********
-LaTeX2e <2026-06-01>
-L3 programming layer <2026-07-20>
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-06>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package lastpage Warning: Rerun to get the references right on input line 347.
+
  ) 
 Here is how much of TeX's memory you used:
- 2984 strings out of 467501
- 49996 string characters out of 5408550
- 476212 words of memory out of 5000000
- 32212 multiletter control sequences out of 15000+600000
- 639274 words of font info for 61 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 72i,16n,79p,252b,541s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\oskar\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1200.pk> <C:\Users\oskar\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecbx1440.pk> <C:\Users\oskar\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecbx1200.pk> <C:\Users\oskar\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecbx1728.pk> <C:\Users\oskar\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\oskar\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\oskar\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\oskar\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx2488.pk>
-Output written on example-report.pdf (11 pages, 274842 bytes).
-PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5352 strings out of 402987
+ 138703 string characters out of 5448524
+ 591561 words of memory out of 5000000
+ 34004 multiletter control sequences out of 15000+600000
+ 630609 words of font info for 68 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 93i,13n,107p,282b,523s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
+Output written on example-report.pdf (10 pages).

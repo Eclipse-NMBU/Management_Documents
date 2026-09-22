@@ -8,6 +8,7 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{lastpage}
 \RequirePackage[margin=2.5cm,headheight=50pt,headsep=15pt,footskip=30pt]{geometry}
+\emergencystretch=2em
 
 % ---------------------------------------------------------------------------
 % Font: Genos. Loading an arbitrary .ttf requires XeLaTeX or LuaLaTeX
@@ -25,13 +26,28 @@
 %   python -m fontTools.varLib.instancer Genos-Italic-VariableFont_wght.ttf wght=400 -o Genos-Italic.ttf
 %   python -m fontTools.varLib.instancer Genos-Italic-VariableFont_wght.ttf wght=700 -o Genos-BoldItalic.ttf
 % ---------------------------------------------------------------------------
+% Genos-*.ttf lives in Common/. \rap@fontpath is that folder, relative to
+% the .tex file being compiled. Default assumes the .tex file lives two
+% folders below Common/ (as in Common/Latex/Templates/). For a report
+% elsewhere in the repo, predefine \rap@fontpath (with the '@' catcode
+% made a letter) *before* \documentclass{rapport}, e.g. for a file three
+% folders below the repo root in a different subtree:
+%   \makeatletter
+%   \def\rap@fontpath{../../../Common/}
+%   \makeatother
+%   \documentclass{../../../Common/Latex/Templates/rapport}
+% This can't be a \newcommand set *after* \documentclass, because the
+% font is loaded immediately below, not deferred to \begin{document}
+% (deferring via \AtBeginDocument triggers a fontspec/vertical-mode bug).
+\providecommand{\rap@fontpath}{../../}
+
 \ifPDFTeX
   \RequirePackage[utf8]{inputenc}
   \RequirePackage[T1]{fontenc}
 \else
   \RequirePackage{fontspec}
   \setmainfont{Genos}[
-    Path = ../../,
+    Path = \rap@fontpath,
     Extension = .ttf,
     UprightFont = *-Regular,
     BoldFont = *-Bold,
@@ -39,7 +55,7 @@
     BoldItalicFont = *-BoldItalic,
   ]
   \setsansfont{Genos}[
-    Path = ../../,
+    Path = \rap@fontpath,
     Extension = .ttf,
     UprightFont = *-Regular,
     BoldFont = *-Bold,
