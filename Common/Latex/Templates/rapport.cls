@@ -65,7 +65,7 @@
 \fi
 
 % ---------------------------------------------------------------------------
-% Metadata commands — set these in your document before \begin{document}
+% Metadata commands set these in your document before \begin{document}
 %   \reporttitle{Structural Analysis Report}
 %   \projectname{Fenrir}                 % used if \projectlogo is not set
 %   \projectlogo{path/to/project-logo}   % optional, overrides \projectname

@@ -177,16 +177,16 @@ Package fontspec Info:
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)            - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"[../../Genos-Regular.ttf]/OT:script=latn;language=df
 lt;mapping=tex-text;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)            - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[../../Genos-Bold.ttf]/OT:script=latn;language=dflt;
 mapping=tex-text;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)            - 'italic' (m/it) with NFSS spec.:
 (fontspec)             <->"[../../Genos-Italic.ttf]/OT:script=latn;language=dfl
 t;mapping=tex-text;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)            - 'bold italic' (b/it) with NFSS spec.:
 (fontspec)             <->"[../../Genos-BoldItalic.ttf]/OT:script=latn;language
 =dflt;mapping=tex-text;"
 

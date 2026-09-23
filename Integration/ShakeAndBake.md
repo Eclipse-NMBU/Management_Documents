@@ -9,9 +9,9 @@ The shake and bake test will be performed in a controlled environment that will 
 ## Exspected data
 the test must provide:
 - ACC data in CSV format and/or abs max data
-    - if abs max data only then max and mean jerk must be provided per frequency band tested
+   - if abs max data only then max and mean jerk must be provided per frequency band tested
 - Temperature data in CSV format and/or abs max,typ data
-    - if a temprature map was used then the map must be provided with the data
+   - if a temprature map was used then the map must be provided with the data
 - Proof of the test vidio or images
 
 ## pass/Fail criteria

@@ -1,7 +1,7 @@
-# Eclipse NMBU — Design & Brand Profile
+# Eclipse NMBU Design & Brand Profile
 ### Student Organisation · 2026 - 2027
 
-> **Our Mission:** To empower university students through design thinking, creative collaboration, and community impact — building the next generation of thoughtful designers.
+> **Our Mission:** To empower university students through design thinking, creative collaboration, and community impact building the next generation of thoughtful designers.
 
 ---
 
@@ -26,15 +26,15 @@ The most important rule is that every rule is mean't to be broken. As long as th
 
 ### 2.1 Logo Usage
 
-The NOVA wordmark is the primary logo asset. It must always appear with sufficient clear space — a minimum of the letter 'N' width on all sides. The logo may be used in Navy, Gold, or White depending on background. Never stretch, rotate, or apply drop shadows to the logo.
+The NOVA wordmark is the primary logo asset. It must always appear with sufficient clear space a minimum of the letter 'N' width on all sides. The logo may be used in Navy, Gold, or White depending on background. Never stretch, rotate, or apply drop shadows to the logo.
 
 
 
 | Variant | Background | Foreground | Use case |
 |---|---|---|---|
-| Primary — Navy | `#1A2B5F` | White | Default use on light backgrounds |
-| Secondary — Gold | `#E8B84B` | Navy | Highlights, events, CTAs |
-| Reversed — White | `#FFFFFF` | Navy | Use on dark/navy backgrounds |
+| Primary Navy | `#1A2B5F` | White | Default use on light backgrounds |
+| Secondary Gold | `#E8B84B` | Navy | Highlights, events, CTAs |
+| Reversed White | `#FFFFFF` | Navy | Use on dark/navy backgrounds |
 
 ---
 
@@ -145,16 +145,16 @@ All palettes share the base colour `#488c83`. Each palette is designed for a spe
 
 ## 4. Design Principles
 
-**01 — Clarity First**
+**01 Clarity First**
 Every design choice should reduce friction, not add it. If an element doesn't serve the reader, remove it.
 
-**02 — Purposeful Contrast**
-Use the Navy/Gold pairing to direct attention. Contrast is a tool — not decoration.
+**02 Purposeful Contrast**
+Use the Navy/Gold pairing to direct attention. Contrast is a tool not decoration.
 
-**03 — Consistent Spacing**
+**03 Consistent Spacing**
 Follow an 8pt grid system. Breathing room communicates confidence and organisation.
 
-**04 — Accessibility**
+**04 Accessibility**
 All body text must meet WCAG AA contrast standards. Design for everyone, not the majority.
 
 ---

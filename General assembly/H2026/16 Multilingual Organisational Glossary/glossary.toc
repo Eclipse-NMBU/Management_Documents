@@ -2,14 +2,14 @@
 \contentsline {section}{Organs and bodies}{1}{}%
 \contentsline {subsection}{General Assembly (generalforsamling)}{1}{}%
 \contentsline {subsection}{Board (styret)}{1}{}%
-\contentsline {subsection}{Election and Control Committee (valg- og kontrollkomit\'e)}{1}{}%
+\contentsline {subsection}{Election and Control Committee (valgog kontrollkomit\'e)}{1}{}%
 \contentsline {section}{Roles (C-suite)}{1}{}%
-\contentsline {subsection}{CEO -- Chief Executive Officer (Styreleder)}{1}{}%
-\contentsline {subsection}{CTO -- Chief Technology Officer / Chief Technical Officer (Teknisk ansvarlig)}{2}{}%
-\contentsline {subsection}{CFO -- Chief Financial Officer (Økonomiansvarlig)}{2}{}%
-\contentsline {subsection}{CMO -- Chief Marketing Officer (Markedsføringsansvarlig)}{2}{}%
-\contentsline {subsection}{CBO -- Chief Business Officer (Forretnings- og økonomiansvarlig)}{2}{}%
-\contentsline {subsection}{CPO -- Chief People Officer (Personal- og medlemsansvarlig)}{2}{}%
+\contentsline {subsection}{CEO: Chief Executive Officer (Styreleder)}{1}{}%
+\contentsline {subsection}{CTO: Chief Technology Officer / Chief Technical Officer (Teknisk ansvarlig)}{2}{}%
+\contentsline {subsection}{CFO: Chief Financial Officer (Økonomiansvarlig)}{2}{}%
+\contentsline {subsection}{CMO: Chief Marketing Officer (Markedsføringsansvarlig)}{2}{}%
+\contentsline {subsection}{CBO: Chief Business Officer (Forretningsog økonomiansvarlig)}{2}{}%
+\contentsline {subsection}{CPO: Chief People Officer (Personalog medlemsansvarlig)}{2}{}%
 \contentsline {subsection}{Project Lead (prosjektleder)}{2}{}%
 \contentsline {subsection}{Team Lead (teamleder)}{3}{}%
 \contentsline {subsection}{Nearest Leader (nærmeste leder)}{3}{}%

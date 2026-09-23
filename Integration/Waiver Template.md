@@ -52,8 +52,8 @@ Mitigations:
 ## Decision
 
 - Decision:
-  - [ ] Approved (waiver accepted)
-  - [ ] Rejected (test must be executed before proceeding)
+ - [ ] Approved (waiver accepted)
+ - [ ] Rejected (test must be executed before proceeding)
 
 ## Sign-off
 

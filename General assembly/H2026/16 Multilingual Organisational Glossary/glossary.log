@@ -132,13 +132,13 @@ Package fontspec Info:
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)            - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"[../../../Common/Genos-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)            - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[../../../Common/Genos-Bold.ttf]/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)            - 'italic' (m/it) with NFSS spec.:
 (fontspec)             <->"[../../../Common/Genos-Italic.ttf]/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)            - 'bold italic' (b/it) with NFSS spec.:
 (fontspec)             <->"[../../../Common/Genos-BoldItalic.ttf]/OT:script=latn;language=dflt;mapping=tex-text;"
 
 \rap@logoheight=\skip65
