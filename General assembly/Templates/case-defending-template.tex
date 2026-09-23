@@ -1,0 +1,45 @@
+\makeatletter
+\def\rap@fontpath{../../Common/}
+\makeatother
+\documentclass{../../Common/Latex/Templates/rapport}
+\usepackage{enumitem}
+
+\projectname{Eclipse NMBU}
+\projectlogo{../../Common/Eclipse Images/EclipseMoon}
+\orglogo{../../Common/Eclipse Images/EclipseFullText}
+\newcommand{\meetingline}{\textbf{Meeting:} [date], [time], [location]}
+
+\reporttitle{Case Defending Template}
+
+\begin{document}
+
+\reportmainmatter
+
+\noindent\textbf{Document ID:} [Document ID]\\
+\meetingline\\
+\textbf{Companion to:} [Case number and Document ID of the Case Paper this defends]. This is a preparation document for whoever presents the Case; it is not distributed to the General Assembly as a Case Paper or attachment.
+
+\vsection{Purpose}
+A working document for the proposer to prepare for presenting and defending a Case at the General Assembly: anticipated objections, the strongest arguments for the proposal, and the limits of what the proposer can concede without undermining the proposal.
+
+\vsection{Anticipated objections and responses}
+\begin{enumerate}[label=\arabic*.]
+  \item \textbf{Objection:} [state the objection as a member might raise it.]\\
+        \textbf{Response:} [the proposer's prepared response.]
+  \item \textbf{Objection:} [ ]\\
+        \textbf{Response:} [ ]
+\end{enumerate}
+
+\vsection{Key arguments in favour}
+The strongest two or three reasons to adopt the proposal, in the order they should be raised if debate runs short.
+
+\vsection{Acceptable Amendments}
+Changes to the proposal the proposer can accept without withdrawing it, and why each is acceptable.
+
+\vsection{Non-negotiables}
+Elements of the proposal the proposer will not concede, and the fallback if an Amendment on one of them is adopted anyway (e.g. withdraw the Case, or accept the amended version).
+
+\vsection{Who presents this Case}
+Name of the presenter, and who answers questions if the presenter cannot.
+
+\end{document}

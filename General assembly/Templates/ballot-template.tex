@@ -1,0 +1,63 @@
+\makeatletter
+\def\rap@fontpath{../../Common/}
+\makeatother
+\documentclass{../../Common/Latex/Templates/rapport}
+\usepackage{tikz}
+\geometry{margin=0.5cm, headheight=0pt, headsep=0pt, footskip=0pt}
+\pagestyle{empty}
+\orglogo{../../Common/Eclipse Images/EclipseFullText}
+
+% General-purpose cut-slip election ballot: N identical slips per A4 page,
+% one page per role/office. Reusable for any candidate election (Board
+% roles, Election and Control Committee roles, or any other office elected
+% by the General Assembly). Only candidate elections use ballots -- Bylaw
+% Amendments, Agenda items and Case proposals are voted by show of hands
+% with voter numbers recorded, not by ballot.
+%
+% To use: set \ballotcols and \ballotrows below for the number of slips
+% wanted per A4 page (default 2 x 5 = 10), then call \ballotpage{ROLE NAME}
+% once per role, in the order roles will be elected.
+
+\newcommand{\ballotcols}{2}
+\newcommand{\ballotrows}{5}
+
+\makeatletter
+\newcommand{\ballotslip}[1]{%
+  \begin{minipage}{9cm}
+    \centering
+    \includegraphics[width=5cm]{\@orglogo}\par
+    \vspace{0.8cm}
+    {\Large\bfseries Role: #1}\par
+    \vspace{1cm}
+    {\Large Candidate: \rule{5.5cm}{0.4pt}}
+  \end{minipage}%
+}
+\makeatother
+
+% Slip size is the full page (21 x 29.7 cm) divided by \ballotcols x \ballotrows.
+\newcommand{\ballotpage}[1]{%
+  \begin{tikzpicture}[remember picture, overlay, shift={(current page.south west)}]
+    \pgfmathsetmacro{\slipw}{21/\ballotcols}
+    \pgfmathsetmacro{\sliph}{29.7/\ballotrows}
+    \foreach \col in {0,...,\numexpr\ballotcols-1\relax} {
+      \foreach \row in {0,...,\numexpr\ballotrows-1\relax} {
+        \node at (\slipw*\col + 0.5*\slipw, \sliph*\row + 0.5*\sliph) {\ballotslip{#1}};
+      }
+    }
+    \foreach \col in {1,...,\numexpr\ballotcols-1\relax} {
+      \draw[dashed, gray] (\slipw*\col, 0) -- (\slipw*\col, 29.7cm);
+    }
+    \foreach \row in {1,...,\numexpr\ballotrows-1\relax} {
+      \draw[dashed, gray] (0, \sliph*\row) -- (21cm, \sliph*\row);
+    }
+  \end{tikzpicture}%
+  \null\newpage
+}
+
+\begin{document}
+
+% One \ballotpage{...} call per role, in election order.
+\ballotpage{[Role 1]}
+\ballotpage{[Role 2]}
+
+\end{document}

@@ -1,0 +1,44 @@
+\makeatletter
+\def\rap@fontpath{../../Common/}
+\makeatother
+\documentclass{../../Common/Latex/Templates/rapport}
+\usepackage{enumitem}
+
+\projectname{Eclipse NMBU}
+\projectlogo{../../Common/Eclipse Images/EclipseMoon}
+\orglogo{../../Common/Eclipse Images/EclipseFullText}
+\newcommand{\meetingline}{\textbf{Meeting:} [date], [time], [location]}
+
+\reporttitle{Case Explanation Template}
+
+\begin{document}
+
+\reportmainmatter
+
+\noindent\textbf{Document ID:} [Document ID]\\
+\meetingline\\
+\textbf{Companion to:} [Case number and Document ID of the Case Paper this explains]. This document has no independent legal effect: if it conflicts with the Case Paper, the Case Paper controls.
+
+\vsection{What this Case is about}
+One or two sentences stating, in plain language, what is being proposed and why the General Assembly is being asked to decide it now.
+
+\vsection{Background}
+The situation that led to the proposal: what problem it solves, what changed, or what the Association has been doing informally that this Case would formalise.
+
+\vsection{What the proposal does}
+What changes in practice if the proposal is adopted, stated as concretely as possible. Where the proposal has several distinct effects, list each as its own point:
+\begin{enumerate}[label=\arabic*.]
+  \item [First effect.]
+  \item [Second effect.]
+\end{enumerate}
+
+\vsection{What does not change}
+Anything a reader might otherwise assume is affected, but is not: existing rights, existing structures, or existing documents that remain as they are.
+
+\vsection{Why the C-suite recommends this}
+The reasoning behind the C-suite's deliberation on the Case Paper, in more depth than the Case Paper's own C-suite deliberation field allows.
+
+\vsection{Sources and further reading}
+Cross-references to the Bylaws, prior decisions, or other documents in the set that a member would need to check the proposal independently.
+
+\end{document}

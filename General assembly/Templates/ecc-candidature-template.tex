@@ -1,0 +1,57 @@
+\makeatletter
+\def\rap@fontpath{../../Common/}
+\makeatother
+\documentclass{../../Common/Latex/Templates/rapport}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amssymb}
+
+\projectname{Eclipse NMBU}
+\projectlogo{../../Common/Eclipse Images/EclipseMoon}
+\orglogo{../../Common/Eclipse Images/EclipseFullText}
+\newcommand{\meetingline}{\textbf{Meeting:} [date], [time], [location]}
+
+\reporttitle{Candidate Documentation -- ECC Assessment}
+
+\begin{document}
+
+\reportmainmatter
+\small
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+
+\begin{center}
+  {\Large\bfseries Candidate Documentation -- ECC Assessment}\par
+  \vspace{0.15cm}
+  {\normalsize [Document ID]}\par
+  \vspace{0.1cm}
+  {\small \meetingline}\par
+\end{center}
+
+\vspace{0.2cm}
+A written candidature has two parts: this Election and Control Committee (ECC) assessment, and the candidate's own statement (Templates/candidate-consent-template.tex). Use one form per candidate. This form applies once the ECC (New Bylaws \S13) is in place and administering the election; for elections run without an ECC, only the candidate's own written candidature is used.
+
+\vspace{0.4cm}
+\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{4.6cm}|X|}
+  \hline
+  Candidate name                          & \rule{0pt}{1.2cm} \\
+  \hline
+  Office standing for                     & \rule{0pt}{1.2cm} \\
+  \hline
+  Election Case (number and Document ID)  & \rule{0pt}{1.2cm} \\
+  \hline
+  Eligibility confirmed by the ECC        & \rule{0pt}{1.2cm}Yes \quad $\square$ \quad\quad No \quad $\square$, per Old Bylaws \S10.2 / New Bylaws \S5.5 \\
+  \hline
+  ECC's introduction of the candidate      & \rule{0pt}{3.2cm}A short, neutral introduction of the candidate for members who have not met them: background, current role in the Association, and relevant experience for the office. \\
+  \hline
+  ECC's note on the candidature, if any    & \rule{0pt}{2.4cm}Any procedural note the ECC considers relevant (e.g. how the candidature was received, whether all requirements were met). Not a recommendation for or against the candidate. \\
+  \hline
+  Prepared by (ECC member) and date        & \rule{0pt}{1.4cm} \\
+  \hline
+\end{tabularx}
+
+\vfill
+This document records the Election and Control Committee's part of a written candidature; it does not itself elect the candidate, and does not substitute for the candidate's own consent and statement.
+
+\end{document}
