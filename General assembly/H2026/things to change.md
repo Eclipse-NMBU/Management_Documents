@@ -1,74 +1,56 @@
-Fix that that Document Id and the file name are the same.
-Make a GF combined doc with attachments.
-new bylaw amendment with line number on left side of the document. 
-all ID and paragrafs are links (in the PDF) to the corresponding paragraph in the bylaw amendment document.
-A full prosediure doc for th eold bylaws, using the "GF prtokol utkast norsk.pdf" in the base of General assembely folder.
+# Eclipse NMBU — 26H-ECL-GA Document Set: Linking, Attachments, and FULL Edition
 
-"Case 2. Approval of the Notice of Meeting (godkjenning av innkalling): ECL-H2026-CASE-01.
-Case 3. Approval of the Agenda (godkjenning av saksliste): ECL-H2026-CASE-02." are both Constitution of the Meeting (konstituering) and shood be filed as sutch
+## Context
+Document set uses the ID scheme in 26H-ECL-GA-REF1: YYH/V-ECL-GA-TYPEn,
+lettered suffixes for attachments/alternate outcomes. All documents use
+the shared rapport class and ga-common.tex preamble. Flat folder, one
+.tex file per Document ID, filename matches Document ID exactly. This
+build targets 26H (autumn 2026).
 
-new id stucture: year,Half-ECL-Scope-identifier
-exsample:
-26H-ECL-GA-AGD1
-26H-ECL-GA-NOT1
-26H-ECL-GA-CASE0
-26H-ECL-GA-CASE1
-26H-ECL-GA-CASE2
-26H-ECL-GA-CASE3
-27V-ECL-GA-AGD1
-...
+## 1. Cross-document links
+Every reference from one document to another must be a real hyperlink,
+not a plain-text Document ID.
 
-and make a document with the new id structure and all abriviation menings
+Implement via a single macro in ga-common.tex, e.g.:
+  \GARef{label}{doc-id}{display text}
+- When a document compiles standalone: emits an external link,
+  \href{doc-id.pdf#label}{display text}
+- When the same source compiles as part of FULL: emits an internal
+  link instead, \hyperref[label]{display text}
+- Controlled by one toggle set per compile job (e.g. \ifga@standalone),
+  not per document and not per call site. Every document's source is
+  written once and never edited when switching between standalone and
+  FULL builds.
 
-C-suite deliberation on Constitution of the Meeting is: The proposials for the difrent meeting roles, and for it to be acsepted.
+## 2. Flat folder
+All 26H-ECL-GA-* files live in one flat directory. No subfolders.
 
-hven case roposials have multiple points eatch shood get a new line.
-like:
-a)
-b)
-c)
-not:
-a)... b)... c)...
+## 3. Attachments
+Any document with lettered-suffix attachments (per REF1 §1.2, e.g.
+CASE4A-E) gets those attachments generated as their own files and
+linked from the parent document using the same \GARef mechanism.
 
+## 4. FULL edition (26H-ECL-GA-FULL)
+- Contains every document in the set, concatenated in meeting order,
+  with a table of contents at the front.
+- Each component document KEEPS its own individual cover page and its
+  own existing page numbering, unchanged.
+- Add a second, independent page counter that runs continuously across
+  the whole FULL document regardless of document boundaries, printed
+  in the bottom-right footer as "Super: x/y". This needs a per-page
+  increment that survives \include/\input boundaries, and a two-pass
+  build so the final total (y) is known before page 1 prints.
 
-in general all preplaned non sent in cases shood hve the C-suite deliberation be, "We agrre with the proposial and reccomend it to the General Assembly for approval."
+## 5. Links resolve in both contexts
+A \GARef link must work correctly whether the reader has the
+standalone PDF open or is reading the same content inside FULL — this
+is what requirement 1's toggle exists to guarantee. No link should be
+hand-duplicated for the two cases.
 
-there Shood be a document with the timetable, how to get to meeting
+## 6. Ballots
+BALLOT documents are pre-generated only for CAND (candidate election)
+cases. For any other case, a BALLOT is produced live only if a
+stemmeberettiget member invokes their right to skriftlig/hemmelig
+voting on the floor (PROC2 §9.6.3) — the template must exist but is
+not pre-instantiated for ordinary cases.
 
-Case 7: Bylaw Amendment, C-suite deliberation "we in the C-suite have reviewed the proposed bylaw amendment and recommend it to the General Assembly for approval."
-
-all bylaws have line numbers on left side for easear discusion and amendment writing
-
-make a case Explanation and Defending document templates (all templates can be moved to a "Templates" folder in the General Assembly folder)
-
-Change the new bylaw that new changes can be made if 2/3 of the member mass meats to GF and 2/3 of the members present vote for it. (this is a change from the old bylaw that said 2/3 of the members present and voting must vote for it)
-
-"suplerings valg" for the new ECC(lection and Control Committee) will be done after the new C-suite is elected.
-
-Candidate Consent (kandidatsamtykke)ECL-H2026-CAND-01 shood be general for all candidates, not just for the C-suite. It shood be a template that can be used for all candidates.
-
-Written candidature will be in 2 parts, obe from the ECC and one from the candidate. The ECC part will be a template that can be used for all candidates.
-
-Make a genaral Ballot, that has x of em on one a4 paper so we can cut them out
-
-(the counting hapens in the protocol, and the counting is done by the ECC, and the result is announced in the protocol)
-
-only candidate voting need balots not things like bylaw amendments, agenda items, or case proposals. Those are voted on by show of hands(with eatch eligable for voting having a vote number).
-
-use this new ID system for all documents, and make a document with the new ID system and all abbreviations and their meanings. and for other files and parts like STL, Dock and other.
-
-for the membership contract add a clase that eclipse can display the CV, and other information about the member on the website and social media, and that the member agrees to this by signing the contract. and agree to use their picture, and other puplic information found or said in some and other chanels. and its opt out.
-
-resposibility contract shood be more streamlined. and th ebord log shood just be a digital copy of it
-
-add in new bylaw that all documents must be stored digital even if signed on paper.
-
-add the nowegian riten and english transulated bylaws (new and old) as seprate atatchments.
-
-Update GF for dumies with a how this all fits togheter segment
-
-Glosery shood have date last update the translations
-
-in the full doc that can be printed that is just a colection of all relevent files shood have a nice cover page and have the ability to be book bined "with leafs of x pages".
-
-Let the document be writen in a natural but objective way like this file. fix gramer and spelling mistakes, and make it more readable. and everything is writen in 3rd person detatched.
