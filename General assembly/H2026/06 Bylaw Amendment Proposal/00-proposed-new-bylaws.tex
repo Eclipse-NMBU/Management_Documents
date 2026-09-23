@@ -2,39 +2,54 @@
 \def\rap@fontpath{../../../Common/}
 \makeatother
 \documentclass{../../../Common/Latex/Templates/rapport}
+\input{../ga-common}
 \usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
 
-\reporttitle{Proposed New Bylaws}
-\projectname{Eclipse NMBU}
-\orglogo{../../../Common/Eclipse Images/EclipseFullText}
-
-\input{../../../Common/Latex/cover/rapport-cover}
-\missionpatch{../../../Common/Eclipse Images/EclipseMoon}
-\coverkind{Bylaw Amendment Proposal (vedtektsendringsforslag)}
-\reportsubtitle{Proposed New Bylaws (nye vedtekter), full text: ECL-H2026-CASE-07A}
-\orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
-\reportlocation{Ås}
-\date{[DATE OF GENERAL ASSEMBLY: TBD]}
-\contactinfo{Contact: post@eclipsenmbu.no}
+\reporttitle{Case 7: Bylaw Amendment}
 
 \begin{document}
 
-\makecoverpage
-\tableofcontents
 \reportmainmatter
+\begingroup
+\small
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
 
-\noindent\textbf{Document ID:} ECL-H2026-CASE-07A\\
-\textbf{Case Paper fields (per ECL-H2026-TPL-01):} \\
-\textbf{Proposed by:} the Board. \\
-\textbf{Background:} the Board proposes a full restructuring of the Bylaws (Old Bylaws \S\S1--13) into the text below (18 sections, five parts). See the plain-language explanation, ECL-H2026-CASE-07B, and the voting procedure, ECL-H2026-CASE-07C. \\
-\textbf{Proposal:} the General Assembly resolves to replace the Old Bylaws with the text below, subject to any Amendments adopted under the procedure in ECL-H2026-CASE-07C. Adoption requires 2/3 of all members of Eclipse NMBU to vote in favour (Old Bylaws \S4.6). \\
-\textbf{External information:} this is a faithful English translation of the Norwegian working draft (``Vedtekter for Eclipse NMBU: Omstrukturert utkast, 21 Sept 2026''). \textbf{The Norwegian text remains the legally controlling version} unless and until the General Assembly adopts an English version as controlling (compare proposed \S3.3.2, which requires all Norwegian texts to be translated to English, and \S17.3, under which the version adopted by the General Assembly controls in case of conflict between language versions). Section numbering and cross-references (jf. \S...) are preserved exactly from the Norwegian draft so that this document and the Norwegian original can be checked against each other clause by clause.
+\begin{center}
+  {\Large\bfseries Bylaw Amendment (vedtektsendring): Proposed New Bylaws}\par
+  \vspace{0.15cm}
+  {\normalsize ECL-H2026-CASE-07A \textperiodcentered{} Case 7 \textperiodcentered{} Proposed by: the Board}\par
+  \vspace{0.1cm}
+  {\small \meetingline}\par
+\end{center}
+
+\vspace{0.3cm}
+\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{4.2cm}|X|}
+  \hline
+  C-suite deliberation & \rule{0pt}{4.1cm} \\
+  \hline
+  Background           & The Old Bylaws (13 sections) no longer describe how Eclipse NMBU operates. The Board proposes a full restructuring of the Bylaws (Old Bylaws \S\S1--13) into the attached text (18 sections, five parts). The main changes are summarised in the plain-language explanation, ECL-H2026-CASE-07B. \\
+  \hline
+  Proposal             & The General Assembly resolves to replace the Old Bylaws with the attached Proposed New Bylaws, with any Amendments adopted under the voting procedure in ECL-H2026-CASE-07C. Adoption requires 2/3 of all members of Eclipse NMBU to vote in favour (Old Bylaws \S4.6). Individual Amendments to the text pass by simple majority. The New Bylaws take effect when the Meeting Protocol (ECL-H2026-PROT-01) is signed. \\
+  \hline
+  External information & The attached text is an English translation of the Norwegian draft (``Vedtekter for Eclipse NMBU: Omstrukturert utkast, 21 Sept 2026''). The Norwegian text is the controlling version unless the General Assembly adopts the English version as controlling (proposed \S17.3). Section numbering and cross-references (jf. \S\ldots) follow the Norwegian draft, so the two can be checked against each other clause by clause. Attachments: Proposed New Bylaws (below), plain-language explanation (ECL-H2026-CASE-07B), voting procedure (ECL-H2026-CASE-07C). \\
+  \hline
+\end{tabularx}
+\endgroup
+
+\newpage
+\begin{center}
+  {\Large\bfseries Attachment: Proposed New Bylaws (nye vedtekter), full text}\par
+\end{center}
+\tableofcontents
 
 \vsection{How to read this document}
 Terminology follows the Multilingual Organisational Glossary, ECL-H2026-GLOSS-01: established terms are written \textbf{English (Norwegian)} on first use per section. Cross-references of the form ``jf. \S X'' point to another section of \emph{these proposed New Bylaws}, not to the Old Bylaws, unless stated otherwise.
 
-\vsection*{Part I: Foundations (Del I: Grunnlag)}
-\addcontentsline{toc}{section}{Part I: Foundations (Del I: Grunnlag)}
+\vsection{Part I: Foundations (Del I: Grunnlag)}
 
 \vsubsection{\S 1 Name and founding (Navn og stiftelse)}
 \textbf{\S 1.1 Name (Navn).} The Association's (foreningens) name is Eclipse NMBU.
@@ -143,8 +158,7 @@ Terminology follows the Multilingual Organisational Glossary, ECL-H2026-GLOSS-01
   \item SRR (System Requirements Review): the requirements review required to start a project, cf. \S16.1.
 \end{enumerate}
 
-\vsection*{Part II: Membership (Del II: Medlemskap)}
-\addcontentsline{toc}{section}{Part II: Membership (Del II: Medlemskap)}
+\vsection{Part II: Membership (Del II: Medlemskap)}
 
 \vsubsection{\S 5 Membership (Medlemskap)}
 \textbf{\S 5.1 Membership tiers (Medlemsnivåer).} Eclipse NMBU operates with six membership tiers. The tiers are hierarchical, such that higher tiers hold all rights and duties belonging to the tiers below:
@@ -243,10 +257,8 @@ The CPO decides whether a member is active or inactive.
 
 \textbf{\S 7.4 Duty to inform (Informasjonsplikt).} The Association shall, on admission and on end of membership, inform the member of the right to request deletion under \S7.3.
 
-\emph{[NOTE: Master Drafting Prompt \S16: the proposed New Bylaws establish deletion/opt-out rights (\S7.3) but do not state what member/Alumni information is displayed publicly by default. Per the resolved answer for this document set, the default public display for Alumni is name, role(s)/title(s) held, and years/semesters active in that role; see the Membership Contract, ECL-H2026-MEMB-01, \S4, and the Clarifications Needed note, ECL-H2026-README, for the status of this as Board-confirmed policy rather than a rule stated in the Bylaws text itself.]}
 
-\vsection*{Part III: Organs (Del III: Organer)}
-\addcontentsline{toc}{section}{Part III: Organer (Del III: Organer)}
+\vsection{Part III: Organs (Del III: Organer)}
 
 \vsubsection{\S 8 General Assembly (Generalforsamling)}
 \textbf{\S 8.1 Supreme organ (Øverste organ).} The General Assembly is the Association's supreme organ.
@@ -484,7 +496,6 @@ The CTO is the Association's Deputy Chair (nestleder) and takes over the CEO's r
   \item Members of the Committee may not stand for election.
 \end{enumerate}
 
-\emph{[NOTE: the Election and Control Committee does not yet exist. Until it is elected at a Supplementary General Assembly following adoption of these New Bylaws, its functions under \S\S11.3, 11.4 and 11.5 (Advance Nominations, Advance Voting, running elections) cannot be performed by it. For \emph{this} General Assembly's own C-suite election, the Old Bylaws \S4.7 election mechanics apply instead, per the Master Drafting Prompt \S10 and the Transitional C-suite Case, ECL-H2026-CASE-08.]}
 
 \vsubsection{\S 14 Mandate, delegation and Signature Right (Fullmakt, delegasjon og signaturrett)}
 \textbf{\S 14.1 Starting point (Utgangspunkt).} The CEO holds the Association's overall Mandate within the limits set by the General Assembly and the Board, and may enter binding agreements on the Association's behalf within those limits, cf. \S\S14.7 and 14.8.
@@ -507,8 +518,7 @@ The CTO is the Association's Deputy Chair (nestleder) and takes over the CEO's r
 
 \textbf{\S 14.10 Responsibility for contracts (Ansvar for kontrakter).} The sitting Board is responsible for all agreements in force.
 
-\vsection*{Part IV: Operations (Del IV: Drift)}
-\addcontentsline{toc}{section}{Part IV: Drift (Del IV: Drift)}
+\vsection{Part IV: Operations (Del IV: Drift)}
 
 \vsubsection{\S 15 Economy (Økonomi)}
 \textbf{\S 15.1 Use of funds (Bruk av midler).} The Association's funds shall be used only in accordance with the Association's purpose, cf. \S2.
@@ -535,14 +545,13 @@ The CTO is the Association's Deputy Chair (nestleder) and takes over the CEO's r
 
 \textbf{\S 16.2 Project organisation (Prosjektorganisering).} The Board appoints a Project Lead for each project. The Project Lead reports to the CTO in technical projects, and otherwise to the Board member responsible for the subject area.
 
-\textbf{\S 16.3 Project model (Prosjektmodell).} Projects are carried out according to a modified version of the NASA Project Life Cycle. Phase division, gate reviews and documentation requirements are set out in the Association's governance documents. \emph{[NOTE: Master Drafting Prompt \S8: that governance document, which is expected to also define further project gates such as PDR (Preliminary Design Review) and CDR (Critical Design Review) referenced elsewhere in Eclipse NMBU's planning, has not been supplied for this drafting exercise and is treated as forthcoming. Only MCR and SRR are therefore stated as concrete, Bylaws-defined gate requirements in \S16.1 above; any reference to PDR/CDR elsewhere in this document set is a forward reference to that not-yet-provided governance document, not a Bylaws rule.]}
+\textbf{\S 16.3 Project model (Prosjektmodell).} Projects are carried out according to a modified version of the NASA Project Life Cycle. Phase division, gate reviews and documentation requirements are set out in the Association's governance documents.
 
 \textbf{\S 16.4 Deviations (Avvik).} Material deviations from an approved plan, including changes to requirements, budget, timeline or safety-relevant assumptions, shall be presented to the Board.
 
 \textbf{\S 16.5 Closure and documentation (Avslutning og dokumentasjon).} A project is closed with a final report to the Board. Project documentation shall be archived so that later members can build on the work, cf. \S2.5.
 
-\vsection*{Part V: Governance Documents and Dissolution (Del V: Styringsdokumenter og opphør)}
-\addcontentsline{toc}{section}{Part V: Governance Documents and Dissolution (Del V: Styringsdokumenter og opphør)}
+\vsection{Part V: Governance Documents and Dissolution (Del V: Styringsdokumenter og opphør)}
 
 \vsubsection{\S 17 Bylaw Amendments and governance documents (Vedtektsendringer og styringsdokumenter)}
 \textbf{\S 17.1 Bylaw Amendments (Vedtektsendringer).} Bylaw Amendments may only happen when 2/3 of the members vote in favour of the amendment. A proposed Bylaw Amendment must be submitted within the deadline in \S8.3.

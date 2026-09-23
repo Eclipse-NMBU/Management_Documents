@@ -2,19 +2,17 @@
 \def\rap@fontpath{../../../Common/}
 \makeatother
 \documentclass{../../../Common/Latex/Templates/rapport}
+\input{../ga-common}
 \usepackage{enumitem}
 
 \reporttitle{Bylaw Amendment Voting Procedure}
-\projectname{Eclipse NMBU}
-\orglogo{../../../Common/Eclipse Images/EclipseFullText}
 
 \input{../../../Common/Latex/cover/rapport-cover}
-\missionpatch{../../../Common/Eclipse Images/EclipseMoon}
 \coverkind{Bylaw Amendment Proposal (vedtektsendringsforslag)}
 \reportsubtitle{Two-stage voting procedure: ECL-H2026-CASE-07C}
 \orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
-\reportlocation{Ås}
-\date{[DATE OF GENERAL ASSEMBLY: TBD]}
+\reportlocation{\meetinglocation, Ås}
+\date{\meetingdate, \meetingtime}
 \contactinfo{Contact: post@eclipsenmbu.no}
 
 \begin{document}
@@ -24,28 +22,36 @@
 \reportmainmatter
 
 \noindent\textbf{Document ID:} ECL-H2026-CASE-07C\\
-\textbf{Status:} this procedure operationalises the Master Drafting Prompt \S9 and \S14, and Old Bylaws \S4.6 (``vedtektsendringer kan bare skje når 2/3 av medlemmene stemmer for endringen''). \textbf{The Old Bylaws do not themselves describe a multi-stage vote or how several submitted Amendments to a Bylaw Amendment are handled.} The staged procedure below is the Board's proposed mechanism for this General Assembly and is presented for the General Assembly's own approval as part of the Voting Order (ECL-H2026-VOTORD-01), rather than asserted as a pre-existing Bylaws rule. See also the Clarifications Needed note.
+\meetingline\\
+\textbf{Status:} attachment to Case 7 (ECL-H2026-CASE-07A). This procedure sets out how the vote required by Old Bylaws \S4.6 (``vedtektsendringer kan bare skje når 2/3 av medlemmene stemmer for endringen'') and the vote on any Amendments to the proposed text are taken at this General Assembly. It is part of the Voting Order (ECL-H2026-VOTORD-01), which the Meeting Chair proposes and the General Assembly approves before voting on Cases begins.
 
 \vsection{Why two stages}
-Old Bylaws \S4.6 sets a single threshold: 2/3 of all members: for the decision to change the Bylaws. The proposed New Bylaws (ECL-H2026-CASE-07A) is a large document; members may want to adopt the overall restructuring while still changing specific wording. Voting on every clause individually at 2/3-of-all-members would be both impractical and would not match \S4.6's plain wording, which attaches the 2/3 threshold to ``the change'' as a whole, not to each clause. The procedure below therefore separates the constitutional question (do we adopt New Bylaws at all) from the drafting question (what exact wording), while keeping the number of separate votes as small as possible.
+Old Bylaws \S4.6 sets a single threshold, 2/3 of all members, for the decision to change the Bylaws. The proposed New Bylaws (ECL-H2026-CASE-07A) is a large document; members may want to adopt the overall restructuring while still changing specific wording. Voting on every clause individually at 2/3 of all members would be impractical, and \S4.6 attaches the 2/3 threshold to ``the change'' as a whole, not to each clause. The procedure below therefore separates the constitutional question (do we adopt New Bylaws at all) from the drafting question (what exact wording), while keeping the number of separate votes as small as possible.
 
 \vsection{Stage 1: Whether to adopt New Bylaws at all}
 \textbf{Question put to the vote:} ``Shall Eclipse NMBU adopt the proposed New Bylaws (ECL-H2026-CASE-07A) to replace the Old Bylaws, subject to any Amendments the General Assembly adopts in Stage 2?''
 
-\textbf{Threshold:} 2/3 of \emph{all} members of Eclipse NMBU (not merely those present or voting), per Old Bylaws \S4.6, read literally.
+\textbf{Threshold:} 2/3 of \emph{all} members of Eclipse NMBU (not merely those present or voting), per Old Bylaws \S4.6.
 
-\textbf{If this fails:} the Bylaw Amendment Case is closed. The Old Bylaws remain in force unchanged. Stage 2 is not reached. The Transitional C-suite Case, ECL-H2026-CASE-08, resolves to the ``Amendment fails'' branch (CEO/CTO/CFO/CMO).
+\textbf{If Stage 1 is not adopted:} Case 7 is closed and the Old Bylaws remain in force unchanged. Stage 2 is not reached.
 
-\textbf{If this passes:} the General Assembly proceeds to Stage 2. \emph{No separate final ratification vote is taken after Stage 2}: the Stage 1 ``Yes'' already constitutes adoption, at the required 2/3 threshold, of the New Bylaws \emph{as it stands after Stage 2's amendments are resolved}. This keeps the total number of votes to Stage 1 plus one vote per submitted Amendment, per the Master Drafting Prompt \S14's instruction to minimise the number of separate votes.
+\textbf{If Stage 1 is adopted:} the General Assembly proceeds to Stage 2. No separate final ratification vote is taken after Stage 2: the Stage 1 ``Yes'' is the adoption, at the required 2/3 threshold, of the New Bylaws as they stand once Stage 2's Amendments are resolved. The total number of votes is therefore Stage 1 plus one vote per submitted Amendment.
 
 \vsection{Stage 2: Submitted Amendments to the proposed text}
 Each Amendment submitted under the Amendment Submission Procedure (ECL-H2026-PROC-01) against the proposed New Bylaws text is presented and voted on individually, in the order set by the Voting Order (ECL-H2026-VOTORD-01).
 
-\textbf{Threshold per Amendment: simple majority of votes cast.} Old Bylaws \S4.6 fixes 2/3 only for the constitutional decision made in Stage 1; the Old Bylaws are silent on the threshold for shaping the text of a proposal already before the General Assembly at 2/3. Absent a stated rule, this document set applies the General Assembly's default threshold (Old Bylaws \S4.3: simple majority) to each individual Amendment.
+\textbf{Threshold per Amendment: simple majority of votes cast.} The 2/3 threshold in Old Bylaws \S4.6 applies to the decision to change the Bylaws, which is taken in Stage 1.
 
 If multiple Amendments target the same clause, they are voted on from most to least far-reaching, per the Voting Order.
 
 \vsection{Result}
-Once every submitted Amendment has been voted on, the text of ECL-H2026-CASE-07A, as amended, is the adopted New Bylaws. Per proposed New Bylaws \S17.2 (applied here as the Board's recommended default, since the Old Bylaws do not state an entry-into-force rule of their own), \textbf{the New Bylaws take effect when the Meeting Protocol is signed}, unless the General Assembly resolves otherwise. The Transitional C-suite Case, ECL-H2026-CASE-08, resolves to the ``Amendment passes'' branch (CEO/CTO/CBO/CPO), and the following Election Case, ECL-H2026-CASE-06, elects into that structure.
+Once every submitted Amendment has been voted on, the text of ECL-H2026-CASE-07A, as amended, is the adopted New Bylaws. \textbf{The New Bylaws take effect when the Meeting Protocol (ECL-H2026-PROT-01) is signed}, unless the General Assembly resolves otherwise.
+
+\vsection{Cases 8 and 9}
+Case 8 (C-suite structure) and Case 9 (Election of Board Members) are presented on the Case Papers that match the result of Case 7:
+\begin{itemize}
+  \item Bylaw Amendment adopted: ECL-H2026-CASE-08A (CEO/CTO/CBO/CPO) and ECL-H2026-CASE-06A.
+  \item Bylaw Amendment not adopted: ECL-H2026-CASE-08B (CEO/CTO/CFO/CMO) and ECL-H2026-CASE-06B.
+\end{itemize}
 
 \end{document}

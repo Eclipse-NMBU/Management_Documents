@@ -3,7 +3,9 @@
 %
 % Usage (after \documentclass{rapport} and before \begin{document}):
 %   \input{../cover/rapport-cover}
-%   \missionpatch{path/to/patch}      % optional circular mission/team patch
+%   \missionpatch{path/to/patch}      % optional circular mission/team patch;
+%                                     % without it, the org logo is shown large
+%                                     % at the top instead
 %   \coverkind{Vedtekter}             % optional small line above the name
 %   \reportsubtitle{Optional subtitle line}
 %   \orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
@@ -44,10 +46,12 @@
   \begingroup
   \thispagestyle{empty}
   \begin{center}
-  \ifx\@missionpatch\@empty\else
+  \ifx\@missionpatch\@empty
+    \includegraphics[width=10cm]{\@orglogo}\par
+  \else
     \includegraphics[width=6.5cm]{\@missionpatch}\par
-    \vspace{3.4cm}
   \fi
+  \vspace{3.4cm}
   \ifx\@coverkind\@empty
     {\sffamily\Huge\bfseries \@reporttitle \par}
   \else
@@ -59,8 +63,10 @@
     {\sffamily\bfseries \@reportsubtitle \par}
   \fi
   \vspace{2cm}
-  \includegraphics[height=1.3cm]{\@orglogo}\par
-  \vspace{0.6cm}
+  \ifx\@missionpatch\@empty\else
+    \includegraphics[height=1.3cm]{\@orglogo}\par
+    \vspace{0.6cm}
+  \fi
   \@orgnameone \\
   \@orgnametwo \par
   \vspace{0.6cm}

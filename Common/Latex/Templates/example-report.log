@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2026.8.21)  22 SEP 2026 11:27
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2026.8.21)  22 SEP 2026 20:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -105,27 +105,6 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@dimlist=\toks19
 
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/currfile\currfile.sty
-Package: currfile 2024/03/14 v1.0 Provides the file path elements of the curren
-t input file
-
-(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-)
-(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-))
-(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/filehook\filehook.sty
-Package: filehook 2022/10/25 v0.8b Hooks for input files
-
-(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/filehook\filehook-2020.
-sty
-Package: filehook-2020 2022/10/25 v0.8b Hooks for input files
-))
-\c@currfiledepth=\count283
-)
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.sty
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
 e.sty
@@ -135,9 +114,9 @@ Package: expl3 2025-11-06 L3 programming layer (loader)
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xet
 ex.def
 File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
-\g__graphics_track_int=\count284
-\g__pdfannot_backend_int=\count285
-\g__pdfannot_backend_link_int=\count286
+\g__graphics_track_int=\count283
+\g__pdfannot_backend_int=\count284
+\g__pdfannot_backend_link_int=\count285
 ))
 Package: xparse 2025-10-09 L3 Experimental document command parser
 )
@@ -147,17 +126,17 @@ Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
 .sty
 Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count287
-\l__fontspec_language_int=\count288
-\l__fontspec_strnum_int=\count289
-\l__fontspec_tmp_int=\count290
-\l__fontspec_tmpa_int=\count291
-\l__fontspec_tmpb_int=\count292
-\l__fontspec_tmpc_int=\count293
-\l__fontspec_em_int=\count294
-\l__fontspec_emdef_int=\count295
-\l__fontspec_strong_int=\count296
-\l__fontspec_strongdef_int=\count297
+\l__fontspec_script_int=\count286
+\l__fontspec_language_int=\count287
+\l__fontspec_strnum_int=\count288
+\l__fontspec_tmp_int=\count289
+\l__fontspec_tmpa_int=\count290
+\l__fontspec_tmpb_int=\count291
+\l__fontspec_tmpc_int=\count292
+\l__fontspec_em_int=\count293
+\l__fontspec_emdef_int=\count294
+\l__fontspec_strong_int=\count295
+\l__fontspec_strongdef_int=\count296
 \l__fontspec_tmpa_dim=\dimen159
 \l__fontspec_tmpb_dim=\dimen160
 \l__fontspec_tmpc_dim=\dimen161
@@ -177,16 +156,16 @@ Package fontspec Info:
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)            - 'normal' (m/n) with NFSS spec.:
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"[../../Genos-Regular.ttf]/OT:script=latn;language=df
 lt;mapping=tex-text;"
-(fontspec)            - 'bold' (b/n) with NFSS spec.:
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[../../Genos-Bold.ttf]/OT:script=latn;language=dflt;
 mapping=tex-text;"
-(fontspec)            - 'italic' (m/it) with NFSS spec.:
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
 (fontspec)             <->"[../../Genos-Italic.ttf]/OT:script=latn;language=dfl
 t;mapping=tex-text;"
-(fontspec)            - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
 (fontspec)             <->"[../../Genos-BoldItalic.ttf]/OT:script=latn;language
 =dflt;mapping=tex-text;"
 
@@ -198,8 +177,8 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@outerparindent=\dimen162
 \enit@toks=\toks20
 \enit@inbox=\box53
-\enit@count@id=\count298
-\enitdp@description=\count299
+\enit@count@id=\count297
+\enitdp@description=\count298
 )
 (../cover/rapport-cover.tex) (example-report.aux)
 \openout1 = `example-report.aux'.
@@ -331,99 +310,49 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `example-report.toc'.
 
  [2]
-Overfull \hbox (4.54126pt too wide) in paragraph at lines 46--49
-\TU/Genos(0)/m/n/12 Foreningen er en frittstående juridisk person med medlemmer
- og er selveiende. At den er selveiende
- []
-
 File: ../../Eclipse Images/EclipseFullText.png Graphic file (type bmp)
 <../../Eclipse Images/EclipseFullText.png>
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 71.
-
-[1]
+ [1]
 File: ../../Eclipse Images/EclipseFullText.png Graphic file (type bmp)
 <../../Eclipse Images/EclipseFullText.png>
-
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 121.
-
-[2]
-Overfull \hbox (1.16083pt too wide) in paragraph at lines 129--133
-[]\TU/Genos(0)/b/n/12 Ansvar: \TU/Genos(0)/m/n/12 Ansvarlig for alle tekniske p
-rosjekt. Ansvarlig for systemintegrasjon, teknisk sikker-
- []
-
-
-Overfull \hbox (3.10648pt too wide) in paragraph at lines 151--155
-[]\TU/Genos(0)/b/n/12 Ansvar: \TU/Genos(0)/m/n/12 Rekruttering, merkevarebyggin
-g, sponsorrelasjon og ekstern kommunikasjon. CMO
- []
-
+ [2]
 File: ../../Eclipse Images/EclipseFullText.png Graphic file (type bmp)
 <../../Eclipse Images/EclipseFullText.png>
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 169.
-
-[3]
+ [3]
 Overfull \hbox (10.59933pt too wide) in paragraph at lines 192--192
 []\TU/Genos(0)/b/n/17.28 § 8 VARSLING OG HÅNDTERING AV KRITIKKVERDIG FORHOLD 
  []
 
 File: ../../Eclipse Images/EclipseFullText.png Graphic file (type bmp)
 <../../Eclipse Images/EclipseFullText.png>
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 212.
-
 [4]
-Overfull \hbox (23.54204pt too wide) in paragraph at lines 238--238
-[]\TU/Genos(0)/b/n/17.28 § 10 RETTIGHETER OG PLIKTER KNYTTET TIL MEDLEMSKAPET 
- []
-
 File: ../../Eclipse Images/EclipseFullText.png Graphic file (type bmp)
 <../../Eclipse Images/EclipseFullText.png>
-
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 259.
-
-[5]
+ [5]
 File: ../../Eclipse Images/EclipseFullText.png Graphic file (type bmp)
 <../../Eclipse Images/EclipseFullText.png>
-
-
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 314.
-
-[6]
+ [6]
 File: ../../Eclipse Images/EclipseFullText.png Graphic file (type bmp)
 <../../Eclipse Images/EclipseFullText.png>
+ [7]
+File: ../../Eclipse Images/EclipseFullText.png Graphic file (type bmp)
+<../../Eclipse Images/EclipseFullText.png>
+ [8]
 
-
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 347.
-
-[7] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (example-report.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package lastpage Warning: Rerun to get the references right on input line 347.
-
  ) 
 Here is how much of TeX's memory you used:
- 5352 strings out of 402987
- 138703 string characters out of 5448524
- 591561 words of memory out of 5000000
- 34004 multiletter control sequences out of 15000+600000
+ 4813 strings out of 402987
+ 128941 string characters out of 5448524
+ 582528 words of memory out of 5000000
+ 33483 multiletter control sequences out of 15000+600000
  630609 words of font info for 68 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,13n,107p,282b,523s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,13n,107p,282b,527s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on example-report.pdf (10 pages).
+Output written on example-report.xdv (11 pages, 191256 bytes).

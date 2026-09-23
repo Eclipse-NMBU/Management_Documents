@@ -2,20 +2,18 @@
 \def\rap@fontpath{../../../Common/}
 \makeatother
 \documentclass{../../../Common/Latex/Templates/rapport}
+\input{../ga-common}
 \usepackage{array}
 \usepackage{tabularx}
 
 \reporttitle{Case Template}
-\projectname{Eclipse NMBU}
-\orglogo{../../../Common/Eclipse Images/EclipseFullText}
 
 \input{../../../Common/Latex/cover/rapport-cover}
-\missionpatch{../../../Common/Eclipse Images/EclipseMoon}
 \coverkind{Case Template (saksmal)}
 \reportsubtitle{Reusable template: ECL-H2026-TPL-01}
 \orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
-\reportlocation{Ås}
-\date{\today}
+\reportlocation{\meetinglocation, Ås}
+\date{\meetingdate, \meetingtime}
 \contactinfo{Contact: post@eclipsenmbu.no}
 
 \begin{document}
@@ -29,7 +27,9 @@
 \begin{center}
   {\Large\bfseries Case Template}\par
   \vspace{0.15cm}
-  {\normalsize ECL-H2026-TPL-01}\par
+  {\normalsize ECL-H2026-TPL-01 \textperiodcentered{} Case \rule{1cm}{0.4pt} \textperiodcentered{} Proposed by: \rule{4cm}{0.4pt}}\par
+  \vspace{0.1cm}
+  {\small \meetingline}\par
 \end{center}
 
 \vspace{0.3cm}

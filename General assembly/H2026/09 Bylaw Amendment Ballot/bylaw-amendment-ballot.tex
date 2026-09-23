@@ -2,21 +2,19 @@
 \def\rap@fontpath{../../../Common/}
 \makeatother
 \documentclass{../../../Common/Latex/Templates/rapport}
+\input{../ga-common}
 \usepackage{array}
 \usepackage{tabularx}
 \usepackage{amssymb}
 
 \reporttitle{Bylaw Amendment Ballot}
-\projectname{Eclipse NMBU}
-\orglogo{../../../Common/Eclipse Images/EclipseFullText}
 
 \input{../../../Common/Latex/cover/rapport-cover}
-\missionpatch{../../../Common/Eclipse Images/EclipseMoon}
 \coverkind{Ballot}
 \reportsubtitle{Stage 1 -- Bylaw Amendment -- ECL-H2026-BALLOT-01}
 \orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
-\reportlocation{Ås}
-\date{[DATE OF GENERAL ASSEMBLY -- TBD]}
+\reportlocation{\meetinglocation, Ås}
+\date{\meetingdate, \meetingtime}
 \contactinfo{Contact: post@eclipsenmbu.no}
 
 \begin{document}
@@ -30,7 +28,9 @@
 \begin{center}
   {\Large\bfseries Bylaw Amendment Ballot}\par
   \vspace{0.15cm}
-  {\normalsize ECL-H2026-BALLOT-01 \quad Case ECL-H2026-CASE-07A/07C, Stage 1}\par
+  {\normalsize ECL-H2026-BALLOT-01 \textperiodcentered{} Case 7 (ECL-H2026-CASE-07A), Stage 1}\par
+  \vspace{0.1cm}
+  {\small \meetingline}\par
 \end{center}
 
 \vspace{0.3cm}
@@ -70,6 +70,6 @@
 \end{tabularx}
 
 \vfill
-\textbf{Note:} this ballot records only Stage 1 (Old Bylaws \S4.6 / \S17.1). Individual submitted Amendments to the proposed text are voted on separately in Stage 2, per ECL-H2026-CASE-07C; use the Case Template (ECL-H2026-TPL-01) or a show-of-hands record for each.
+This ballot records only Stage 1 (Old Bylaws \S4.6). Amendments to the proposed text are voted on separately in Stage 2, by simple majority, per ECL-H2026-CASE-07C, and recorded in the Meeting Protocol (ECL-H2026-PROT-01).
 
 \end{document}

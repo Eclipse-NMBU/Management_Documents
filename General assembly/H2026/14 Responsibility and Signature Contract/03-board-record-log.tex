@@ -2,20 +2,18 @@
 \def\rap@fontpath{../../../Common/}
 \makeatother
 \documentclass{../../../Common/Latex/Templates/rapport}
+\input{../ga-common}
 \usepackage{array}
 \usepackage{tabularx}
 
 \reporttitle{Board Record -- Responsibility Transfer}
-\projectname{Eclipse NMBU}
-\orglogo{../../../Common/Eclipse Images/EclipseFullText}
 
 \input{../../../Common/Latex/cover/rapport-cover}
-\missionpatch{../../../Common/Eclipse Images/EclipseMoon}
 \coverkind{Board Record}
 \reportsubtitle{Responsibility transfer log -- ECL-H2026-RESP-02}
 \orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
-\reportlocation{Ås}
-\date{\today}
+\reportlocation{\meetinglocation, Ås}
+\date{\meetingdate, \meetingtime}
 \contactinfo{Contact: post@eclipsenmbu.no}
 
 \begin{document}
@@ -30,6 +28,8 @@
   {\Large\bfseries Board Record -- Responsibility Transfer}\par
   \vspace{0.15cm}
   {\normalsize ECL-H2026-RESP-02}\par
+  \vspace{0.1cm}
+  {\small \meetingline}\par
 \end{center}
 
 \vspace{0.2cm}

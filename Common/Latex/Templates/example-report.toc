@@ -20,7 +20,7 @@
 \contentsline {subsection}{§ 5.3 Teknisk Ansvarlig (CTO: Chief Technology Officer)}{3}{}%
 \contentsline {subsection}{§ 5.4 Økonomi ansvarlig (CFO: Chief Financial Officer)}{3}{}%
 \contentsline {subsection}{§ 5.5 Marknadsførings ansvarlig (CMO: Chief Marketing Officer)}{3}{}%
-\contentsline {subsection}{§ 5.6 Konstituering av fratreden}{3}{}%
+\contentsline {subsection}{§ 5.6 Konstituering av fratreden}{4}{}%
 \contentsline {subsection}{§ 5.7 Erfaringsoverføring}{4}{}%
 \contentsline {subsection}{§ 5.8 Stemmegivning i styret}{4}{}%
 \contentsline {section}{§ 6 START AV PROSJEKTER}{4}{}%
@@ -39,7 +39,7 @@
 \contentsline {subsection}{§ 10.2 Rettigheter og stemmerett}{6}{}%
 \contentsline {subsection}{§ 10.3 Medlemmenes plikter}{6}{}%
 \contentsline {subsection}{§ 10.4 Poengsystem}{6}{}%
-\contentsline {subsection}{§ 10.5 Styrets fullmakter vedrørende medlemskap}{6}{}%
+\contentsline {subsection}{§ 10.5 Styrets fullmakter vedrørende medlemskap}{7}{}%
 \contentsline {section}{§ 11 SIGNATURRETT}{7}{}%
 \contentsline {subsection}{§ 11.1 Utøvelse av signaturrett}{7}{}%
 \contentsline {section}{§ 12 ØKONOMI}{7}{}%
@@ -48,6 +48,6 @@
 \contentsline {subsection}{§ 12.3 Godkjenning av utbetalinger}{7}{}%
 \contentsline {subsection}{§ 12.4 Økonomiske investeringer}{7}{}%
 \contentsline {subsection}{§ 12.5 Økonomisk ansvar}{7}{}%
-\contentsline {section}{§ 13 OPPHØR}{7}{}%
-\contentsline {subsection}{§ 13.1 Prosedyrer for oppløsning}{7}{}%
-\contentsline {subsection}{§ 13.2 Disponering av eiendeler}{7}{}%
+\contentsline {section}{§ 13 OPPHØR}{8}{}%
+\contentsline {subsection}{§ 13.1 Prosedyrer for oppløsning}{8}{}%
+\contentsline {subsection}{§ 13.2 Disponering av eiendeler}{8}{}%

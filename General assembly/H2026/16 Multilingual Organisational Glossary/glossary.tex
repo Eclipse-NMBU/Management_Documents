@@ -2,19 +2,17 @@
 \def\rap@fontpath{../../../Common/}
 \makeatother
 \documentclass{../../../Common/Latex/Templates/rapport}
+\input{../ga-common}
 \usepackage{enumitem}
 
 \reporttitle{Organisational Glossary}
-\projectname{Eclipse NMBU}
-\orglogo{../../../Common/Eclipse Images/EclipseFullText}
 
 \input{../../../Common/Latex/cover/rapport-cover}
-\missionpatch{../../../Common/Eclipse Images/EclipseMoon}
 \coverkind{Multilingual Organisational Glossary}
 \reportsubtitle{Flerspråklig organisasjonsordliste: ECL-H2026-GLOSS-01}
 \orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
-\reportlocation{Ås}
-\date{[DATE: TBD]}
+\reportlocation{\meetinglocation, Ås}
+\date{\meetingdate, \meetingtime}
 \contactinfo{Contact: post@eclipsenmbu.no}
 
 \newcommand{\term}[1]{\vsubsection{#1}}
@@ -28,6 +26,7 @@
 \reportmainmatter
 
 \noindent\textbf{Document ID:} ECL-H2026-GLOSS-01\\
+\meetingline\\
 \textbf{Status:} Living reference document: update whenever a new organisational term is adopted.\\
 \textbf{Scope:} Applies to all Eclipse NMBU governance documents, including this General Assembly's document set (ECL-H2026-*). Where the Old and New Bylaws use the same Norwegian term with different meaning, both are noted.
 

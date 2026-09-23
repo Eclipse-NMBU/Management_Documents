@@ -2,73 +2,49 @@
 \def\rap@fontpath{../../../Common/}
 \makeatother
 \documentclass{../../../Common/Latex/Templates/rapport}
-\usepackage{array}
-\usepackage{tabularx}
-\usepackage{amssymb}
+\input{../ga-common}
+\usepackage{tikz}
+\geometry{margin=0.5cm, headheight=0pt, headsep=0pt, footskip=0pt}
+\pagestyle{empty}
 
-\reporttitle{Election Ballot -- CEO/CTO/CFO/CMO}
-\projectname{Eclipse NMBU}
-\orglogo{../../../Common/Eclipse Images/EclipseFullText}
+% ECL-H2026-BALLOT-02B: election ballot slips for CEO, CTO, CFO and CMO.
+% One A4 page per role, cut into 10 identical slips (2 x 5) along the dashed
+% lines. Each voter gets one slip per role, per Old Bylaws \S4.7.
 
-\input{../../../Common/Latex/cover/rapport-cover}
-\missionpatch{../../../Common/Eclipse Images/EclipseMoon}
-\coverkind{Ballot}
-\reportsubtitle{Election -- used if the Bylaw Amendment failed -- ECL-H2026-BALLOT-02B}
-\orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
-\reportlocation{Ås}
-\date{[DATE OF GENERAL ASSEMBLY -- TBD]}
-\contactinfo{Contact: post@eclipsenmbu.no}
+\makeatletter
+\newcommand{\ballotslip}[1]{%
+  \begin{minipage}{9cm}
+    \centering
+    \includegraphics[width=5cm]{\@orglogo}\par
+    \vspace{0.8cm}
+    {\Large\bfseries Role: #1}\par
+    \vspace{1cm}
+    {\Large Candidate: \rule{5.5cm}{0.4pt}}
+  \end{minipage}%
+}
+\makeatother
+
+% Slips are laid out on the full page (21 x 29.7 cm): 10.5 x 5.94 cm each.
+\newcommand{\ballotpage}[1]{%
+  \begin{tikzpicture}[remember picture, overlay, shift={(current page.south west)}]
+    \foreach \col in {0,1} {
+      \foreach \row in {0,...,4} {
+        \node at (5.25cm + \col*10.5cm, 2.97cm + \row*5.94cm) {\ballotslip{#1}};
+      }
+    }
+    \draw[dashed, gray] (10.5cm, 0) -- (10.5cm, 29.7cm);
+    \foreach \row in {1,...,4} {
+      \draw[dashed, gray] (0, \row*5.94cm) -- (21cm, \row*5.94cm);
+    }
+  \end{tikzpicture}%
+  \null\newpage
+}
 
 \begin{document}
 
-\reportmainmatter
-\small
-\setlength{\parindent}{0pt}
-\setlength{\tabcolsep}{6pt}
-\renewcommand{\arraystretch}{1.3}
-
-\begin{center}
-  {\Large\bfseries Election Ballot -- CEO / CTO / CFO / CMO}\par
-  \vspace{0.15cm}
-  {\normalsize ECL-H2026-BALLOT-02B \quad Used only if the Bylaw Amendment failed (ECL-H2026-CASE-08)}\par
-\end{center}
-
-\vspace{0.2cm}
-One ballot per role, per Old Bylaws \S4.7 election mechanics (majority; blank votes count in the mass; a further round removing blank votes if no candidate reaches a majority, per \S4.7.2).
-
-\vspace{0.3cm}
-\textbf{Role being voted on:} \underline{\hspace{6cm}} \quad (CEO / CTO / CFO / CMO)
-
-\vspace{0.4cm}
-\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}X|c|}
-  \hline
-  \bfseries Candidate  & \bfseries Mark one \\
-  \hline
-  \rule{0pt}{0.9cm}    & $\square$          \\
-  \hline
-  \rule{0pt}{0.9cm}    & $\square$          \\
-  \hline
-  \rule{0pt}{0.9cm}    & $\square$          \\
-  \hline
-  Blank (blank stemme) & $\square$          \\
-  \hline
-\end{tabularx}
-
-\vspace{0.6cm}
-\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5.5cm}|X|}
-  \hline
-  Eligible voters present                  & \rule{0pt}{1.2cm}                                                                                             \\
-  \hline
-  Votes per candidate (add rows as needed) & \rule{0pt}{2.4cm}                                                                                             \\
-  \hline
-  Blank votes                              & \rule{0pt}{1.2cm}                                                                                             \\
-  \hline
-  Round                                    & \rule{0pt}{1.2cm}First round \quad $\square$ \quad\quad Second round (blank removed, \S4.7.2) \quad $\square$ \\
-  \hline
-  Elected                                  & \rule{0pt}{1.4cm}                                                                                             \\
-  \hline
-  Vote Counters' signatures                & \rule{0pt}{1.6cm}                                                                                             \\
-  \hline
-\end{tabularx}
+\ballotpage{CEO}
+\ballotpage{CTO}
+\ballotpage{CFO}
+\ballotpage{CMO}
 
 \end{document}

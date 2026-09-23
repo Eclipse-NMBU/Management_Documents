@@ -1,0 +1,22 @@
+% ---------------------------------------------------------------------------
+% Shared settings for the H2026 General Assembly document set.
+%
+% Usage, directly after \documentclass{../../../Common/Latex/Templates/rapport}
+% in a document one folder below this file:
+%   \input{../ga-common}
+%
+% Image paths are relative to the compiled document's folder, so every
+% document using this file must sit one folder below it.
+% ---------------------------------------------------------------------------
+
+% Meeting details, used on covers and in each document's ID block.
+\newcommand{\meetingdate}{30 September 2026}
+\newcommand{\meetingtime}{12:00}
+\newcommand{\meetinglocation}{Festsalen, NMBU}
+\newcommand{\meetingline}{\textbf{Meeting:} \meetingdate, \meetingtime, \meetinglocation}
+
+% Header: moon logo on the left, full-text logo on the right. \projectname is
+% still set because the cover title uses it.
+\projectname{Eclipse NMBU}
+\projectlogo{../../../Common/Eclipse Images/EclipseMoon}
+\orglogo{../../../Common/Eclipse Images/EclipseFullText}

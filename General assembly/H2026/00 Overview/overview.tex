@@ -1,0 +1,155 @@
+\makeatletter
+\def\rap@fontpath{../../../Common/}
+\makeatother
+\documentclass{../../../Common/Latex/Templates/rapport}
+\input{../ga-common}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{longtable}
+
+\reporttitle{Overview}
+
+\input{../../../Common/Latex/cover/rapport-cover}
+\coverkind{Overview (oversikt)}
+\reportsubtitle{General Assembly document set -- ECL-H2026-OVW-01}
+\orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
+\reportlocation{\meetinglocation, Ås}
+\date{\meetingdate, \meetingtime}
+\contactinfo{Contact: post@eclipsenmbu.no}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\begin{document}
+
+\makecoverpage
+\tableofcontents
+\reportmainmatter
+
+\noindent\textbf{Document ID:} ECL-H2026-OVW-01\\
+\meetingline\\
+\textbf{Purpose:} a map of the General Assembly document set: the meeting details, the Cases on the Agenda, and every document with its ID and purpose.\\
+\textbf{Governing Bylaws:} Old Bylaws (gamle vedtekter).
+
+\vsection{1. Meeting details}
+\begin{itemize}
+  \item \textbf{Date:} \meetingdate
+  \item \textbf{Time:} \meetingtime
+  \item \textbf{Location:} \meetinglocation
+  \item \textbf{Case Papers available:} no later than 23 September 2026 (Old Bylaws \S4.5)
+  \item \textbf{Amendments:} in writing, before voting on Cases begins (ECL-H2026-PROC-01)
+\end{itemize}
+
+\vsection{2. Cases}
+\begingroup
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{|c|L{6.4cm}|L{6.6cm}|}
+  \hline
+  \textbf{Case} & \textbf{Item} & \textbf{Case Paper} \\
+  \hline
+  \endhead
+  1  & Constitution of the Meeting (chair, secretary, vote counters, protocol signers, count of eligible voters) & ECL-H2026-CASE-00 \\
+  \hline
+  2  & Approval of Notice                        & ECL-H2026-CASE-01 \\
+  \hline
+  3  & Approval of Agenda                        & ECL-H2026-CASE-02 \\
+  \hline
+  4  & Financial statements, previous semester   & ECL-H2026-CASE-03 \\
+  \hline
+  5  & Budget, coming semester                   & ECL-H2026-CASE-04 \\
+  \hline
+  6  & Semester report                           & ECL-H2026-CASE-05 \\
+  \hline
+  7  & Bylaw Amendment                           & ECL-H2026-CASE-07A (attachments: ECL-H2026-CASE-07B, 07C) \\
+  \hline
+  8  & C-suite structure                         & ECL-H2026-CASE-08A (Bylaw Amendment adopted) / ECL-H2026-CASE-08B (not adopted) \\
+  \hline
+  9  & Election of Board Members                 & ECL-H2026-CASE-06A (Bylaw Amendment adopted) / ECL-H2026-CASE-06B (not adopted) \\
+  \hline
+  10 & Other business                            & No Case Paper \\
+  \hline
+\end{longtable}
+\endgroup
+
+\vsection{3. Documents in the set}
+The column \textbf{Used} shows when a document is used: \emph{All} for every outcome, \emph{Adopted} only if the Bylaw Amendment is adopted under Case 7, and \emph{Not adopted} only if it is not.
+
+\begingroup
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{|L{3.2cm}|L{3.6cm}|L{5.3cm}|L{1.9cm}|}
+  \hline
+  \textbf{Document ID} & \textbf{Document} & \textbf{Purpose} & \textbf{Used} \\
+  \hline
+  \endhead
+  ECL-H2026-OVW-01    & Overview                                        & This document: meeting details, Cases and the document list.                                  & All \\
+  \hline
+  ECL-H2026-NOT-01    & Notice of Meeting (innkalling)                  & Calls the meeting; states date, time, location, deadlines and voting rights.                  & All \\
+  \hline
+  ECL-H2026-AGD-01    & Agenda (saksliste)                              & Cases 1--10 in order, with their Case Papers.                                                 & All \\
+  \hline
+  ECL-H2026-TPL-01    & Case Template (saksmal)                         & The layout every Case Paper follows.                                                          & All \\
+  \hline
+  ECL-H2026-PROC-01   & Amendment Submission Procedure                  & Form for submitting an Amendment to a Case.                                                   & All \\
+  \hline
+  ECL-H2026-CASE-00   & Case 1: Constitution of the Meeting             & Elects Meeting Chair, Secretary, Vote Counters and Protocol Signers; counts eligible voters.   & All \\
+  \hline
+  ECL-H2026-CASE-01   & Case 2: Approval of Notice                      & Confirms the Notice reached members in time.                                                  & All \\
+  \hline
+  ECL-H2026-CASE-02   & Case 3: Approval of Agenda                      & Approves the order of business.                                                               & All \\
+  \hline
+  ECL-H2026-CASE-03   & Case 4: Financial statements                     & Approves the previous semester's financial statement.                                         & All \\
+  \hline
+  ECL-H2026-CASE-04   & Case 5: Budget                                  & Approves the coming semester's budget.                                                        & All \\
+  \hline
+  ECL-H2026-CASE-05   & Case 6: Semester report                         & Notes the report on the semester's activity.                                                  & All \\
+  \hline
+  ECL-H2026-CASE-07A  & Case 7: Bylaw Amendment                         & Case Paper and full text of the proposed New Bylaws.                                          & All \\
+  \hline
+  ECL-H2026-CASE-07B  & Plain-language explanation                      & Attachment to Case 7: what changes and why.                                                   & All \\
+  \hline
+  ECL-H2026-CASE-07C  & Bylaw Amendment voting procedure                & Attachment to Case 7: the two-stage vote.                                                     & All \\
+  \hline
+  ECL-H2026-CASE-08A  & Case 8: C-suite structure, CEO/CTO/CBO/CPO      & Fixes the roles elected in Case 9 under the New Bylaws.                                      & Adopted \\
+  \hline
+  ECL-H2026-CASE-08B  & Case 8: C-suite structure, CEO/CTO/CFO/CMO      & Fixes the roles elected in Case 9 under the Old Bylaws.                                      & Not adopted \\
+  \hline
+  ECL-H2026-CASE-06A  & Case 9: Election, CEO/CTO/CBO/CPO               & Elects the Board into the roles fixed by ECL-H2026-CASE-08A.                                 & Adopted \\
+  \hline
+  ECL-H2026-CASE-06B  & Case 9: Election, CEO/CTO/CFO/CMO               & Elects the Board into the roles fixed by ECL-H2026-CASE-08B.                                 & Not adopted \\
+  \hline
+  ECL-H2026-CAND-01   & Candidate consent form (kandidatsamtykke)       & Records a candidate's consent and eligibility, or a written candidature.                      & All \\
+  \hline
+  ECL-H2026-BALLOT-01 & Bylaw Amendment ballot                          & Ballot and count sheet for Stage 1 of Case 7.                                                 & All \\
+  \hline
+  ECL-H2026-BALLOT-02A & Election ballot slips, CEO/CTO/CBO/CPO         & One page of ten cut-out slips per role, for Case 9.                                           & Adopted \\
+  \hline
+  ECL-H2026-BALLOT-02B & Election ballot slips, CEO/CTO/CFO/CMO         & One page of ten cut-out slips per role, for Case 9.                                           & Not adopted \\
+  \hline
+  ECL-H2026-VOTORD-01 & Voting Order (voteringsorden)                   & The order in which proposals, Amendments and elections are voted on.                          & All \\
+  \hline
+  ECL-H2026-PROT-01   & Meeting Protocol (protokoll)                    & The record of every decision, completed live and signed after the meeting.                    & All \\
+  \hline
+  ECL-H2026-MEMB-01   & Membership Contract (medlemskontrakt)           & Contract signed by new members under the New Bylaws.                                          & Adopted \\
+  \hline
+  ECL-H2026-RESP-01A  & Signature Authorisation (Old Bylaws)            & Records the Board's joint decision to sign an agreement.                                      & Not adopted \\
+  \hline
+  ECL-H2026-RESP-01B  & Responsibility \& Signature Contract            & Transfers a leadership responsibility or Signature Right under the New Bylaws.                & Adopted \\
+  \hline
+  ECL-H2026-RESP-02   & Board Record                                    & Board log of signed Responsibility \& Signature Contracts.                                     & All \\
+  \hline
+  ECL-H2026-DUMMY-01  & GF for Dummies                                  & Plain-language, non-binding guide to the General Assembly.                                    & All \\
+  \hline
+  ECL-H2026-GLOSS-01  & Multilingual Organisational Glossary            & English (Norwegian) terms used across the set.                                                & All \\
+  \hline
+\end{longtable}
+\endgroup
+
+\vsection{4. After the Bylaw Amendment vote}
+Case 7 decides which documents are used for the rest of the meeting and afterwards.
+\begin{itemize}
+  \item \textbf{Bylaw Amendment adopted:} Case 8 on ECL-H2026-CASE-08A, Case 9 on ECL-H2026-CASE-06A with ballot slips ECL-H2026-BALLOT-02A. From signature of the Meeting Protocol, the New Bylaws apply, and new members sign ECL-H2026-MEMB-01; responsibilities and Signature Right are transferred with ECL-H2026-RESP-01B.
+  \item \textbf{Bylaw Amendment not adopted:} Case 8 on ECL-H2026-CASE-08B, Case 9 on ECL-H2026-CASE-06B with ballot slips ECL-H2026-BALLOT-02B. The Old Bylaws remain in force, and the Board records joint signing decisions with ECL-H2026-RESP-01A.
+\end{itemize}
+
+\end{document}

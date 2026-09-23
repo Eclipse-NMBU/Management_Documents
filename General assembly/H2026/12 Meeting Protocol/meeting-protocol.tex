@@ -2,23 +2,38 @@
 \def\rap@fontpath{../../../Common/}
 \makeatother
 \documentclass{../../../Common/Latex/Templates/rapport}
+\input{../ga-common}
 \usepackage{enumitem}
 \usepackage{array}
 \usepackage{tabularx}
 \usepackage{amssymb}
 
 \reporttitle{Meeting Protocol}
-\projectname{Eclipse NMBU}
-\orglogo{../../../Common/Eclipse Images/EclipseFullText}
 
 \input{../../../Common/Latex/cover/rapport-cover}
-\missionpatch{../../../Common/Eclipse Images/EclipseMoon}
 \coverkind{Meeting Protocol (protokoll)}
 \reportsubtitle{General Assembly: ECL-H2026-PROT-01}
 \orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
-\reportlocation{Ås}
-\date{[DATE OF GENERAL ASSEMBLY: TBD]}
+\reportlocation{\meetinglocation, Ås}
+\date{\meetingdate, \meetingtime}
 \contactinfo{Contact: post@eclipsenmbu.no}
+
+% Standard record block for a Case: proposer, amendments, resolution, votes.
+\newcommand{\caseblock}[1]{%
+  \begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5cm}|X|}
+    \hline
+    Proposer                                                 & \rule{0pt}{0.9cm}#1 \\
+    \hline
+    Amendments presented (if any), with proposer and outcome & \rule{0pt}{1.8cm}   \\
+    \hline
+    Resolution (exact wording adopted)                       & \rule{0pt}{1.8cm}   \\
+    \hline
+    Vote count (for / against / blank), where applicable     & \rule{0pt}{0.9cm}   \\
+    \hline
+    Protocol Notes (protokolltilførsler), if any             & \rule{0pt}{1.2cm}   \\
+    \hline
+  \end{tabularx}%
+}
 
 \begin{document}
 
@@ -27,92 +42,114 @@
 \reportmainmatter
 
 \noindent\textbf{Document/Protocol ID:} ECL-H2026-PROT-01\\
-\textbf{Status:} this is the authoritative record of what the General Assembly decided (Master Drafting Prompt \S15). Completed live by the Secretary during the meeting; finalised on signature by the two Protocol Signers. No proxy/full-power form (fullmakt) exists or is referenced in this document set: proxy voting is prohibited under both the Old Bylaws (\S4.3) and the proposed New Bylaws (\S8.4.3).\\
-\textbf{Cross-references:} every Case Paper, Amendment, ballot and Standing Order referenced below carries its own Document ID; this Protocol is in turn the source Protocol ID cited by any Responsibility Contract arising from a General Assembly resolution (see ECL-H2026-RESP-01B, \S ``General Assembly \(\to\) CEO'').
+\meetingline\\
+\textbf{Status:} the authoritative record of what the General Assembly decided. Completed live by the Secretary during the meeting; finalised on signature by the two Protocol Signers. Proxy voting is prohibited (Old Bylaws \S4.3), so no proxy form (fullmakt) is used.\\
+\textbf{Cross-references:} every Case Paper, Amendment and ballot referenced below carries its own Document ID; this Protocol is in turn the source Protocol ID cited by any Responsibility Contract arising from a General Assembly resolution (see ECL-H2026-RESP-01B, \S ``General Assembly \(\to\) CEO'').
 
 \vsection{1. Meeting details}
 \begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5cm}|X|}
   \hline
-  Date                                              & \rule{0pt}{0.9cm} \\
+  Date               & \rule{0pt}{0.9cm}\meetingdate     \\
   \hline
-  Time (start / end)                                & \rule{0pt}{0.9cm} \\
+  Location           & \rule{0pt}{0.9cm}\meetinglocation \\
   \hline
-  Location                                          & \rule{0pt}{0.9cm} \\
-  \hline
-  Number of eligible voters present at constitution & \rule{0pt}{0.9cm} \\
+  Time (start / end) & \rule{0pt}{0.9cm}                 \\
   \hline
 \end{tabularx}
 
-\vsection{2. Constitution of the Meeting (ECL-H2026-CASE-00)}
+\vsection{2. Case 1: Constitution of the Meeting (ECL-H2026-CASE-00)}
 \begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5cm}|X|}
   \hline
-  Meeting Chair (ordstyrer) elected                 & \rule{0pt}{0.9cm}                                                  \\
+  Meeting Chair (ordstyrer) elected                 & \rule{0pt}{0.9cm} \\
   \hline
-  Secretary (referent) elected                      & \rule{0pt}{0.9cm}                                                  \\
+  Secretary (referent) elected                      & \rule{0pt}{0.9cm} \\
   \hline
-  Vote Counters (tellekorps) elected                & \rule{0pt}{0.9cm}                                                  \\
+  Vote Counters (tellekorps) elected                & \rule{0pt}{0.9cm} \\
   \hline
-  Protocol Signers (protokollunderskrivere) elected & \rule{0pt}{0.9cm}                                                  \\
+  Protocol Signers (protokollunderskrivere) elected & \rule{0pt}{0.9cm} \\
   \hline
-  Notice of Meeting approved (ECL-H2026-CASE-01)    & \rule{0pt}{0.9cm}Yes \quad $\square$ \quad\quad No \quad $\square$ \\
-  \hline
-  Agenda approved (ECL-H2026-CASE-02)               & \rule{0pt}{0.9cm}Yes \quad $\square$ \quad\quad No \quad $\square$ \\
+  Number of eligible voters present                 & \rule{0pt}{0.9cm} \\
   \hline
 \end{tabularx}
 
-\vsection{3. Cases, proposals and resolutions}
-\emph{Repeat this block for every Case on the final Agenda (ECL-H2026-AGD-01), in Agenda order, including Standard Case Papers, submitted Cases, the Bylaw Amendment (both stages, per ECL-H2026-CASE-07C), the Transitional C-suite Case, and any Amendments.}
-
+\vsection{3. Cases 2 and 3: Approval of Notice and Agenda (ECL-H2026-CASE-01 / 02)}
 \begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5cm}|X|}
   \hline
-  Case number and Document ID                              & \rule{0pt}{0.9cm} \\
+  Case 2: Notice of Meeting approved & \rule{0pt}{0.9cm}Yes \quad $\square$ \quad\quad No \quad $\square$ \\
   \hline
-  Title                                                    & \rule{0pt}{0.9cm} \\
+  Case 3: Agenda approved            & \rule{0pt}{0.9cm}Yes \quad $\square$ \quad\quad No \quad $\square$ \\
   \hline
-  Proposer                                                 & \rule{0pt}{0.9cm} \\
-  \hline
-  Amendments presented (if any), with proposer and outcome & \rule{0pt}{1.8cm} \\
-  \hline
-  Resolution (exact wording adopted)                       & \rule{0pt}{1.8cm} \\
-  \hline
-  Vote count (for / against / blank), where applicable     & \rule{0pt}{0.9cm} \\
-  \hline
-  Protocol Notes (protokolltilførsler), if any             & \rule{0pt}{1.2cm} \\
+  Protocol Notes, if any             & \rule{0pt}{1.2cm}                                                  \\
   \hline
 \end{tabularx}
 
-\vsection{4. Bylaw Amendment result (ECL-H2026-CASE-07A/07C)}
+\vsection{4. Case 4: Previous semester's financial statements (ECL-H2026-CASE-03)}
+\caseblock{The Board (CFO)}
+
+\vsection{5. Case 5: Coming semester's budget (ECL-H2026-CASE-04)}
+\caseblock{The Board (CFO)}
+
+\vsection{6. Case 6: Semester Report (ECL-H2026-CASE-05)}
+\caseblock{CEO (Styreleder)}
+
+\vsection{7. Case 7: Bylaw Amendment (ECL-H2026-CASE-07A)}
 \begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5cm}|X|}
   \hline
-  Stage 1 result (2/3 of all members)             & \rule{0pt}{0.9cm}Passed \quad $\square$ \quad\quad Failed \quad $\square$                                                                      \\
+  Stage 1 vote count (for / against / blank)     & \rule{0pt}{0.9cm}                                                           \\
   \hline
-  Stage 2: Amendments adopted (list Document IDs) & \rule{0pt}{1.8cm}                                                                                                                              \\
+  Stage 1 result (2/3 of all members)            & \rule{0pt}{0.9cm}Adopted \quad $\square$ \quad\quad Not adopted \quad $\square$ \\
   \hline
-  Final text adopted as                           & \rule{0pt}{0.9cm}ECL-H2026-CASE-07A, as amended per above                                                                                      \\
+  Stage 2: Amendments voted on, with outcome     & \rule{0pt}{1.8cm}                                                           \\
   \hline
-  Entry into force                                & \rule{0pt}{0.9cm}On signature of this Protocol (proposed New Bylaws \S17.2), unless the General Assembly resolved otherwise: \rule{2cm}{0.4pt} \\
+  Final text adopted as                          & \rule{0pt}{0.9cm}ECL-H2026-CASE-07A, as amended per above                   \\
+  \hline
+  Entry into force                               & \rule{0pt}{0.9cm}On signature of this Protocol, unless the General Assembly resolved otherwise: \rule{2cm}{0.4pt} \\
+  \hline
+  Protocol Notes, if any                         & \rule{0pt}{1.2cm}                                                           \\
   \hline
 \end{tabularx}
 
-\vsection{5. Election results (ECL-H2026-CASE-06)}
+\vsection{8. Case 8: C-suite structure (ECL-H2026-CASE-08A / 08B)}
 \begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5cm}|X|}
   \hline
-  C-suite structure elected & \rule{0pt}{0.9cm}CEO/CTO/CBO/CPO \quad $\square$ \quad\quad CEO/CTO/CFO/CMO \quad $\square$ \\
+  Case Paper used          & \rule{0pt}{0.9cm}ECL-H2026-CASE-08A (CEO/CTO/CBO/CPO) \quad $\square$ \quad\quad ECL-H2026-CASE-08B (CEO/CTO/CFO/CMO) \quad $\square$ \\
   \hline
-  CEO elected               & \rule{0pt}{0.9cm}                                                                           \\
+  Amendments (if any), with proposer and outcome & \rule{0pt}{1.2cm} \\
   \hline
-  CTO elected               & \rule{0pt}{0.9cm}                                                                           \\
-  \hline
-  CBO / CFO elected         & \rule{0pt}{0.9cm}                                                                           \\
-  \hline
-  CPO / CMO elected         & \rule{0pt}{0.9cm}                                                                           \\
+  Protocol Notes, if any   & \rule{0pt}{1.2cm} \\
   \hline
 \end{tabularx}
 
-\vsection{6. Protocol Statements / Reservations (protokolltilførsler)}
+\vsection{9. Case 9: Election of Board Members (ECL-H2026-CASE-06A / 06B)}
+\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5cm}|X|}
+  \hline
+  Case Paper used   & \rule{0pt}{0.9cm}ECL-H2026-CASE-06A \quad $\square$ \quad\quad ECL-H2026-CASE-06B \quad $\square$ \\
+  \hline
+  CEO elected       & \rule{0pt}{0.9cm}                                                                              \\
+  \hline
+  CTO elected       & \rule{0pt}{0.9cm}                                                                              \\
+  \hline
+  CBO / CFO elected & \rule{0pt}{0.9cm}                                                                              \\
+  \hline
+  CPO / CMO elected & \rule{0pt}{0.9cm}                                                                              \\
+  \hline
+  Protocol Notes, if any & \rule{0pt}{1.2cm}                                                                         \\
+  \hline
+\end{tabularx}
+
+\vsection{10. Case 10: Other business}
+\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5cm}|X|}
+  \hline
+  Matters raised                              & \rule{0pt}{1.8cm} \\
+  \hline
+  Resolutions, with vote count, if any        & \rule{0pt}{1.8cm} \\
+  \hline
+\end{tabularx}
+
+\vsection{11. Protocol Statements / Reservations (protokolltilførsler)}
 \rule{0pt}{3cm}
 
-\vsection{7. Signatures}
+\vsection{12. Signatures}
 \begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5cm}|X|}
   \hline
   Meeting Chair     & \rule{0pt}{1.4cm} \\
@@ -126,6 +163,6 @@
 \end{tabularx}
 
 \vspace{0.4cm}
-Per Old Bylaws \S4.5 / proposed New Bylaws \S9.8.4, this Protocol shall be made available to members no later than two weeks after the General Assembly.
+Per Old Bylaws \S4.5, this Protocol shall be made available to members no later than two weeks after the General Assembly.
 
 \end{document}

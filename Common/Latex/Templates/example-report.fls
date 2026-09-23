@@ -1,5 +1,5 @@
-PWD C:\GItHub\Management_Documents\Common\Latex\Templates
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+PWD C:\Users\oskar\01 - Projects\Management_Documents\Common\Latex\Templates
+INPUT C:\Users\oskar\AppData\Local\MiKTeX\miktex\data\le\xetex\xelatex.fmt
 INPUT example-report.tex
 OUTPUT example-report.log
 INPUT .\rapport.cls
@@ -9,7 +9,6 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
@@ -23,9 +22,9 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\xetex.def
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\xetex.def
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\xetex.def
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\lastpage\lastpage.sty
@@ -41,13 +40,21 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\base\inputenc.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\fontspec\fontspec.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\fontspec\fontspec.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-xetex.def
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-xetex.def
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\fontspec\fontspec-xetex.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\fontspec\fontspec-xetex.sty
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1200.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\fontspec\fontspec.cfg
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\fontspec\fontspec.cfg
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\fontspec\fontspec.cfg
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
 INPUT ..\cover\rapport-cover.tex
@@ -55,63 +62,28 @@ INPUT ..\cover\rapport-cover.tex
 INPUT ..\cover\rapport-cover.tex
 INPUT ..\cover\rapport-cover.tex
 INPUT ..\cover\rapport-cover.tex
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT .\example-report.aux
 INPUT .\example-report.aux
 INPUT example-report.aux
 OUTPUT example-report.aux
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT ..\..\Eclipse Images\EclipsePlack.png
 INPUT ..\..\Eclipse Images\EclipsePlack.png
-INPUT ..\..\Eclipse Images\EclipsePlack.png
-OUTPUT example-report.pdf
-INPUT ..\..\Eclipse Images\EclipsePlack.png
-INPUT ..\..\Eclipse Images\EclipsePlack.png
-INPUT ..\..\Eclipse Images\EclipsePlack.png
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss1200.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss2488.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsx2488.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsx1200.tfm
 INPUT ..\..\Eclipse Images\EclipseFullText.png
 INPUT ..\..\Eclipse Images\EclipseFullText.png
-INPUT ..\..\Eclipse Images\EclipseFullText.png
-INPUT ..\..\Eclipse Images\EclipseFullText.png
-INPUT ..\..\Eclipse Images\EclipseFullText.png
-INPUT ..\..\Eclipse Images\EclipseFullText.png
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1095.tfm
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1728.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1728.tfm
+OUTPUT example-report.xdv
 INPUT .\example-report.toc
 INPUT .\example-report.toc
 INPUT example-report.toc
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1200.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 OUTPUT example-report.toc
-INPUT ..\..\Eclipse Images\EclipseFullText.png
-INPUT ..\..\Eclipse Images\EclipseFullText.png
-INPUT ..\..\Eclipse Images\EclipseFullText.png
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
-INPUT ..\..\Eclipse Images\EclipseFullText.png
-INPUT ..\..\Eclipse Images\EclipseFullText.png
-INPUT ..\..\Eclipse Images\EclipseFullText.png
-INPUT ..\..\Eclipse Images\EclipseFullText.png
-INPUT ..\..\Eclipse Images\EclipseFullText.png
 INPUT ..\..\Eclipse Images\EclipseFullText.png
 INPUT ..\..\Eclipse Images\EclipseFullText.png
 INPUT ..\..\Eclipse Images\EclipseFullText.png
@@ -129,19 +101,3 @@ INPUT ..\..\Eclipse Images\EclipseFullText.png
 INPUT ..\..\Eclipse Images\EclipseFullText.png
 INPUT ..\..\Eclipse Images\EclipseFullText.png
 INPUT example-report.aux
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx2488.pk
-INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx2488.pk

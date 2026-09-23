@@ -2,19 +2,17 @@
 \def\rap@fontpath{../../../Common/}
 \makeatother
 \documentclass{../../../Common/Latex/Templates/rapport}
+\input{../ga-common}
 \usepackage{enumitem}
 
 \reporttitle{Notice of Meeting}
-\projectname{Eclipse NMBU}
-\orglogo{../../../Common/Eclipse Images/EclipseFullText}
 
 \input{../../../Common/Latex/cover/rapport-cover}
-\missionpatch{../../../Common/Eclipse Images/EclipseMoon}
 \coverkind{Notice of Meeting (innkalling)}
 \reportsubtitle{General Assembly -- ECL-H2026-NOT-01}
 \orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
-\reportlocation{Ås}
-\date{[DATE OF NOTICE -- TBD]}
+\reportlocation{\meetinglocation, Ås}
+\date{\meetingdate, \meetingtime}
 \contactinfo{Contact: post@eclipsenmbu.no}
 
 \begin{document}
@@ -24,41 +22,37 @@
 \reportmainmatter
 
 \noindent\textbf{Document ID:} ECL-H2026-NOT-01\\
-\textbf{Governing Bylaws:} Old Bylaws (gamle vedtekter) -- the New Bylaws are not yet adopted, so their timing rules (New Bylaws \S8.3) do not apply to this meeting; the Old Bylaws' \S4.5/\S4.6 timing rules do.\\
-\textbf{Cross-references:} Agenda (ECL-H2026-AGD-01), Case Template (ECL-H2026-TPL-01), Amendment Submission Procedure (ECL-H2026-PROC-01), Bylaw Amendment Proposal (ECL-H2026-CASE-07A/07B/07C), Meeting Protocol (ECL-H2026-PROT-01).
+\meetingline\\
+\textbf{Governing Bylaws:} Old Bylaws (gamle vedtekter). Notice and deadlines follow Old Bylaws \S4.5 and \S4.6.\\
+\textbf{Cross-references:} Overview (ECL-H2026-OVW-01), Agenda (ECL-H2026-AGD-01), Case Template (ECL-H2026-TPL-01), Amendment Submission Procedure (ECL-H2026-PROC-01), Bylaw Amendment Proposal (ECL-H2026-CASE-07A/07B/07C), Meeting Protocol (ECL-H2026-PROT-01).
 
 \vsection{1. Meeting details}
 \begin{itemize}
-  \item \textbf{Date:} [DATE -- TBD, must fall on or before the end of April per Old Bylaws \S4.2]
-  \item \textbf{Time:} [TIME -- TBD]
-  \item \textbf{Location:} [LOCATION -- TBD]
+  \item \textbf{Date:} \meetingdate
+  \item \textbf{Time:} \meetingtime
+  \item \textbf{Location:} \meetinglocation
 \end{itemize}
 
 \vsection{2. Nature of this General Assembly}
 This is a General Assembly with elections (valggeneralforsamling): all four Board (styret) positions are up for election, per Old Bylaws \S4.7.
 
-\textbf{A Bylaw Amendment (vedtektsendring) is on the agenda.} The General Assembly will be asked to consider replacing the current Bylaws (Old Bylaws) with the proposed New Bylaws (nye vedtekter), see the Bylaw Amendment Proposal, ECL-H2026-CASE-07A/07B. Adoption requires 2/3 of all members of Eclipse NMBU to vote in favour, per Old Bylaws \S4.6.
+\textbf{A Bylaw Amendment (vedtektsendring) is on the agenda as Case 7.} The General Assembly will be asked to replace the current Bylaws (Old Bylaws) with the proposed New Bylaws (nye vedtekter); see the Bylaw Amendment Proposal, ECL-H2026-CASE-07A/07B/07C. Adoption requires 2/3 of all members of Eclipse NMBU to vote in favour, per Old Bylaws \S4.6.
 
-\textbf{The C-suite election is on the agenda.} Because the outcome of the Bylaw Amendment vote determines which C-suite structure is being elected into, a Transitional C-suite Case (ECL-H2026-CASE-08) precedes the Election of Board Members case and fixes which roles are open depending on whether the Bylaw Amendment passes:
-\begin{itemize}
-  \item \textbf{If the Bylaw Amendment passes:} CEO, CTO, CBO, CPO are elected.
-  \item \textbf{If the Bylaw Amendment fails:} CEO, CTO, CFO, CMO are elected (i.e. the current structure continues).
-\end{itemize}
-In both cases, election follows the Old Bylaws \S4.7 election mechanics (the Election and Control Committee introduced by the New Bylaws does not yet exist and cannot run this election).
+\textbf{The election of the Board is on the agenda as Cases 8 and 9.} Case 8 fixes the C-suite structure that follows from the result of Case 7, and Case 9 elects the four Board members into that structure. The election follows the Old Bylaws \S4.7 election mechanics. See the Agenda, ECL-H2026-AGD-01.
 
 \vsection{3. Deadlines}
 
 \begin{itemize}
-  \item \textbf{Deadline for submitting Cases (saker):} [DATE -- TBD], such that Case Papers can be made available to members no later than one week before the General Assembly, per Old Bylaws \S4.5.
-  \item \textbf{Deadline for Amendments (endringsforslag):} [DATE -- TBD], together with the publication of Case Papers (one week before the General Assembly). See the Amendment Submission Procedure, ECL-H2026-PROC-01, \S1, for why this date is used: the Old Bylaws do not fix a separate Amendment deadline, so the Case Papers deadline is used as the operative cut-off pending Board confirmation.
-  \item \textbf{Deadline for the Bylaw Amendment proposal reaching the Board:} at least one week before the General Assembly, per Old Bylaws \S4.6. This is satisfied by the Case Papers deadline above.
-  \item \textbf{Deadline/procedure for Advance Nominations (forhåndsbenking):} candidates wishing to be nominated in advance of the meeting should notify the Board by [DATE -- TBD], the same date as the Case submission deadline. Candidates who cannot attend in person may submit a written candidature; see Candidate Documentation, ECL-H2026-CAND-01. Nomination from the floor (benkeforslag) remains possible during the meeting itself.
+  \item \textbf{Case Papers (sakspapirer)} are available to members no later than \textbf{23 September 2026}, one week before the General Assembly, per Old Bylaws \S4.5.
+  \item \textbf{Bylaw Amendment proposal:} must reach the Board no later than \textbf{23 September 2026}, one week before the General Assembly, per Old Bylaws \S4.6. It is published with the Case Papers.
+  \item \textbf{Amendments (endringsforslag)} to a Case on the Agenda must be submitted in writing before voting on Cases begins at the meeting. See the Amendment Submission Procedure, ECL-H2026-PROC-01.
+  \item \textbf{Advance Nominations (forhåndsbenking):} candidates may notify the Board before the meeting that they are standing. Candidates who cannot attend in person may submit a written candidature; see Candidate Documentation, ECL-H2026-CAND-01. Nomination from the floor (benkeforslag) remains possible during the meeting itself.
 \end{itemize}
 
 \vsection{4. Case Papers}
-Case Papers (sakspapirer), including the Agenda, the full Bylaw Amendment Proposal and all Standard Case Papers, will be made available to members no later than one week before the General Assembly, per Old Bylaws \S4.5.
+Case Papers, including the Agenda, the full Bylaw Amendment Proposal and all Standard Case Papers, are made available to members no later than 23 September 2026, per Old Bylaws \S4.5. The Overview, ECL-H2026-OVW-01, lists every document in the set.
 
 \vsection{5. Voting rights}
-Per Old Bylaws \S10.2, Board Members, Core Members and Active Members have voting rights and are eligible for office. All members, including Inactive Members, have the right to attend. Proxy voting is not permitted (Old Bylaws \S4.3; also prohibited under the New Bylaws \S8.4.3) -- no member may vote on another member's behalf, in person or by any form of power of attorney.
+Per Old Bylaws \S10.2, Board Members, Core Members and Active Members have voting rights and are eligible for office. All members, including Inactive Members, have the right to attend. Proxy voting is not permitted (Old Bylaws \S4.3): no member may vote on another member's behalf, in person or by any form of power of attorney.
 
 \end{document}
