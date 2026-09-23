@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.6.3)  22 SEP 2026 20:55
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.6.3)  23 SEP 2026 02:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -132,13 +132,13 @@ Package fontspec Info:
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)            - 'normal' (m/n) with NFSS spec.:
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"[../../../Common/Genos-Regular.ttf]/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)            - 'bold' (b/n) with NFSS spec.:
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[../../../Common/Genos-Bold.ttf]/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)            - 'italic' (m/it) with NFSS spec.:
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
 (fontspec)             <->"[../../../Common/Genos-Italic.ttf]/OT:script=latn;language=dflt;mapping=tex-text;"
-(fontspec)            - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
 (fontspec)             <->"[../../../Common/Genos-BoldItalic.ttf]/OT:script=latn;language=dflt;mapping=tex-text;"
 
 \rap@logoheight=\skip65
@@ -262,8 +262,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/Genos(0)/b/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 24.
-File: ../../../Common/Eclipse Images/EclipsePlack.png Graphic file (type bmp)
-<../../../Common/Eclipse Images/EclipsePlack.png>
+File: ../../../Common/Eclipse Images/EclipseMoon.png Graphic file (type bmp)
+<../../../Common/Eclipse Images/EclipseMoon.png>
 File: ../../../Common/Eclipse Images/EclipseFullText.png Graphic file (type bmp)
 <../../../Common/Eclipse Images/EclipseFullText.png>
 [1
@@ -280,9 +280,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `glossary.toc'.
 
  [2]
+Underfull \hbox (badness 1533) in paragraph at lines 57--57
+[]\TU/Genos(0)/b/n/14.4 CTO: Chief Technology Officer / Chief Technical Officer (Teknisk
+ []
+
 File: ../../../Common/Eclipse Images/EclipseFullText.png Graphic file (type bmp)
 <../../../Common/Eclipse Images/EclipseFullText.png>
- [1]
+[1]
 File: ../../../Common/Eclipse Images/EclipseFullText.png Graphic file (type bmp)
 <../../../Common/Eclipse Images/EclipseFullText.png>
  [2]
@@ -324,11 +328,11 @@ L3 programming layer <2026-04-28>
  ) 
 Here is how much of TeX's memory you used:
  4812 strings out of 402799
- 130019 string characters out of 5444456
- 587398 words of memory out of 5000000
+ 130000 string characters out of 5444456
+ 586393 words of memory out of 5000000
  33668 multiletter control sequences out of 15000+600000
  630617 words of font info for 69 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  88i,14n,107p,481b,406s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on glossary.xdv (10 pages, 190016 bytes).
+Output written on glossary.xdv (10 pages, 189872 bytes).
