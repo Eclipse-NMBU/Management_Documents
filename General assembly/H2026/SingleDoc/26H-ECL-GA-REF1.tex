@@ -1,0 +1,143 @@
+\makeatletter
+\def\rap@fontpath{../../../Common/}
+\makeatother
+\documentclass{../../../Common/Latex/Templates/rapport}
+\input{../ga-common}
+\usepackage{array}
+\usepackage{longtable}
+
+\reporttitle{ID and Abbreviations Reference}
+
+\input{../../../Common/Latex/cover/rapport-cover}
+\coverkind{ID and Abbreviations Reference}
+\reportsubtitle{General Assembly -- 26H-ECL-GA-REF1}
+\orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
+\reportlocation{\meetinglocation, Ås}
+\date{\meetingdate, \meetingtime}
+\contactinfo{Contact: post@eclipsenmbu.no}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\begin{document}
+
+\makecoverpage
+\tableofcontents
+\reportmainmatter
+
+\noindent\textbf{Document ID:} 26H-ECL-GA-REF1\\
+\meetingline\\
+\textbf{Purpose:} explains the Document ID scheme used across the General Assembly document set, and, separately, the general file-naming convention used for other Eclipse NMBU files (technical files such as CAD/STL models, software and Docker configuration, and other project files) that are not part of a General Assembly document set.
+
+\vsection{1. General Assembly Document IDs}
+
+\vsubsection{1.1 Format}
+Every General Assembly document has an ID of the form:
+\begin{center}
+  \bfseries YYH/V-ECL-GA-TYPEn
+\end{center}
+For example, \texttt{26H-ECL-GA-CASE0} or \texttt{27V-ECL-GA-AGD1}. Each file's name matches its own Document ID exactly (e.g. \texttt{26H-ECL-GA-CASE0.tex}).
+
+\vsubsection{1.2 Parts}
+\begin{longtable}{|L{2.3cm}|L{11cm}|}
+  \hline
+  \textbf{Part}   & \textbf{Meaning}                                                                                                                                                                                                                                                                                                        \\
+  \hline
+  \endhead
+  \texttt{YY}     & Last two digits of the calendar year, e.g.\ \texttt{26} for 2026.                                                                                                                                                                                                                                                       \\
+  \hline
+  \texttt{H/V}    & Semester half: \texttt{H} for Høst (autumn), \texttt{V} for Vår (spring).                                                                                                                                                                                                                                               \\
+  \hline
+  \texttt{ECL}    & Organisation code: Eclipse NMBU.                                                                                                                                                                                                                                                                                        \\
+  \hline
+  \texttt{GA}     & Scope code: this document belongs to a General Assembly document set (as opposed to, e.g., a Board-only or project-only document set outside this scheme).                                                                                                                                                              \\
+  \hline
+  \texttt{TYPE}   & Document type abbreviation, see \S1.3.                                                                                                                                                                                                                                                                                  \\
+  \hline
+  \texttt{n}      & Sequence number of this document within its type, for this semester's General Assembly. No leading zero.                                                                                                                                                                                                                \\
+  \hline
+  \emph{(suffix)} & An optional trailing letter (\texttt{A}, \texttt{B}, \texttt{C}, \ldots) marks an alternate or attachment of the same numbered document, e.g.\ \texttt{CASE5A} and \texttt{CASE5B} are the two mutually exclusive outcomes of Case 6, and \texttt{CASE4A}--\texttt{CASE4E} are the main text and attachments of Case 5. \\
+  \hline
+\end{longtable}
+
+\vsubsection{1.3 Type abbreviations}
+\begin{longtable}{|L{2cm}|L{11.5cm}|}
+  \hline
+  \textbf{Type}   & \textbf{Meaning}                                                                                                                                                      \\
+  \hline
+  \endhead
+  \texttt{OVW}    & Overview of the meeting, Cases and the whole document set.                                                                                                            \\
+  \hline
+  \texttt{NOT}    & Notice of Meeting (innkalling).                                                                                                                                       \\
+  \hline
+  \texttt{AGD}    & Agenda (saksliste).                                                                                                                                                   \\
+  \hline
+  \texttt{TPL}    & Case Template (saksmal).                                                                                                                                              \\
+  \hline
+  \texttt{PROC}   & Procedure document: \texttt{PROC1} is the Amendment Submission Procedure, \texttt{PROC2} is the Full Meeting Procedure.                                               \\
+  \hline
+  \texttt{CASE}   & A Case Paper, numbered in Agenda order (\texttt{CASE0} for Case 1, \texttt{CASE1} for Case 2, and so on); a lettered suffix marks an alternate outcome or attachment. \\
+  \hline
+  \texttt{CAND}   & Candidate Documentation (kandidatsamtykke and related forms).                                                                                                         \\
+  \hline
+  \texttt{BALLOT} & A ballot. Only candidate elections use ballots.                                                                                                                       \\
+  \hline
+  \texttt{VOTORD} & Voting Order (voteringsorden).                                                                                                                                        \\
+  \hline
+  \texttt{PROT}   & Meeting Protocol (protokoll).                                                                                                                                         \\
+  \hline
+  \texttt{MEMB}   & Membership Contract (medlemskontrakt).                                                                                                                                \\
+  \hline
+  \texttt{RESP}   & Responsibility and Signature Contract, or the Board Record of such contracts.                                                                                         \\
+  \hline
+  \texttt{DUMMY}  & GF for Dummies: the plain-language, non-binding guide.                                                                                                                \\
+  \hline
+  \texttt{GLOSS}  & Multilingual Organisational Glossary.                                                                                                                                 \\
+  \hline
+  \texttt{TIME}   & Timetable and Directions.                                                                                                                                             \\
+  \hline
+  \texttt{REF}    & This ID and Abbreviations Reference.                                                                                                                                  \\
+  \hline
+  \texttt{FULL}   & The full, combined, printable edition of the document set.                                                                                                            \\
+  \hline
+\end{longtable}
+
+\vsubsection{1.4 Worked examples}
+\begin{itemize}
+  \item \texttt{26H-ECL-GA-AGD1}: the Agenda for the autumn 2026 General Assembly.
+  \item \texttt{26H-ECL-GA-NOT1}: the Notice of Meeting for the same General Assembly.
+  \item \texttt{26H-ECL-GA-CASE0}, \texttt{CASE1}, \texttt{CASE2}, \texttt{CASE3}: Cases 1--4 of the same General Assembly.
+  \item \texttt{27V-ECL-GA-AGD1}: the Agenda for the following, spring 2027 General Assembly -- a new semester restarts the sequence numbers from 1 for each type.
+\end{itemize}
+
+\vsection{2. General file-naming convention (non-governance files)}
+Files that are not part of a General Assembly document set, such as CAD or STL models, engineering drawings, software and Docker configuration, and other project working files, do not use the Document ID scheme in \S1. They instead use the Association's general file-naming convention:
+\begin{center}
+  \bfseries Sem\_Org\_Prosjekt\_Type\_Fase\_Beskrivelse\_Versjon.ext
+\end{center}
+
+\begin{longtable}{|L{2.6cm}|L{11cm}|}
+  \hline
+  \textbf{Part}        & \textbf{Meaning}                                                                                                       \\
+  \hline
+  \endhead
+  \texttt{Sem}         & Semester, e.g.\ \texttt{H26} or \texttt{V27} (Høst/Vår and year).                                                      \\
+  \hline
+  \texttt{Org}         & Organisational unit responsible for the file, e.g.\ a C-suite area or team.                                            \\
+  \hline
+  \texttt{Prosjekt}    & The project the file belongs to.                                                                                       \\
+  \hline
+  \texttt{Type}        & The kind of file, e.g.\ Rapport (report), Tegning (drawing), Budsjett (budget).                                        \\
+  \hline
+  \texttt{Fase}        & The project phase the file was produced in, e.g.\ MCR or SRR (\S16.1 of the New Bylaws) or an equivalent phase marker. \\
+  \hline
+  \texttt{Beskrivelse} & A short, specific description of the file's content.                                                                   \\
+  \hline
+  \texttt{Versjon}     & Version number, e.g.\ \texttt{v1}, \texttt{v2}.                                                                        \\
+  \hline
+  \texttt{.ext}        & The file's extension, e.g.\ \texttt{.stl}, \texttt{.docx}, \texttt{.pdf}.                                              \\
+  \hline
+\end{longtable}
+
+This convention is independent of, and does not mix with, the General Assembly Document ID scheme in \S1: a General Assembly document is never named using this pattern, and a project or technical file is never given a \texttt{YYH/V-ECL-GA-TYPEn} ID.
+
+\end{document}

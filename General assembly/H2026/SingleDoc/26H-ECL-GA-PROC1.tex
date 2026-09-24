@@ -1,0 +1,54 @@
+\makeatletter
+\def\rap@fontpath{../../../Common/}
+\makeatother
+\documentclass{../../../Common/Latex/Templates/rapport}
+\input{../ga-common}
+\usepackage{array}
+\usepackage{tabularx}
+
+\reporttitle{Amendment Submission Procedure}
+
+\input{../../../Common/Latex/cover/rapport-cover}
+\coverkind{Amendment Submission Procedure (endringsforslagsprosedyre)}
+\reportsubtitle{General Assembly -- 26H-ECL-GA-PROC1}
+\orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
+\reportlocation{\meetinglocation, Ås}
+\date{\meetingdate, \meetingtime}
+\contactinfo{Contact: post@eclipsenmbu.no}
+
+\begin{document}
+
+\reportmainmatter
+\small
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+
+\begin{center}
+  {\Large\bfseries Amendment Submission}\par
+  \vspace{0.15cm}
+  {\normalsize General Assembly -- 26H-ECL-GA-PROC1}\par
+  \vspace{0.1cm}
+  {\small \meetingline}\par
+\end{center}
+
+\vspace{0.2cm}
+\textbf{Use one form per amendment.} Quote the current wording exactly and write the complete replacement wording. Submit the completed form in writing to the Board, or to the Meeting Chair during the meeting, before voting on Cases begins. Only members with the right to propose may submit an amendment.
+
+\vspace{0.4cm}
+\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{3.7cm}|X|}
+  \hline
+  Which case?           & \rule{0pt}{1.2cm}Case number (1--8), Document ID and title.   \\
+  \hline
+  What it says now      & \rule{0pt}{3.2cm}Quote the exact text that should be changed. \\
+  \hline
+  What I want it to say & \rule{0pt}{3.2cm}Write the exact replacement text.            \\
+  \hline
+  Sender                & \rule{0pt}{1.2cm}Full name and signature, if required.        \\
+  \hline
+\end{tabularx}
+
+\vfill
+\textbf{Submission note:} Amendments must identify one specific case and include exact replacement wording. Anonymous amendments, and amendments submitted after voting on Cases has begun, are not accepted.
+
+\end{document}

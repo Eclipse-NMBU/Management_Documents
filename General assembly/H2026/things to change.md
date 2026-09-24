@@ -22,9 +22,6 @@ Implement via a single macro in ga-common.tex, e.g.:
   written once and never edited when switching between standalone and
   FULL builds.
 
-## 2. Flat folder
-All 26H-ECL-GA-* files live in one flat directory. No subfolders.
-
 ## 3. Attachments
 Any document with lettered-suffix attachments (per REF1 §1.2, e.g.
 CASE4A-E) gets those attachments generated as their own files and

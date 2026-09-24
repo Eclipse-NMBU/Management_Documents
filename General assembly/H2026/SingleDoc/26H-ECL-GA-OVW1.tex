@@ -1,0 +1,161 @@
+\makeatletter
+\def\rap@fontpath{../../../Common/}
+\makeatother
+\documentclass{../../../Common/Latex/Templates/rapport}
+\input{../ga-common}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{longtable}
+
+\reporttitle{Overview}
+
+\input{../../../Common/Latex/cover/rapport-cover}
+\coverkind{Overview (oversikt)}
+\reportsubtitle{General Assembly document set -- 26H-ECL-GA-OVW1}
+\orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
+\reportlocation{\meetinglocation, Ås}
+\date{\meetingdate, \meetingtime}
+\contactinfo{Contact: post@eclipsenmbu.no}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\begin{document}
+
+\makecoverpage
+\tableofcontents
+\reportmainmatter
+
+\noindent\textbf{Document ID:} 26H-ECL-GA-OVW1\\
+\meetingline\\
+\textbf{Purpose:} a map of the General Assembly document set: the meeting details, the Cases on the Agenda, and every document with its ID and purpose.\\
+\textbf{Governing Bylaws:} Old Bylaws (gamle vedtekter).
+
+\vsection{1. Meeting details}
+\begin{itemize}
+  \item \textbf{Date:} \meetingdate
+  \item \textbf{Time:} \meetingtime
+  \item \textbf{Location:} \meetinglocation
+  \item \textbf{Case Papers available:} no later than 23 September 2026 (Old Bylaws \S4.5)
+  \item \textbf{Amendments:} in writing, before voting on Cases begins (26H-ECL-GA-PROC1)
+  \item \textbf{Timetable and how to get there:} 26H-ECL-GA-TIME1
+  \item \textbf{Full step-by-step meeting procedure:} 26H-ECL-GA-PROC2
+\end{itemize}
+
+\vsection{2. Cases}
+\begingroup
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{|c|L{6.4cm}|L{6.6cm}|}
+  \hline
+  \textbf{Case} & \textbf{Item}                                                                                                                            & \textbf{Case Paper}                                                           \\
+  \hline
+  \endhead
+  1             & Constitution of the Meeting (chair, secretary, vote counters, protocol signers, count of eligible voters, approval of notice and agenda) & 26H-ECL-GA-CASE0                                                              \\
+  \hline
+  2             & Financial statements, previous semester                                                                                                  & 26H-ECL-GA-CASE1                                                              \\
+  \hline
+  3             & Budget, coming semester                                                                                                                  & 26H-ECL-GA-CASE2                                                              \\
+  \hline
+  4             & Semester report                                                                                                                          & 26H-ECL-GA-CASE3                                                              \\
+  \hline
+  5             & Bylaw Amendment                                                                                                                          & 26H-ECL-GA-CASE4A (attachments: 26H-ECL-GA-CASE4B, CASE4C)                    \\
+  \hline
+  6             & C-suite structure                                                                                                                        & 26H-ECL-GA-CASE5A (Bylaw Amendment adopted) / 26H-ECL-GA-CASE5B (not adopted) \\
+  \hline
+  7             & Election of Board Members                                                                                                                & 26H-ECL-GA-CASE6A (Bylaw Amendment adopted) / 26H-ECL-GA-CASE6B (not adopted) \\
+  \hline
+  8             & Other business                                                                                                                           & No Case Paper                                                                 \\
+  \hline
+\end{longtable}
+\endgroup
+
+\vsection{3. Documents in the set}
+The column \textbf{Used} shows when a document is used: \emph{All} for every outcome, \emph{Adopted} only if the Bylaw Amendment is adopted under Case 5, and \emph{Not adopted} only if it is not.
+
+\begingroup
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{|L{3.2cm}|L{3.6cm}|L{5.3cm}|L{1.9cm}|}
+  \hline
+  \textbf{Document ID} & \textbf{Document}                          & \textbf{Purpose}                                                                                                             & \textbf{Used} \\
+  \hline
+  \endhead
+  26H-ECL-GA-OVW1      & Overview                                   & This document: meeting details, Cases and the document list.                                                                 & All           \\
+  \hline
+  26H-ECL-GA-NOT1      & Notice of Meeting (innkalling)             & Calls the meeting; states date, time, location, deadlines and voting rights.                                                 & All           \\
+  \hline
+  26H-ECL-GA-AGD1      & Agenda (saksliste)                         & Cases 1--8 in order, with their Case Papers.                                                                                 & All           \\
+  \hline
+  26H-ECL-GA-TPL1      & Case Template (saksmal)                    & The layout every Case Paper follows.                                                                                         & All           \\
+  \hline
+  26H-ECL-GA-PROC1     & Amendment Submission Procedure             & Form for submitting an Amendment to a Case.                                                                                  & All           \\
+  \hline
+  26H-ECL-GA-PROC2     & Full Meeting Procedure (Old Bylaws)        & Step-by-step walk-through of the whole meeting, from registration to protocol.                                               & All           \\
+  \hline
+  26H-ECL-GA-TIME1     & Timetable and Directions                   & When to arrive, the planned running order, and how to get to the venue.                                                      & All           \\
+  \hline
+  26H-ECL-GA-REF1      & ID and Abbreviations Reference             & The Document ID scheme and every abbreviation used across the set.                                                           & All           \\
+  \hline
+  26H-ECL-GA-CASE0     & Case 1: Constitution of the Meeting        & Elects Meeting Chair, Secretary, Vote Counters and Protocol Signers; counts eligible voters; approves the Notice and Agenda. & All           \\
+  \hline
+  26H-ECL-GA-CASE1     & Case 2: Financial statements               & Approves the previous semester's financial statement.                                                                        & All           \\
+  \hline
+  26H-ECL-GA-CASE2     & Case 3: Budget                             & Approves the coming semester's budget.                                                                                       & All           \\
+  \hline
+  26H-ECL-GA-CASE3     & Case 4: Semester report                    & Notes the report on the semester's activity.                                                                                 & All           \\
+  \hline
+  26H-ECL-GA-CASE4A    & Case 5: Bylaw Amendment                    & Case Paper and full text of the proposed New Bylaws.                                                                         & All           \\
+  \hline
+  26H-ECL-GA-CASE4B    & Plain-language explanation                 & Attachment to Case 5: what changes and why.                                                                                  & All           \\
+  \hline
+  26H-ECL-GA-CASE4C    & Bylaw Amendment voting procedure           & Attachment to Case 5: the two-stage vote.                                                                                    & All           \\
+  \hline
+  26H-ECL-GA-CASE4D    & Old Bylaws, Norwegian original             & Attachment to Case 5: the controlling Norwegian text of the Old Bylaws.                                                      & All           \\
+  \hline
+  26H-ECL-GA-CASE4E    & New Bylaws, Norwegian draft                & Attachment to Case 5: the controlling Norwegian draft the English text translates.                                           & All           \\
+  \hline
+  26H-ECL-GA-CASE5A    & Case 6: C-suite structure, CEO/CTO/CBO/CPO & Fixes the roles elected in Case 7 under the New Bylaws.                                                                      & Adopted       \\
+  \hline
+  26H-ECL-GA-CASE5B    & Case 6: C-suite structure, CEO/CTO/CFO/CMO & Fixes the roles elected in Case 7 under the Old Bylaws.                                                                      & Not adopted   \\
+  \hline
+  26H-ECL-GA-CASE6A    & Case 7: Election, CEO/CTO/CBO/CPO          & Elects the Board into the roles fixed by 26H-ECL-GA-CASE5A.                                                                  & Adopted       \\
+  \hline
+  26H-ECL-GA-CASE6B    & Case 7: Election, CEO/CTO/CFO/CMO          & Elects the Board into the roles fixed by 26H-ECL-GA-CASE5B.                                                                  & Not adopted   \\
+  \hline
+  26H-ECL-GA-CAND1     & Candidate consent form (kandidatsamtykke)  & Records a candidate's consent and eligibility, or a written candidature.                                                     & All           \\
+  \hline
+  26H-ECL-GA-BALLOT2A  & Election ballot slips, CEO/CTO/CBO/CPO     & One page of ten cut-out slips per role, for Case 7.                                                                          & Adopted       \\
+  \hline
+  26H-ECL-GA-BALLOT2B  & Election ballot slips, CEO/CTO/CFO/CMO     & One page of ten cut-out slips per role, for Case 7.                                                                          & Not adopted   \\
+  \hline
+  26H-ECL-GA-VOTORD1   & Voting Order (voteringsorden)              & The order in which proposals, Amendments and elections are voted on.                                                         & All           \\
+  \hline
+  26H-ECL-GA-PROT1     & Meeting Protocol (protokoll)               & The record of every decision, completed live and signed after the meeting.                                                   & All           \\
+  \hline
+  26H-ECL-GA-MEMB1     & Membership Contract (medlemskontrakt)      & Contract signed by new members under the New Bylaws.                                                                         & Adopted       \\
+  \hline
+  26H-ECL-GA-RESP1A    & Signature Authorisation (Old Bylaws)       & Records the Board's joint decision to sign an agreement.                                                                     & Not adopted   \\
+  \hline
+  26H-ECL-GA-RESP1B    & Responsibility \& Signature Contract       & Transfers a leadership responsibility or Signature Right under the New Bylaws.                                               & Adopted       \\
+  \hline
+  26H-ECL-GA-RESP2     & Board Record                               & Board log of signed Responsibility \& Signature Contracts.                                                                   & All           \\
+  \hline
+  26H-ECL-GA-DUMMY1    & GF for Dummies                             & Plain-language, non-binding guide to the General Assembly.                                                                   & All           \\
+  \hline
+  26H-ECL-GA-GLOSS1    & Multilingual Organisational Glossary       & English (Norwegian) terms used across the set.                                                                               & All           \\
+  \hline
+  26H-ECL-GA-FULL1     & Full Combined Edition                      & Every document above, bound together in one printable, book-bindable edition.                                                & All           \\
+  \hline
+\end{longtable}
+\endgroup
+
+Only candidate elections use ballots; the standalone Bylaw Amendment ballot from the earlier document set has been retired in favour of a show-of-hands vote recorded directly in the Meeting Protocol (see \texttt{09 Bylaw Amendment Ballot/README.md}).
+
+\vsection{4. After the Bylaw Amendment vote}
+Case 5 decides which documents are used for the rest of the meeting and afterwards.
+\begin{itemize}
+  \item \textbf{Bylaw Amendment adopted:} Case 6 on 26H-ECL-GA-CASE5A, Case 7 on 26H-ECL-GA-CASE6A with ballot slips 26H-ECL-GA-BALLOT2A. From signature of the Meeting Protocol, the New Bylaws apply, and new members sign 26H-ECL-GA-MEMB1; responsibilities and Signature Right are transferred with 26H-ECL-GA-RESP1B.
+  \item \textbf{Bylaw Amendment not adopted:} Case 6 on 26H-ECL-GA-CASE5B, Case 7 on 26H-ECL-GA-CASE6B with ballot slips 26H-ECL-GA-BALLOT2B. The Old Bylaws remain in force, and the Board records joint signing decisions with 26H-ECL-GA-RESP1A.
+\end{itemize}
+
+\end{document}
