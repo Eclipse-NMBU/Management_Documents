@@ -1,15 +1,15 @@
 \makeatletter
-\def\rap@fontpath{../../../Common/}
+\def\rap@fontpath{../../Common/}
 \makeatother
-\documentclass{../../../Common/Latex/Templates/rapport}
-\input{../ga-common}
+\documentclass{../../Common/Latex/Templates/rapport}
+\input{ga-common}
 \usepackage{pdfpages}
 \usepackage{tabularx}
-\usepackage{hyperref}
+\usepackage{hyperref} 
 
 \reporttitle{Full Document Set}
 
-\input{../../../Common/Latex/cover/rapport-cover}
+\input{../../Common/Latex/cover/rapport-cover}
 \coverkind{Full Combined Edition}
 \reportsubtitle{General Assembly -- 26H-ECL-GA-FULL1}
 \orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
@@ -24,7 +24,7 @@
     \fancyfoot[R]{\thepage/\number\numexpr\getpagerefnumber{LastPage}+1\relax}%
 }
 \includepdfset{pagecommand=\thispagestyle{fullcounter}}
-\newcommand{\documentsetpath}{../Exsport23/}
+\newcommand{\documentsetpath}{Exsport23/}
 
 \begin{document}
 

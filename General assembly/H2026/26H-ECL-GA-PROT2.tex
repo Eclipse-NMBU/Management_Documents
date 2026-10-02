@@ -1,0 +1,186 @@
+\makeatletter
+\def\rap@fontpath{../../Common/}
+\makeatother
+\documentclass{../../Common/Latex/Templates/rapport}
+\input{ga-common}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amssymb}
+
+\reporttitle{Meeting Protocol}
+
+\input{../../Common/Latex/cover/rapport-cover}
+\coverkind{Meeting Protocol (protokoll)}
+\reportsubtitle{General Assembly: 26H-ECL-GA-PROT2}
+\orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
+\reportlocation{\meetinglocation, Ås}
+\date{\meetingdate, \meetingtime}
+\contactinfo{Contact: post@eclipsenmbu.no}
+
+% Standard record block for a Case: proposer, amendments, resolution, votes, notes.
+\newcommand{\caseblock}[5]{%
+  \begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5cm}|X|}
+    \hline
+    Proposer                                                 & \rule{0pt}{0.9cm}#1 \\
+    \hline
+    Amendments presented (if any), with proposer and outcome & \rule{0pt}{1.8cm}#2 \\
+    \hline
+    Resolution (exact wording adopted)                       & \rule{0pt}{1.8cm}#3 \\
+    \hline
+    Vote count (for / against / blank), where applicable     & \rule{0pt}{0.9cm}#4 \\
+    \hline
+    Protocol Notes (protokolltilførsler), if any             & \rule{0pt}{1.2cm}#5 \\
+    \hline
+  \end{tabularx}%
+}
+
+\begin{document}
+
+\makecoverpage
+\tableofcontents
+\reportmainmatter
+
+\noindent\textbf{Document/Protocol ID:} 26H-ECL-GA-PROT2\\
+\meetingline\\
+\textbf{Status:} the authoritative record of what the General Assembly decided. Completed live by the Secretary during the meeting; finalised on signature by the two Protocol Signers. Proxy voting is prohibited (Old Bylaws \S4.3), so no proxy form (fullmakt) is used.\\
+\textbf{Cross-references:} every Case Paper and Amendment referenced below carries its own Document ID; this Protocol is in turn the source Protocol ID cited by any Responsibility Contract arising from a General Assembly resolution (see 26H-ECL-GA-RESP1B, \S ``General Assembly $\to$ CEO'').\\
+\textbf{Voting method:} only the Election of Board Members (Case 7) is voted on by ballot. Every other Case, Amendment and the Bylaw Amendment (Case 5) is voted on by show of hands, with each Eligible Voter's voter number recorded against their vote where a count is required.
+
+\vsection{1. Meeting details}
+\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5cm}|X|}
+  \hline
+  Date               & \rule{0pt}{0.9cm}\meetingdate     \\
+  \hline
+  Location           & \rule{0pt}{0.9cm}\meetinglocation \\
+  \hline
+  Time (start / end) & \rule{0pt}{0.9cm}12:23 -- 14:25   \\
+  \hline
+\end{tabularx}
+
+\vsection{2. Case 1: Constitution of the Meeting (26H-ECL-GA-CASE0)}
+\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5cm}|X|}
+  \hline
+  Meeting Chair (ordstyrer) elected                 & \rule{0pt}{0.9cm}Oskar Nerheim                                                                     \\
+  \hline
+  Secretary (referent) elected                      & \rule{0pt}{0.9cm}Gabriel Røer                                                                      \\
+  \hline
+  Vote Counters (tellekorps) elected                & \rule{0pt}{0.9cm}Isba Ahmed, Sara Helena Haarbrink                                                 \\
+  \hline
+  Protocol Signers (protokollunderskrivere) elected & \rule{0pt}{0.9cm}Isba Ahmed, Sara Helena Haarbrink                                                 \\
+  \hline
+  Number of eligible voters present                 & \rule{0pt}{0.9cm}20 of 30 active members                                                           \\
+  \hline
+  Notice of Meeting approved                        & \rule{0pt}{0.9cm}Yes \quad $\boxtimes$ \quad\quad No \quad $\square$                               \\
+  \hline
+  Agenda approved                                   & \rule{0pt}{0.9cm}Yes \quad $\boxtimes$ \quad\quad No \quad $\square$                               \\
+  \hline
+  Protocol Notes, if any                            & \rule{0pt}{1.2cm}The agenda was amended to move Case 4: Semester Report to the end of the meeting. \\
+  \hline
+\end{tabularx}
+
+\vsection{3. Case 2: Previous semester's financial statements (26H-ECL-GA-CASE1)}
+\caseblock
+{The Board (CFO)}
+{None}
+{Approved by acclamation without objections.}
+{Acclamation, no objections}
+{}
+
+\vsection{4. Case 3: Coming semester's budget (26H-ECL-GA-CASE2)}
+\caseblock
+{The Board (CFO)}
+{Amendment to let the new board make a budget within 2 weeks of the GA. Adopted.}
+{Approved by acclamation without objections, with the amendment that the new board makes a budget within 2 weeks of the GA.}
+{Acclamation, no objections}
+{}
+
+\vsection{5. Case 4: Semester Report (26H-ECL-GA-CASE3)}
+\caseblock
+{CEO (Styreleder)}
+{None}
+{Taken note of (tatt til orientering).}
+{Not applicable}
+{}
+
+\vsection{6. Case 5: Bylaw Amendment (26H-ECL-GA-CASE4A)}
+\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5cm}|X|}
+  \hline
+  Stage 1 vote count (for / against / blank), with voter numbers recorded & \rule{0pt}{0.9cm}Acclamation without objections                                                                                               \\
+  \hline
+  Stage 1 result (2/3 of all members)                                     & \rule{0pt}{0.9cm}Adopted \quad $\boxtimes$ \quad\quad Not adopted \quad $\square$                                                             \\
+  \hline
+  Stage 2: Amendments voted on, with outcome                              & \rule{0pt}{1.8cm}All 3 proposed amendments were accepted by acclamation.                                                                      \\
+  \hline
+  Final text adopted as                                                   & \rule{0pt}{0.9cm}26H-ECL-GA-CASE4A, as amended per:
+  ``Amendment 1: Splitting the CBO role into a CFO and a CMO as described in 26H-ECL-GA-PROC3, with the wording changed so that the CFO has sponsor handling and the CMO has sponsor relations, and that the board corrects the rest of the bylaws with regard to the CBO.''
+  ``Amendment 2: The GA accepts that the new board makes grammatical corrections to the text, as long as it stays within the bylaws as written and implied, to the best of their ability, within 2 weeks of the GA.''
+  ``Amendment 3: That bylaw 15.6 is extended with a 4th clause stating that funds from a competition go to that team by first right, and at the discretion of the CFO and the board if that money is available for use.'' \\
+  \hline
+  Entry into force                                                        & \rule{0pt}{0.9cm}On signature of this Protocol, unless the General Assembly resolved otherwise: resolved at the protocol signing.             \\
+  \hline
+  Protocol Notes, if any                                                  & \rule{0pt}{1.2cm}                                                                                                                             \\
+  \hline
+\end{tabularx}
+
+\vsection{7. Case 6: C-suite structure (26H-ECL-GA-CASE5A / 5B)}
+\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5cm}|X|}
+  \hline
+  Case Paper used                                & \rule{0pt}{0.9cm}26H-ECL-GA-CASE5A (CEO/CTO/CBO/CPO) \quad $\square$ \quad\quad 26H-ECL-GA-CASE5B (CEO/CTO/CFO/CMO) \quad $\square$ \\
+  \hline
+  Amendments (if any), with proposer and outcome & \rule{0pt}{1.2cm}Amendment accepted by acclamation for the case to follow the C-suite setup agreed upon in 26H-ECL-GA-CASE4A.       \\
+  \hline
+  Protocol Notes, if any                         & \rule{0pt}{1.2cm}This means CEO, CTO, CFO, CMO and CPO.                                                                             \\
+  \hline
+\end{tabularx}
+
+\vsection{8. Case 7: Election of Board Members (26H-ECL-GA-CASE6A / 6B)}
+\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5cm}|X|}
+  \hline
+  Case Paper used        & \rule{0pt}{0.9cm}Follows Case 5        \\
+  \hline
+  CEO elected            & \rule{0pt}{0.9cm}Gabriel Røer          \\
+  \hline
+  CTO elected            & \rule{0pt}{0.9cm}Oskar Nerheim         \\
+  \hline
+  CFO elected            & \rule{0pt}{0.9cm}Sara Helena Haarbrink \\
+  \hline
+  CMO elected            & \rule{0pt}{0.9cm}Manar Yasir           \\
+  \hline
+  CPO elected            & \rule{0pt}{0.9cm}Rozalia Anna Ciupka   \\
+  \hline
+  Protocol Notes, if any & \rule{0pt}{1.2cm}                      \\
+  \hline
+\end{tabularx}
+
+\vsection{9. Case 8: Other business}
+\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5cm}|X|}
+  \hline
+  Matters raised                       & \rule{0pt}{1.8cm}None \\
+  \hline
+  Resolutions, with vote count, if any & \rule{0pt}{1.8cm}     \\
+  \hline
+\end{tabularx}
+
+\vsection{10. Protocol Statements / Reservations (protokolltilførsler)}
+\rule{0pt}{3cm}
+
+\vsection{11. Signatures}
+\begin{tabularx}{\textwidth}{|>{\bfseries\raggedright\arraybackslash}p{5cm}|X|}
+  \hline
+  Meeting Chair     & \rule{0pt}{1.4cm}Oskar Nerheim                                                \\
+  \hline
+  Secretary         & \rule{0pt}{1.4cm}Gabriel Røer                                                 \\
+  \hline
+  Protocol Signer 1 & \rule{0pt}{1.4cm}Sara Helena Haarbrink                                        \\
+  \hline
+  Protocol Signer 2 & \rule{0pt}{1.4cm}Isba Ahmed                                                   \\
+  \hline
+  Notes             & This Protocol is digital and therefore does not carry handwritten signatures. \\
+  \hline
+\end{tabularx}
+
+\vspace{0.4cm}
+Per Old Bylaws \S4.5, this Protocol shall be made available to members no later than two weeks after the General Assembly.
+
+\end{document}
