@@ -1,0 +1,479 @@
+\makeatletter
+\def\rap@fontpath{../../Common/}
+\makeatother
+\documentclass{../../Common/Latex/Templates/rapport}
+\usepackage{enumitem}
+\usepackage{amssymb}     % \square for checklist boxes
+\usepackage{booktabs}    % agenda table
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=blue,pdftitle={PDR Preparation Guide}]{hyperref}
+
+% Numbered chapters and subchapters for this guide (rapport.cls defaults to unnumbered)
+\setcounter{secnumdepth}{2}
+\renewcommand{\vsection}[1]{\section{#1}}
+\renewcommand{\vsubsection}[1]{\subsection{#1}}
+
+\reporttitle{PDR Preparation Guide}
+\projectname{Organisation}
+\orglogo{../../Common/Eclipse Images/EclipseFullText}
+
+\input{../../Common/Latex/cover/rapport-cover}
+\coverkind{Preliminary Design Review Preparation Guide}
+\reportsubtitle{For Team Leads}
+\orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
+\reportlocation{Ås}
+\date{4 October 2026}
+\contactinfo{Author: Oskar Nerheim}
+
+\begin{document}
+
+\makecoverpage
+\tableofcontents
+\reportmainmatter
+
+\vsection{Overview}
+The Preliminary Design Review (PDR) is a project's first review. Each team presents its preliminary design, cost, test plan and sponsorship plan, the whole organisation can ask questions and criticise it, and the Technical Leader decides whether the project can move into detailed design towards the Critical Design Review (CDR).
+
+\begin{itemize}
+  \item \textbf{Systems} presents the project as a whole: requirements, interfaces, safety, permits and operations on the day. Brings the requirements and verification matrix, hazard list, go/no-go procedure, operations sequence and failsafes.
+  \item \textbf{Mechanical (including propulsion)} presents structure, mechanisms, recovery and propulsion. Brings computer-aided design (CAD) models, a mass budget, load estimates and a manufacturing plan.
+  \item \textbf{Electronics} presents boards, sensors, radios and power. Brings a block diagram, a power budget and schematics or a KiCad plan.
+  \item \textbf{Software} presents onboard, ground and operator software. Brings the software architecture, a state machine and a data logging plan.
+  \item \textbf{Business} presents budget and funding. Brings the project budget, funding status and sponsorship plan.
+\end{itemize}
+
+Every technical team answers the same eight questions for each subsystem it presents, and includes a trade study, its top risks and a schedule to CDR. The main sections apply to every project; the chapter at the end adds what is specific to each type of project.
+
+\vsection{Purpose and how to use this guide}
+At the Preliminary Design Review (PDR), every team shows that its part of the project is feasible, costed, testable and fundable. If the review is passed, the project moves into detailed design towards the Critical Design Review (CDR).
+
+This guide is written for any Eclipse NMBU project. The main sections apply to every project, and the last chapter adds what is specific to each type of project.
+
+The PDR follows a modified NASA project life cycle. It is the project's first review, so it also sets the mission and system requirements. You are not expected to have finished drawings or code, but you must show:
+\begin{itemize}
+  \item The mission and system requirements, and a preliminary design that meets them
+  \item Why this design was chosen over the alternatives you considered
+  \item What it costs, and where the money and equipment will come from
+  \item How you will prove it works before the launch or event
+  \item The biggest risks and what you will do about them
+\end{itemize}
+
+\vsection{Review structure and agenda}
+Each project holds its own PDR, with an agenda built from that project's subsystems. Time is given per subsystem according to how complex and risky it is, not equally per team. The project lead sets the agenda and sends it out two weeks before the review.
+
+Presentations follow the team order: Systems first, so everyone shares the same picture of the whole project; then Mechanical, Electronics and Software; and Business last, so the budget is built from what the technical teams presented. Each team is one chapter of the review, and each subsystem the team presents is a subchapter of that chapter, so the agenda reads team by team.
+
+An example agenda and the subsystems to cover for each type of project are in the last chapter. Plan a break if the review runs over two hours. Every subsystem presentation includes its own cost, sponsorship and test plan. Teams that present at more than one project's review can prepare shared material once (team intro, tools, workflow) and reuse it.
+
+\vsection{How the review is judged}
+The review is open: everyone in the organisation can ask questions and criticise the design. The project is judged against fixed criteria, and every issue raised is logged, so feedback is acted on before CDR.
+
+\vsubsection{Who takes part}
+\begin{itemize}
+  \item Every member of Eclipse NMBU is welcome and may ask questions and criticise any part of the design
+  \item The Technical Leader chairs the review, keeps time, and makes sure every question gets an answer or is logged
+  \item External guests are welcome too, for example from our industry contacts, the NORSTEC network or Norwegian University of Life Sciences (NMBU) faculty; invite them early, as review season fills up fast
+  \item The slides are shared with the whole organisation two days before, so people can prepare questions
+\end{itemize}
+
+\vsubsection{Pass criteria}
+A project passes when:
+\begin{itemize}
+  \item Every mission and system requirement is traced to a subsystem and a verification method
+  \item Mass, power and cost budgets close with margin
+  \item The test plans together cover every requirement
+  \item The top risks have a mitigation and an owner
+  \item No safety issue is left open
+\end{itemize}
+
+After the review, the Technical Leader decides on one of three outcomes, based on the criteria and the issues raised:
+\begin{itemize}
+  \item \textbf{Pass:} the criteria are met, and detailed design starts towards CDR.
+  \item \textbf{Pass with actions:} the criteria are mostly met and issues are logged. Detailed design starts, and the actions are closed by a set date.
+  \item \textbf{Re-review:} there are major gaps in design, budget or safety. The affected teams present again within three weeks.
+\end{itemize}
+
+\vsubsection{Issue tracking}
+Every issue raised during the review is logged as a Review Item Discrepancy (RID) in one shared sheet for the project. Each RID has a description, the subsystem it concerns, a severity (critical, major or minor), an owner and a due date. Critical RIDs are closed before detailed design continues, and all RIDs are closed before CDR.
+
+\vsection{Questions every technical subsystem must answer}
+Mechanical, Electronics, Software and Systems all answer the same eight questions, in this order, for every subsystem they present. Use them as the backbone of your slides so the audience can compare subsystems directly.
+
+\begin{enumerate}
+  \item \textbf{Define the subsystem.} What is it, what are its boundaries, and what are its interfaces to the other subsystems? Include a block diagram or sketch.
+  \item \textbf{Why do we need it?} Which mission and system requirements does it fulfil? What happens to the mission if it fails or is left out?
+  \item \textbf{Materials.} What will it be made of or built from, and why? List the main materials, components or libraries. If there were alternatives, list the ones you rejected and why.
+  \item \textbf{Equipment requirements.} What tools, machines, software licences, test rigs and workspace do you need? Mark what we already have, what we can borrow at NMBU, and what we must buy or rent.
+  \item \textbf{Price.} A bill of materials with item, quantity, unit price, supplier and total. Add a 15--20\,\% margin for spares, shipping and mistakes, and state it separately. If an item is shared with another project, say which project pays for it.
+  \item \textbf{Testing and simulations.} How will you prove the subsystem works? Give a test and simulation plan: what is tested or simulated, how, with what equipment or tools, the pass/fail criteria, and when it happens relative to CDR and the launch or event.
+  \item \textbf{Can it be sponsored?} Which parts of the cost could be covered by in-kind sponsorship (parts, materials, machining, software) instead of cash?
+  \item \textbf{Where can we get sponsors?} Name concrete companies, suppliers or programmes to contact for your subsystem, and who on your team will contact them.
+\end{enumerate}
+
+Each team also includes:
+\begin{itemize}
+  \item \textbf{Trade study:} only where there were alternatives: the main design choice, the alternatives you compared, the criteria, and why you picked what you did. If there were no alternatives, leave it out
+  \item \textbf{Risks:} the three to five biggest risks, how likely and how serious each is, and your plan to reduce it
+  \item \textbf{Schedule and capacity:} your plan to CDR with the critical path marked, how many active members you have, and how exam periods and the quiet months of December, January and May affect it. If your team works on several projects, show how your time is split between them
+\end{itemize}
+
+\vsection{Mechanical}
+On top of the eight questions, Mechanical shows that the structure can survive its environment and that every part fits together. Mechanical also covers propulsion and recovery where the project has them.
+\begin{itemize}
+  \item Preliminary computer-aided design (CAD) of the full system and each major part
+  \item Mass budget with margin, against the limit set by the mission, the host vehicle or the competition rules
+  \item Preliminary load estimates with safety factors
+  \item Manufacturing plan: which parts are machined, printed or laid up, where, and by whom
+  \item Interfaces to Electronics (mounting, cable routing, access hatches)
+\end{itemize}
+Test plan should cover at least material or coupon tests and fit checks. Project-specific points and extra tests are in the last chapter.
+
+\vsection{Electronics}
+On top of the eight questions, Electronics shows that the system can be powered, sense what it needs, communicate and act reliably.
+\begin{itemize}
+  \item Block diagram of all boards, sensors, radios and power, with the communication buses between them (I2C, SPI, UART, CAN)
+  \item Chosen microcontroller, sensors and radio, with the reasons for each choice
+  \item Power budget: consumption per operating state and battery capacity, with margin for delays
+  \item Preliminary schematics or a KiCad plan for each printed circuit board (PCB), and a board-by-board build schedule
+  \item Connectors and cabling that survive vibration and handling
+\end{itemize}
+Test plan should cover at least bench tests per board, sensor calibration, communication range tests and battery endurance tests. Project-specific points and extra tests are in the last chapter.
+
+\vsection{Software}
+On top of the eight questions, Software shows how the onboard and ground software behave in every phase, including when things go wrong. For Software, ``materials'' means languages, frameworks and libraries, and ``price'' is mostly licences, development hardware and test rigs.
+\begin{itemize}
+  \item Software architecture: onboard software, ground or operator software, the communication link, and how they talk to each other
+  \item State machine for the onboard software, with the condition that triggers each transition
+  \item Data logging plan: what is logged, at what rate, and how data survives a crash or power loss
+  \item Operator interface: what the operators see and what commands they can send
+  \item Development workflow: version control, code review, and how a build is frozen before the launch or event
+\end{itemize}
+Test plan should cover at least unit tests, hardware-in-the-loop tests, fault injection (sensor dropouts, resets, link loss) and a full end-to-end test with the real electronics. Project-specific points and extra tests are in the last chapter.
+
+\vsection{Systems}
+Systems answers the eight questions for the project as a whole, then shows how the subsystems come together and how we operate safely on launch or event day. Project-specific hazards, permits, equipment, operations sequences and failsafes are in the last chapter.
+
+\vsubsection{Requirements and integration}
+\begin{itemize}
+  \item Mission and system requirements, each traced to the subsystem that owns it
+  \item Verification matrix: each requirement mapped to how it is verified (test, analysis, inspection or demonstration) and the team responsible
+  \item System block diagram and an interface list (mechanical, electrical, data) between all subsystems
+  \item Written interface agreements with any other project this one depends on
+  \item System-level mass, power and cost budgets, built from the subsystem numbers
+  \item Integration plan: in what order subsystems are assembled and tested together before CDR and the Operational Readiness Review (ORR)
+\end{itemize}
+
+\vsubsection{Safety and hazard analysis}
+A hazard list for the whole project: each hazard, its cause, how likely and how serious it is, the mitigation, and who owns it. Cover at least batteries, moving parts and tools in the workshop.
+
+\vsubsection{Permits, regulations and venue}
+List every permit, registration and agreement the project needs, with its lead time and owner. Some take months, so the plan starts at PDR. Check the current requirements, since rules and processes change.
+
+\vsubsection{Ground support equipment}
+List every piece of equipment needed on the day that is not part of the vehicle or robot, and give each an owning team.
+
+\vsubsection{Go/no-go procedures}
+Propose how decisions are made before a launch or run. The proposal should answer:
+\begin{itemize}
+  \item Which roles take part in the poll (for example mission director, safety officer, and one lead per subsystem), and who has final authority
+  \item At which points a poll is held
+  \item The criteria for each role
+  \item What a single no-go means: hold, scrub, or a defined recovery path
+  \item How the poll and its result are logged
+\end{itemize}
+
+\vsubsection{Operations sequence}
+Draft the sequence of events on the day, from arrival to packing up, with who does what at each step. The final version becomes a written checklist that is rehearsed before ORR.
+
+\vsubsection{Failsafes}
+List what happens when something goes wrong, and which subsystem owns the response. Every project covers injury or fire on site, with first aid, extinguishers and emergency contacts.
+
+\vsection{Business presentation and budget}
+The PDR ends with a business presentation that presents the project's budget for approval.
+\begin{itemize}
+  \item Total project budget built from each subsystem's bill of materials, plus project costs such as travel, permits, insurance or competition fees
+  \item Funding status: confirmed money, grant applications sent or planned (for example to SpareBank 1 Stiftelsen or Sparebankstiftelsen DNB), and expected sponsorship
+  \item Sponsorship plan: which companies are approached, at which tier (Bronze, Silver, Gold, Main Partner), by whom and by when
+  \item In-kind sponsorship gathered from the technical teams' answers to questions 7 and 8
+  \item The funding gap, and what is cut or postponed if it is not closed
+  \item A spending timeline: when money is needed relative to CDR, ORR and the launch or event
+\end{itemize}
+
+\vsubsection{Combined budget}
+When Eclipse NMBU runs several projects in the same year, the last PDR of the round also presents a combined budget:
+\begin{itemize}
+  \item All project budgets side by side, and the total
+  \item Shared costs (tools, equipment used by several projects, outreach, memberships) shown once, so nothing is counted twice
+  \item Total funding against total cost
+  \item Which project gets priority if money runs short
+  \item Sponsors approached once for Eclipse NMBU as a whole rather than once per project
+\end{itemize}
+
+Each technical lead sends their bill of materials and sponsor list to the Business lead at least one week before the PDR.
+
+\vsection{Presentation format and deliverables}
+Use the Eclipse NMBU slide template and keep to the time limits above; detail that does not fit goes in an appendix.
+
+Name all files with the Eclipse naming convention (\texttt{semester\_organization\_project\_type\_description\_version}).
+
+\vsection{Rapport}
+Each project also hands in a written \emph{rapport}. The rapport holds all the information that is presented at the PDR, so the review itself can be a discussion rather than a read-through. The slides summarise the rapport; the rapport contains the full answers. Each team lead checks that the rapport contains the parts below before it is sent out.
+
+\vsubsection{Structure}
+The rapport follows the order of the review. Its chapters and subchapters are numbered, so they can be referred to during the review:
+\begin{itemize}
+  \item \textbf{Chapter 1:} Project overview
+  \item \textbf{Chapters 2 to 5:} the technical teams in review order: 2 Systems, 3 Mechanical, 4 Electronics, 5 Software. Each team chapter has one subchapter per subsystem it presents, numbered x.1, x.2 and so on
+  \item Each subsystem subchapter x.y answers the eight questions in order, numbered x.y.1 to x.y.8, so readers can compare subsystems directly
+  \item \textbf{Chapter 6:} Business
+\end{itemize}
+
+\vsubsection{Project overview}
+\begin{itemize}
+  \item Mission and system requirements, each traced to the subsystem that owns it
+  \item System block diagram and interface list (mechanical, electrical, data)
+  \item Verification matrix: each requirement, how it is verified, and the responsible team
+  \item System-level mass, power and cost budgets, built from the subsystem numbers
+  \item Written interface agreements with any other project this one depends on
+  \item Integration plan up to CDR and ORR
+  \item Hazard list, permit and venue status, ground support equipment with owners
+  \item Draft go/no-go procedure, operations sequence and failsafe list
+\end{itemize}
+
+\vsubsection{Subsystem subchapters (x.y)}
+For each subsystem subchapter, the rapport contains:
+\begin{itemize}
+  \item The answers to the eight questions, one numbered section per question (x.y.1 to x.y.8)
+  \item Block diagram of the subsystem and its interfaces
+  \item Bill of materials with item, quantity, unit price, supplier, total, and the margin stated separately
+  \item Test plan with what is tested, how, equipment, pass/fail criteria and dates
+  \item Sponsor list with a named contact person on our side
+  \item Trade study for each main design choice where alternatives were compared, with the alternatives, criteria and reasons
+  \item Top three to five risks, with likelihood, severity, mitigation and owner
+  \item Schedule to CDR with the critical path marked, active member count, and how exams and the quiet months affect the plan
+  \item Open questions for the organisation
+\end{itemize}
+
+\vsubsection{Business}
+\begin{itemize}
+  \item Total project budget, built from the subsystem bills of materials, plus project costs
+  \item Funding status, sponsorship plan by tier, in-kind sponsorship and the funding gap
+  \item Spending timeline against CDR, ORR and the launch or event
+  \item Combined budget, when several projects run in the same year
+\end{itemize}
+
+\vsubsection{Delivery}
+The rapport is shared with the whole organisation two days before the PDR, together with the slides. The bill of materials and sponsor lists go to the Business lead one week before the PDR, as described above. The rapport is named with the Eclipse naming convention.
+
+\vsection{Timeline}
+The PDR is followed by CDR, ORR and the launch or event. In a typical year the PDR is in early November, CDR in early February, ORR in late April and the launch in June. Little work happens in December, January and May, so the weeks right after the PDR are the main window for detailed design.
+\begin{itemize}
+  \item Two weeks before the PDR: the project lead sends out the agenda
+  \item One week before: bill of materials and sponsor lists to the Business lead
+  \item Two days before: slides shared with the whole organisation
+  \item After the PDR: RIDs assigned and tracked to closure before CDR
+\end{itemize}
+
+Ask the Technical Leader if anything in this guide is unclear.
+
+\vsection{What each project should use}
+The sections above apply to every project. This chapter adds what is specific to each type of project. For a new project, start from the closest type and adapt it.
+
+\vsubsection{Rocket}
+\noindent\textbf{Agenda example.} Times are presentation plus questions, in minutes:
+
+\begin{center}
+\begin{tabular}{@{}lc@{}}
+  \toprule
+  \textbf{Team / subsystem} & \textbf{Time (presentation + questions)} \\
+  \midrule
+  \multicolumn{2}{@{}l}{\textbf{Systems}} \\
+  \quad System overview and requirements & 15 + 5 \\
+  \quad Launch schedule and operations & 10 + 5 \\
+  \multicolumn{2}{@{}l}{\textbf{Mechanical}} \\
+  \quad Airframe and structure & 10 + 5 \\
+  \quad Propulsion & 15 + 10 \\
+  \quad Recovery & 10 + 5 \\
+  \multicolumn{2}{@{}l}{\textbf{Electronics}} \\
+  \quad Flight computer & 10 + 5 \\
+  \quad Radio frequency (RF) board & 10 + 5 \\
+  \quad Ground station & 5 + 5 \\
+  \multicolumn{2}{@{}l}{\textbf{Software}} \\
+  \quad Flight software & 10 + 5 \\
+  \multicolumn{2}{@{}l}{\textbf{Business}} \\
+  \quad Budget and sponsorship & 15 + 10 \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+This agenda totals about 2 hours 50 minutes, so plan a break halfway.
+
+\subsubsection*{Mechanical}
+\begin{itemize}
+  \item Airframe, nose cone, fins, bulkheads, couplers and internal bays
+  \item Centre of gravity and centre of pressure, and the resulting stability margin
+  \item Loads at launch, maximum dynamic pressure (max-Q), recovery deployment and landing
+  \item Recovery system: parachute sizes, deployment events, descent rates, and how the recovery bay is sealed from other parts
+  \item Propulsion: motor choice or design, propellant, casing and nozzle, expected thrust curve, and how energetic materials are stored and handled
+  \item Payload bay envelope and mass limit, agreed in writing with the Payload team
+\end{itemize}
+
+\subsubsection*{Electronics}
+\begin{itemize}
+  \item Flight computers with an inertial measurement unit (IMU), barometer and Global Navigation Satellite System (GNSS) receiver
+  \item Telemetry radio link to the ground station
+  \item Redundant deployment electronics: independent flight computers and separate batteries
+  \item Arming and safety: how pyro channels are armed, and how they stay safe until the pad
+  \item Power and data interfaces to the payload, agreed with the Payload team
+  \item Ground ignition system, together with Systems
+\end{itemize}
+
+\subsubsection*{Software}
+\begin{itemize}
+  \item Flight states (pad, armed, boost, coast, apogee, descent, landed)
+  \item How apogee and other events are detected, and how false triggers are prevented
+\end{itemize}
+
+\subsubsection*{Systems}
+\begin{itemize}
+  \item Hazards: energetic materials, pressure, pyrotechnics and the launch site
+  \item Permits: rules from the Norwegian Directorate for Civil Protection (DSB) for propellant and pyrotechnics, airspace coordination with the Civil Aviation Authority Norway (Luftfartstilsynet), the launch site agreement and insurance
+  \item Ground support equipment: launch rail, ignition system, ground station and transport
+  \item Go/no-go criteria: weather limits (wind, cloud ceiling, precipitation), range clear, telemetry and GNSS lock, battery levels, recovery armed
+\end{itemize}
+
+\noindent\textbf{Operations sequence:}
+\begin{enumerate}
+  \item Site setup and range safety briefing
+  \item Vehicle assembly and final checks
+  \item Moving the vehicle to the pad and mounting it on the rail
+  \item Powering up avionics and payload, and confirming telemetry
+  \item Arming recovery and ignition systems, then clearing the pad
+  \item Final go/no-go poll and terminal countdown
+  \item Launch, flight tracking and recovery deployment
+  \item Recovery of the vehicle, safing any unfired charges, and data download
+\end{enumerate}
+
+\noindent\textbf{Failsafes:}
+\begin{itemize}
+  \item Misfire or hang-fire: wait time before approach, and how the igniter is safed
+  \item Hold or abort during countdown: how the vehicle is returned to a safe state
+  \item Loss of telemetry in flight
+  \item Primary flight computer failure: how the backup takes over recovery
+  \item Parachute fails to deploy or deploys early
+  \item Vehicle lands outside the planned area
+\end{itemize}
+
+\noindent\textbf{Extra tests:} structural load tests, ground deployment tests of the recovery system, static fire tests of the motor, a vacuum chamber or simulated flight test of the deployment logic, and software tests with recorded or simulated flight data.
+
+\vsubsection{Payload}
+\noindent\textbf{Agenda, by team:}
+\begin{itemize}
+  \item \textbf{Systems:} system overview and requirements, interface with the rocket, integration and launch-day steps
+  \item \textbf{Mechanical:} structure and mounting
+  \item \textbf{Electronics:} experiment or mission sensors, power and data storage
+  \item \textbf{Software:} payload software
+  \item \textbf{Business:} budget and sponsorship
+\end{itemize}
+
+\subsubsection*{Mechanical}
+\begin{itemize}
+  \item Structure that fits the rocket's payload bay envelope and mass limit, agreed in writing with the Rocket team
+  \item How it survives launch acceleration, vibration and landing
+  \item Mounting, and any release or deployment mechanism
+  \item Its own recovery system, if it has one
+\end{itemize}
+
+\subsubsection*{Electronics}
+\begin{itemize}
+  \item Electronics for the experiment or mission sensors
+  \item Own battery or power from the rocket, agreed with the Rocket team
+  \item Data storage that survives landing, and any downlink
+  \item Components rated for launch acceleration and vibration
+\end{itemize}
+
+\subsubsection*{Software}
+\begin{itemize}
+  \item Experiment sequence and how it starts (launch detection, timer or signal from the rocket)
+  \item Behaviour if the payload resets during flight
+\end{itemize}
+
+\subsubsection*{Systems}
+\begin{itemize}
+  \item Interface agreement with the Rocket team covering size, mass, mounting, power, data and any signals between them
+  \item Permits handled together with the Rocket team
+  \item Ground support equipment: ground station or data download setup
+  \item Operations: follows the Rocket's sequence, adding the payload's own power-on, logging check and data download
+\end{itemize}
+
+\noindent\textbf{Failsafes:}
+\begin{itemize}
+  \item Payload fails to power on or start logging before launch
+  \item A payload fault must never affect the rocket's recovery; show how it is isolated
+\end{itemize}
+
+\noindent\textbf{Extra tests:} vibration or shake tests, a fit check in the real payload bay, a full power-on and logging test in flight configuration, and software tests with simulated flight data.
+
+\vsubsection{Lunar robot}
+\noindent\textbf{Agenda, by team:}
+\begin{itemize}
+  \item \textbf{Systems:} system overview and requirements, competition operations
+  \item \textbf{Mechanical:} chassis and drivetrain, tools and manipulators
+  \item \textbf{Electronics:} motor drivers and power, sensors and navigation, communication link
+  \item \textbf{Software:} control software and autonomy
+  \item \textbf{Business:} budget and sponsorship
+\end{itemize}
+
+Use the competition rules and deadlines in place of the launch date wherever the guide mentions the launch or event.
+
+\subsubsection*{Mechanical}
+\begin{itemize}
+  \item Chassis, drivetrain, wheels or tracks, and suspension for the expected terrain
+  \item Manipulators or tools needed for the competition tasks
+  \item Size and mass limits from the competition rules
+  \item Protection against dust, impacts and temperature where relevant
+\end{itemize}
+
+\subsubsection*{Electronics}
+\begin{itemize}
+  \item Motor drivers and power distribution for drive and tools
+  \item Sensors for navigation and tasks (cameras, lidar, IMU, wheel encoders)
+  \item Communication link to the operators, with expected range, bandwidth and latency
+  \item A hardware emergency stop that works independently of the software
+\end{itemize}
+
+\subsubsection*{Software}
+\begin{itemize}
+  \item Control mode: teleoperated, autonomous or a mix, and which tasks use which
+  \item Navigation and localisation approach
+  \item Task logic for each competition task
+  \item Behaviour on high latency or loss of communication
+\end{itemize}
+
+\subsubsection*{Systems}
+\begin{itemize}
+  \item Hazards: batteries, moving parts and pinch points
+  \item Competition registration, rules, deadlines and travel
+  \item Ground support equipment: operator station, charging, test arena, transport crates and spare parts
+  \item Go/no-go criteria: battery levels, link quality, and all functions checked
+\end{itemize}
+
+\noindent\textbf{Operations sequence:}
+\begin{enumerate}
+  \item Arrival, setup of the operator station and check-in with organisers
+  \item Robot assembly, charging and function checks
+  \item Communication link check from the operator station
+  \item Go/no-go poll before the run
+  \item Competition run
+  \item Data download, inspection and repairs before the next run
+\end{enumerate}
+
+\noindent\textbf{Failsafes:}
+\begin{itemize}
+  \item Loss of communication: the robot stops safely
+  \item Emergency stop by operators or organisers
+  \item Low battery, tipping over or getting stuck
+\end{itemize}
+
+\noindent\textbf{Extra tests:} driving tests on representative terrain, tests of each competition task, emergency-stop tests, full-length runs on battery, and full timed runs in a test arena set up like the competition.
+
+\end{document}
