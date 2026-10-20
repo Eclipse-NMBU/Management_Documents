@@ -1,0 +1,575 @@
+\makeatletter
+\def\rap@fontpath{../../../Common/}
+\makeatother
+\documentclass{../../../Common/Latex/Templates/rapport}
+\input{../ga-common}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{lineno}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue}
+
+% Norwegian-language document. The Genos font has no precomposed glyph for
+% 'å', so it is written \r{a} / \r{A} throughout, as in 26H-ECL-GA-GLOSS1;
+% 'ø' and 'æ' are written literally. \contentsname is renamed because the
+% rapport class ships no language option.
+\renewcommand{\contentsname}{Innhold}
+% \meetingdate in ga-common.tex is written in English ("30 September 2026").
+% This document is the Norwegian controlling text, so it carries its own
+% Norwegian rendering of the same date -- keep the two in step.
+\newcommand{\motedato}{30. september 2026}
+\newcommand{\motelinje}{\textbf{Møte:} \motedato, \meetingtime, \meetinglocation}
+
+% ga-common.tex sets the logo paths as ../../Common/..., which is one level
+% short from this folder and resolves to "General assembly/Common". Point
+% them at the real Common/ folder, as gf-for-dummies.tex does.
+\projectlogo{../../../Common/Eclipse Images/EclipseMoon}
+\orglogo{../../../Common/Eclipse Images/EclipseFullText}
+
+\reporttitle{Nye vedtekter (norsk originaltekst)}
+
+\input{../../../Common/Latex/cover/rapport-cover}
+\coverkind{Vedtekter}
+\reportsubtitle{Nye vedtekter, norsk originaltekst: 26H-ECL-GA-CASE4E}
+\orgname{Eclipse NMBU}{Norges miljø- og biovitenskapelige universitet}
+\reportlocation{\meetinglocation, \r{A}s}
+\date{\motedato, \meetingtime}
+\contactinfo{Kontakt: post@eclipsenmbu.no}
+
+\begin{document}
+
+\makecoverpage
+\tableofcontents
+\reportmainmatter
+
+\noindent\textbf{Dokument-ID:} 26H-ECL-GA-CASE4E\\
+\motelinje\\
+\textbf{Status:} vedlegg til sak 5 (26H-ECL-GA-CASE4A). Dette er den norske originalteksten til de foresl\r{a}tte nye vedtektene, ``Vedtekter for Eclipse NMBU: Omstrukturert utkast, 21. september 2026''. Den engelske teksten i 26H-ECL-GA-CASE4A er en oversettelse av denne.\\
+\textbf{Kontrollerende versjon:} den norske teksten er den kontrollerende versjonen med mindre generalforsamlingen vedtar den engelske versjonen som kontrollerende, jf.\ foresl\r{a}tt \S\,17.3. Ved motstrid mellom spr\r{a}kversjonene g\r{a}r denne teksten foran.\\
+\textbf{Vedtakskrav:} vedtakelse krever at 2/3 av alle medlemmer i Eclipse NMBU stemmer for (gamle vedtekter \S\,4.6). Enkelte endringsforslag til teksten vedtas med simpelt flertall, jf.\ 26H-ECL-GA-CASE4C.
+
+\vsection{Hvordan lese dette dokumentet}
+Terminologien følger den flerspr\r{a}klige organisasjonsordlisten, 26H-ECL-GA-GLOSS1: innarbeidede termer skrives \textbf{norsk (engelsk)} ved første bruk i hver paragraf. Kryssreferanser av formen ``jf.\ \S\,X'' peker til en annen paragraf i \emph{disse foresl\r{a}tte nye vedtektene}, ikke til de gamle vedtektene, med mindre noe annet er oppgitt; hver slik kryssreferanse nedenfor er en klikkbar lenke til det leddet den viser til. Paragrafnummereringen er den samme som i den engelske teksten (26H-ECL-GA-CASE4A), slik at de to kan sammenholdes ledd for ledd. Tallet i margen ved hver linje er linjens nummer i dette dokumentet, slik at endringsforslag og diskusjon kan festes til en bestemt linje.
+
+\linenumbers
+
+\vsection{Del I: Grunnlag (Part I: Foundations)}
+
+\vsubsection{\S 1 Navn og stiftelse (Name and founding)}\label{nbylaw:1}
+\textbf{\S 1.1 Navn.}\label{nbylaw:1.1} Foreningens navn er Eclipse NMBU.
+
+\textbf{\S 1.2 Stiftelse og tilknytning.}\label{nbylaw:1.2} Eclipse NMBU er en frivillig studentforening ved Norges miljø- og biovitenskapelige universitet (NMBU), stiftet 9.\ oktober 2024.
+
+\vsubsection{\S 2 Form\r{a}l og grunnprinsipper (Purpose and core principles)}\label{nbylaw:2}
+\textbf{\S 2.1 Form\r{a}l.}\label{nbylaw:2.1} Eclipse NMBU skal være en sosial og faglig arena for studenter med interesse for rommet. Foreningen er primært for studenter som er semesterregistrert ved NMBU.
+
+\textbf{\S 2.2 Virksomhet.}\label{nbylaw:2.2} Foreningens virksomhet er frivillig og rettet mot forskning og utvikling (FoU). Den overordnede visjonen er \r{a} utvikle bærekraftig romteknologi med utgangspunkt i FNs bærekraftsm\r{a}l.
+
+\textbf{\S 2.3 Grunnprinsipper.}\label{nbylaw:2.3} Foreningens virksomhet bygger p\r{a} følgende grunnprinsipper:
+\begin{enumerate}
+  \item \textbf{Dokumentasjon:} det som ikke er skriftlig dokumentert, regnes ikke som gjort.
+  \item \textbf{Ekstremt eierskap (extreme ownership):} g\r{a}r noe galt, ligger ansvaret b\r{a}de hos ledelsen og hos det enkelte medlemmet.
+\end{enumerate}
+
+\textbf{\S 2.4 Etikk og miljø.}\label{nbylaw:2.4} Foreningen skal s\r{a} langt det er mulig ta hensyn til miljømessige og etiske faktorer n\r{a}r virksomheten planlegges. I kontakt med andre organisasjoner, foreninger, arrangementer og kunder skal foreningen oppsøke alternativer som ivaretar etiske og miljømessige hensyn.
+
+\textbf{\S 2.5 Organisatorisk bærekraft.}\label{nbylaw:2.5} Foreningens struktur, oppbygning og organisering skal sikre at framtidige generasjoner av medlemmer kan bygge videre p\r{a} tidligere virksomhet, blant annet gjennom dokumentasjon, arkivering og erfaringsoverføring, jf.\ \hyperref[nbylaw:10.2]{\S\,10.2} og \hyperref[nbylaw:16.5]{\S\,16.5}.
+
+\vsubsection{\S 3 Organisasjonsform (Organisational form)}\label{nbylaw:3}
+\textbf{\S 3.1 Uavhengighet.}\label{nbylaw:3.1} Foreningen er politisk og religiøst uavhengig.
+
+\textbf{\S 3.2 Juridisk status.}\label{nbylaw:3.2} Foreningen er en frittst\r{a}ende juridisk person med medlemmer, og er selveiende. Verken medlemmer eller andre har krav p\r{a} foreningens formue eller eiendom, og de hefter heller ikke for foreningens gjeld eller andre forpliktelser.
+
+\textbf{\S 3.3 Driftsspr\r{a}k.}\label{nbylaw:3.3}
+\begin{enumerate}
+  \item Foreningens driftsspr\r{a}k er engelsk.
+  \item Alle tekster foreningen produserer p\r{a} norsk, skal oversettes til engelsk.
+  \item Tekster p\r{a} engelsk skal oversettes til norsk ved forespørsel.
+\end{enumerate}
+
+\vsubsection{\S 4 Definisjoner og ordforklaringer (Definitions)}\label{nbylaw:4}
+\textbf{\S 4.1 Virkeomr\r{a}de.}\label{nbylaw:4.1} Termene i denne paragrafen gjelder gjennom hele vedtektene. Termene skal brukes konsekvent i vedtak, protokoller og annen organisatorisk dokumentasjon.
+
+\textbf{\S 4.2 Organer.}\label{nbylaw:4.2}
+\begin{enumerate}
+  \item Generalforsamling (GF): foreningens øverste organ, jf.\ \hyperref[nbylaw:8]{\S\,8}.
+  \item Styret: foreningens øverste organ mellom generalforsamlingene, jf.\ \hyperref[nbylaw:12]{\S\,12}.
+  \item Valg- og kontrollkomit\'e: en komit\'e valgt av generalforsamlingen som gjennomfører valg til verv og fører tilsyn med at vedtektene følges, jf.\ \hyperref[nbylaw:13]{\S\,13}.
+\end{enumerate}
+
+\textbf{\S 4.3 Roller.}\label{nbylaw:4.3}
+\begin{enumerate}
+  \item CEO (Chief Executive Officer): styreleder.
+  \item CTO (Chief Technical Officer): teknisk ansvarlig og nestleder.
+  \item CBO (Chief Business Officer): forretnings- og økonomiansvarlig.
+  \item CPO (Chief People Officer): personal- og medlemsansvarlig.
+  \item Prosjektleder: et medlem med overordnet ansvar for gjennomføring av et prosjekt.
+  \item Teamleder: et medlem med ansvar for et team, det vil si en faggruppe som g\r{a}r p\r{a} tvers av flere prosjekter, jf.\ \hyperref[nbylaw:12.9]{\S\,12.9}.
+  \item Nærmeste leder: den rollen et medlem rapporterer til i foreningens styringsstruktur. For et ordinært medlem er nærmeste leder teamlederen. Teamlederen rapporterer til prosjektlederen for det aktuelle prosjektet, og prosjektlederen til ansvarlig styremedlem, jf.\ \hyperref[nbylaw:16.2]{\S\,16.2}.
+  \item Ansvarsverv: et tildelt og avgrenset lederansvar ut over ordinært medlemskap, herunder prosjektleder og teamleder.
+\end{enumerate}
+
+\textbf{\S 4.4 Medlemskap.}\label{nbylaw:4.4}
+\begin{enumerate}
+  \item Aktivt medlem: synonymt med ``fullt medlem''. Termen aktivt medlem brukes i disse vedtektene, jf.\ \hyperref[nbylaw:5]{\S\,5}.
+  \item Mentor: medlemsniv\r{a} for personer p\r{a} foreningens mentorliste, jf.\ \hyperref[nbylaw:5.4]{\S\,5.4}.
+  \item Alumni: medlemsniv\r{a} for personer hvis medlemskontrakt er utløpt uten fornyelse, jf.\ \hyperref[nbylaw:5.4]{\S\,5.4}.
+  \item Aktiv periode: NMBUs v\r{a}r- og høstparallell, fra semesterstart til begynnelsen av eksamensperioden.
+\end{enumerate}
+
+\textbf{\S 4.5 Generalforsamling og valg.}\label{nbylaw:4.5}
+\begin{enumerate}
+  \item Valggeneralforsamling: generalforsamlingen i v\r{a}rsemesteret, der tillitsverv velges for kommende periode, jf.\ \hyperref[nbylaw:8.2]{\S\,8.2}.
+  \item Suppleringsgeneralforsamling: generalforsamlingen i høstsemesteret, der det holdes suppleringsvalg til ledige verv og valg til valg- og kontrollkomiteen, jf.\ \hyperref[nbylaw:8.2]{\S\,8.2}.
+  \item Tillitsverv: et verv som velges av generalforsamlingen for en periode, herunder styreverv og verv i valg- og kontrollkomiteen, jf.\ \hyperref[nbylaw:10]{\S\,10}.
+  \item Forslagsrett: retten til \r{a} sende inn saker og endringsforslag til generalforsamlingen, jf.\ \hyperref[nbylaw:5.5]{\S\,5.5}.
+  \item Endringsforslag: et forslag om \r{a} endre en sak p\r{a} sakslisten, jf.\ \hyperref[nbylaw:9.5]{\S\,9.5}.
+  \item Forh\r{a}ndsbenking: nominasjon av en kandidat før generalforsamlingen, jf.\ \hyperref[nbylaw:11.3]{\S\,11.3}.
+  \item Benkeforslag: nominasjon av en kandidat fra salen under generalforsamlingen, jf.\ \hyperref[nbylaw:11.3]{\S\,11.3}.
+  \item Benketale: en tale der den som har fremmet et benkeforslag, begrunner nominasjonen.
+  \item Forh\r{a}ndsstemme: en stemme i et valg, avgitt før stemmegivningen i det aktuelle valget \r{a}pner p\r{a} generalforsamlingen, jf.\ \hyperref[nbylaw:11.4]{\S\,11.4}.
+\end{enumerate}
+
+\textbf{\S 4.6 Møtefunksjonærer og møteregler.}\label{nbylaw:4.6}
+\begin{enumerate}
+  \item Ordstyrer: leder generalforsamlingen, jf.\ \hyperref[nbylaw:9.2]{\S\,9.2}.
+  \item Referent: fører protokollen for generalforsamlingen, jf.\ \hyperref[nbylaw:9.8]{\S\,9.8}.
+  \item Tellekorps: de medlemmene som teller stemmer p\r{a} generalforsamlingen, jf.\ \hyperref[nbylaw:9.3]{\S\,9.3}.
+  \item Protokollunderskriver: et medlem som kontrollerer og signerer protokollen, jf.\ \hyperref[nbylaw:9.9]{\S\,9.9}.
+  \item Taleliste: oversikten over hvem som har bedt om ordet, og i hvilken rekkefølge.
+  \item Innlegg: en tale i diskusjonen av en sak, gitt i talelistens rekkefølge.
+  \item Replikk: et kort svar p\r{a} det umiddelbart foreg\r{a}ende innlegget, jf.\ \hyperref[nbylaw:9.4]{\S\,9.4}.
+  \item Innlegg til forretningsorden: et innlegg om møtets gjennomføring, som har prioritet foran talelisten.
+  \item Strek p\r{a} talelisten: et vedtak om at ingen nye talere kan tegne seg i saken.
+  \item Voteringsorden: rekkefølgen forslagene settes under votering i, jf.\ \hyperref[nbylaw:9.6]{\S\,9.6}.
+  \item Protokolltilførsel: en kort merknad et medlem krever inntatt i protokollen, jf.\ \hyperref[nbylaw:9.8]{\S\,9.8}.
+\end{enumerate}
+
+\textbf{\S 4.7 Myndighet og fullmakt.}\label{nbylaw:4.7}
+\begin{enumerate}
+  \item Myndighet: den beslutningsmakten et organ eller en rolle har direkte etter disse vedtektene.
+  \item Fullmakt: retten til \r{a} treffe beslutninger og binde foreningen p\r{a} CEOs vegne, innenfor et tildelt ansvarsomr\r{a}de, jf.\ \hyperref[nbylaw:14]{\S\,14}.
+  \item Delegasjon: overføring av fullmakt fra CEO til et annet styremedlem, jf.\ \hyperref[nbylaw:14.2]{\S\,14.2}.
+  \item Signaturrett: retten til \r{a} signere bindende avtaler p\r{a} foreningens vegne, jf.\ \hyperref[nbylaw:14.7]{\S\,14.7}.
+  \item Føringsorden: regler vedtatt av styret som et tillegg til vedtektene, jf.\ \hyperref[nbylaw:17.4]{\S\,17.4}.
+\end{enumerate}
+
+\textbf{\S 4.8 Økonomi og prosjekter.}\label{nbylaw:4.8}
+\begin{enumerate}
+  \item Frie midler: midler foreningen disponerer uten øremerking, jf.\ \hyperref[nbylaw:15.6]{\S\,15.6}.
+  \item NASA Project Life Cycle: rammeverket for faseinndeling og portgjennomganger i prosjekter, i en modifisert versjon fastsatt i foreningens styringsdokumenter, jf.\ \hyperref[nbylaw:16.3]{\S\,16.3}.
+  \item MCR (Mission Concept Review): konseptgjennomgangen som kreves for \r{a} starte et prosjekt, jf.\ \hyperref[nbylaw:16.1]{\S\,16.1}.
+  \item SRR (System Requirements Review): kravgjennomgangen som kreves for \r{a} starte et prosjekt, jf.\ \hyperref[nbylaw:16.1]{\S\,16.1}.
+\end{enumerate}
+
+\vsection{Del II: Medlemskap (Part II: Membership)}
+
+\vsubsection{\S 5 Medlemskap (Membership)}\label{nbylaw:5}
+\textbf{\S 5.1 Medlemsniv\r{a}er (membership tiers).}\label{nbylaw:5.1} Eclipse NMBU opererer med seks medlemsniv\r{a}er. Niv\r{a}ene er hierarkiske, slik at høyere niv\r{a}er har alle rettigheter og plikter som tilligger niv\r{a}ene under:
+\begin{enumerate}
+  \item \textbf{Styremedlem:} har det juridiske og administrative ansvaret for foreningen.
+  \item \textbf{Kjernemedlem:} et medlem som er tildelt et ansvarsverv av styret eller et styremedlem, jf.\ \hyperref[nbylaw:4.3]{\S\,4.3} nr.\ 8, herunder prosjektleder, teamleder eller et annet avgrenset lederansvar.
+  \item \textbf{Aktivt medlem:} et medlem som er tatt opp etter \hyperref[nbylaw:5.2]{\S\,5.2}.
+  \item \textbf{Mentor:} en person p\r{a} foreningens mentorliste, jf.\ \hyperref[nbylaw:5.4]{\S\,5.4}.
+  \item \textbf{Inaktivt medlem:} et medlem som er registrert i foreningen, men som ikke er aktivt medlem.
+  \item \textbf{Alumni:} et medlem med alumnistatus, jf.\ \hyperref[nbylaw:5.4]{\S\,5.4}.
+\end{enumerate}
+CPO avgjør om et medlem er aktivt eller inaktivt.
+
+\textbf{\S 5.2 Opptak og medlemskontrakt (admission and Membership Contract).}\label{nbylaw:5.2}
+\begin{enumerate}
+  \item Alle medlemmer skal signere en medlemskontrakt som bekrefter at de har lest vedtektene, og at de forst\r{a}r og aksepterer risikoen knyttet til romfartsvirksomhet.
+  \item For \r{a} bli aktivt medlem m\r{a} medlemmet ha gjennomført intervju og signert medlemskontrakten.
+  \item CPO er ansvarlig for opptaksprosessen. Intervjuet gjennomføres av to styremedlemmer, som avgjør opptaket.
+\end{enumerate}
+
+\textbf{\S 5.3 Medlemsperiode (membership period).}\label{nbylaw:5.3} Medlemsperioden følger vervperioden i \hyperref[nbylaw:10.1]{\S\,10.1} og løper fra 1.\ august til 31.\ juli. En person kan tre inn n\r{a}r som helst i perioden, men medlemskapet opphører 31.\ juli. Mentorer og alumni er unntatt fra dette; deres medlemskap varer til vedkommende selv trekker seg, eller CPO fjerner dem, jf.\ \hyperref[nbylaw:5.4]{\S\,5.4}.
+
+\textbf{\S 5.4 Mentorer og alumni (mentors and Alumni).}\label{nbylaw:5.4}
+\begin{enumerate}
+  \item Mentor er et eget medlemsniv\r{a}, som ogs\r{a} kan innehas av personer utenfor foreningen. Personer kan bli spurt om \r{a} bli mentor, og de som sier ja, føres opp p\r{a} foreningens mentorliste. CPO er ansvarlig for mentorlisten.
+  \item Et medlem hvis medlemskontrakt utløper uten \r{a} bli fornyet, f\r{a}r automatisk alumnistatus.
+\end{enumerate}
+
+\textbf{\S 5.5 Rettigheter p\r{a} generalforsamlingen (rights at the General Assembly).}\label{nbylaw:5.5}
+\begin{enumerate}
+  \item Styremedlemmer, kjernemedlemmer og aktive medlemmer har stemmerett og er valgbare.
+  \item Stemmerett forutsetter at medlemmet er tatt opp som aktivt medlem, jf.\ \hyperref[nbylaw:5.2]{\S\,5.2}, minst \'en m\r{a}ned før generalforsamlingen.
+  \item Medlemmer med stemmerett, og mentorer, har forslagsrett.
+  \item Alle medlemmer, herunder inaktive medlemmer, mentorer og alumni, har møte- og talerett.
+  \item Inaktive medlemmer, mentorer og alumni har verken stemmerett eller valgbarhet.
+  \item Generalforsamlingen kan med simpelt flertall gi møte- og talerett til personer som ikke er medlemmer.
+\end{enumerate}
+
+\textbf{\S 5.6 Plikter (duties).}\label{nbylaw:5.6}
+\begin{enumerate}
+  \item Medlemmene er bundet av vedtak truffet av generalforsamlingen og styret.
+  \item \textbf{Leveringsplikt:} et medlem som har tatt p\r{a} seg en oppgave, er forpliktet til \r{a} levere den innen den fastsatte tidsrammen.
+  \item \textbf{Varslingsplikt:} kan et medlem ikke gjennomføre en oppgave det har tatt p\r{a} seg, skal medlemmet uten ugrunnet opphold varsle sin nærmeste leder, jf.\ \hyperref[nbylaw:4.3]{\S\,4.3} nr.\ 7. Nærmeste leder er ansvarlig for at oppgaven blir fordelt p\r{a} nytt.
+  \item \textbf{Fravær:} er et medlem inaktivt uten gyldig grunn i en sammenhengende periode p\r{a} fire uker i en aktiv periode, kan styret vurdere \r{a} avslutte medlemskapet. \r{A}rsaken til fraværet skal avklares med medlemmets nærmeste leder.
+\end{enumerate}
+
+\textbf{\S 5.7 Styrets myndighet i medlemssaker (Board authority in membership matters).}\label{nbylaw:5.7} Utenfor generalforsamlingen kan styret ved flertallsvedtak:
+\begin{enumerate}
+  \item Endre et medlems niv\r{a} p\r{a} grunnlag av brudd p\r{a} plikter, likevel slik at vurderingen av om et medlem er aktivt eller inaktivt er unntatt, jf.\ \hyperref[nbylaw:5.1]{\S\,5.1}.
+  \item Innvilge eller avsl\r{a} søknader om verv og medlemskap, og endre hvem som innehar et verv.
+  \item Fjerne medlemmer fra foreningens medlemsliste dersom \hyperref[nbylaw:5.6]{\S\,5.6} nr.\ 4 er brutt.
+\end{enumerate}
+
+\vsubsection{\S 6 Varsling og reaksjoner (Whistleblowing and reactions)}\label{nbylaw:6}
+\textbf{\S 6.1 Definisjon (definition).}\label{nbylaw:6.1} Varsling er n\r{a}r et medlem, et styremedlem, eller en person i kontakt med foreningen, melder om et kritikkverdig forhold knyttet til foreningens virksomhet.
+
+\textbf{\S 6.2 Kritikkverdige forhold (reprehensible matters).}\label{nbylaw:6.2} Kritikkverdige forhold omfatter blant annet:
+\begin{enumerate}
+  \item Forhold knyttet til helse, miljø og sikkerhet.
+  \item Personkonflikter.
+  \item Forstyrrende oppførsel.
+  \item Lovbrudd, herunder tyveri, økonomisk utroskap og underslag.
+  \item Seksuell trakassering.
+  \item Overgrep.
+\end{enumerate}
+
+\textbf{\S 6.3 Saksbehandling (case handling).}\label{nbylaw:6.3}
+\begin{enumerate}
+  \item Et varsel rettes til CPO, eller til CEO dersom varselet gjelder CPO.
+  \item Ved alvorlige p\r{a}stander om lovbrudd m\r{a} forholdet anmeldes til politiet før styret kan behandle varselet.
+  \item I saker rettet mot \'en eller flere personer skal alle involverte gis mulighet til \r{a} gjøre rede for sin versjon av situasjonen.
+  \item Lovbrudd og seksuell trakassering aksepteres ikke, og styret kan anmelde forhold p\r{a} grunnlag av egne observasjoner.
+\end{enumerate}
+
+\textbf{\S 6.4 Habilitet (impartiality).}\label{nbylaw:6.4} Ved behandling av varsler skal styrets habilitet vurderes. Et styremedlem som ikke er habilt, deltar ikke i behandlingen. Er styret som helhet inhabilt, skal det oppnevnes et uavhengig organ til \r{a} behandle saken.
+
+\textbf{\S 6.5 Reaksjoner (reactions).}\label{nbylaw:6.5} Vedtak om reaksjon krever 2/3 flertall i styret, jf.\ \hyperref[nbylaw:12.7]{\S\,12.7} nr.\ 5. Følgende reaksjoner kan besluttes:
+\begin{enumerate}
+  \item Endringer i foreningens rutiner.
+  \item Advarsel.
+  \item Suspensjon eller utestengelse fra verv og foreningens aktiviteter for en periode.
+  \item Permanent utestengelse fra verv og foreningens aktiviteter.
+\end{enumerate}
+
+\vsubsection{\S 7 Personvern (Privacy)}\label{nbylaw:7}
+\textbf{\S 7.1 Behandling av personopplysninger (processing of personal data).}\label{nbylaw:7.1} Foreningen behandler kun personopplysninger som er nødvendige og relevante for \r{a} administrere medlemskap. Behandlingen skal følge personopplysningsloven og Datatilsynets retningslinjer.
+
+\textbf{\S 7.2 Oppbevaring ved opphør av medlemskap (retention on end of membership).}\label{nbylaw:7.2} Ved opphør av medlemskap oppbevarer foreningen medlemmets personopplysninger inntil det fremsettes en anmodning om sletting etter \hyperref[nbylaw:7.3]{\S\,7.3}.
+
+\textbf{\S 7.3 Anmodning om sletting (request for deletion).}\label{nbylaw:7.3}
+\begin{enumerate}
+  \item Et medlem eller tidligere medlem kan n\r{a}r som helst kreve at egne personopplysninger slettes.
+  \item Anmodningen fremsettes skriftlig til CPO.
+  \item Sletting skal gjennomføres uten ugrunnet opphold, og medlemmet skal motta bekreftelse p\r{a} at sletting er gjennomført.
+\end{enumerate}
+
+\textbf{\S 7.4 Informasjonsplikt (duty to inform).}\label{nbylaw:7.4} Foreningen skal ved opptak og ved opphør av medlemskap informere medlemmet om retten til \r{a} kreve sletting etter \hyperref[nbylaw:7.3]{\S\,7.3}.
+
+\vsection{Del III: Organer (Part III: Organs)}
+
+\vsubsection{\S 8 Generalforsamling (General Assembly)}\label{nbylaw:8}
+\textbf{\S 8.1 Øverste organ (supreme organ).}\label{nbylaw:8.1} Generalforsamlingen er foreningens øverste organ.
+
+\textbf{\S 8.2 Hyppighet og typer (frequency and types).}\label{nbylaw:8.2}
+\begin{enumerate}
+  \item Generalforsamling skal holdes minst \'en gang per semester, innen utgangen av november i høstsemesteret og innen utgangen av april i v\r{a}rsemesteret.
+  \item Generalforsamlingen i v\r{a}rsemesteret er valggeneralforsamlingen; generalforsamlingen i høstsemesteret er suppleringsgeneralforsamlingen.
+\end{enumerate}
+
+\textbf{\S 8.3 Innkalling og frister (notice and deadlines).}\label{nbylaw:8.3}
+\begin{enumerate}
+  \item Innkalling skal n\r{a} medlemmene minst \'en m\r{a}ned før generalforsamlingen.
+  \item Saker som skal behandles av generalforsamlingen, herunder forslag til vedtektsendringer, skal n\r{a} styret minst to uker før generalforsamlingen.
+  \item Saksdokumentene skal være tilgjengelige for medlemmene minst \'en uke før generalforsamlingen.
+\end{enumerate}
+
+\textbf{\S 8.4 Vedtaksførhet og flertallskrav (quorum and majority requirements).}\label{nbylaw:8.4}
+\begin{enumerate}
+  \item Generalforsamlingen er vedtaksfør n\r{a}r den er lovlig innkalt, uavhengig av hvor mange som møter.
+  \item Generalforsamlingen treffer vedtak med simpelt flertall med mindre disse vedtektene bestemmer noe annet. Flertallskrav for vedtektsendringer og oppløsning følger \hyperref[nbylaw:17.1]{\S\,17.1} og \hyperref[nbylaw:18.1]{\S\,18.1}.
+  \item Ingen medlemmer har mer enn \'en stemme, og det kan ikke stemmes ved fullmakt. Forh\r{a}ndsstemming i valg reguleres av \hyperref[nbylaw:11.4]{\S\,11.4}.
+\end{enumerate}
+
+\textbf{\S 8.5 Ekstraordinær generalforsamling (extraordinary General Assembly).}\label{nbylaw:8.5} Ekstraordinær generalforsamling kan innkalles dersom minst 1/3 av medlemmene krever det, eller dersom styret finner det nødvendig. \hyperref[nbylaw:8.3]{\S\,8.3} og \hyperref[nbylaw:8.4]{\S\,8.4} gjelder tilsvarende. P\r{a} en ekstraordinær generalforsamling behandles bare de sakene som er oppgitt i innkallingen.
+
+\textbf{\S 8.6 Saksliste (agenda).}\label{nbylaw:8.6} Sakslistene for valg- og suppleringsgeneralforsamlingen følger rekkefølgen nedenfor.
+
+\emph{Valggeneralforsamling (v\r{a}rsemesteret):}
+\begin{enumerate}
+  \item Konstituering: (1) valg av ordstyrer; (2) valg av referent; (3) valg av tellekorps; (4) valg av protokollunderskrivere; (5) godkjenning av innkalling; (6) godkjenning av saksliste.
+  \item Presentasjon og diskusjon av saker: (1) semesterrapport; (2) forrige semesters regnskap; (3) kommende semesters budsjett; (4) innsendte saker.
+  \item Votering over saker.
+  \item Valg av CEO, CTO, CBO og CPO for kommende periode, jf.\ \hyperref[nbylaw:11]{\S\,11}.
+  \item Eventuelt.
+\end{enumerate}
+
+\emph{Suppleringsgeneralforsamling (høstsemesteret):}
+\begin{enumerate}
+  \item Konstituering: (1) valg av ordstyrer; (2) valg av referent; (3) valg av tellekorps; (4) valg av protokollunderskrivere; (5) godkjenning av innkalling; (6) godkjenning av saksliste.
+  \item Presentasjon og diskusjon av saker: (1) semesterrapport; (2) forrige semesters regnskap; (3) kommende semesters budsjett; (4) innsendte saker.
+  \item Votering over saker.
+  \item Suppleringsvalg, jf.\ \hyperref[nbylaw:11]{\S\,11}: (1) suppleringsvalg til ledige verv for resten av perioden; (2) valg av leder og to medlemmer til valg- og kontrollkomiteen.
+  \item Eventuelt.
+\end{enumerate}
+
+Hver sak under punkt 2 presenteres og diskuteres samlet, og sakene voteres over under punkt 3. Saksbehandlingen følger \hyperref[nbylaw:9]{\S\,9}.
+
+\vsubsection{\S 9 Møteregler for generalforsamlingen (Meeting rules)}\label{nbylaw:9}
+\textbf{\S 9.1 \r{A}pning og konstituering (opening and constitution).}\label{nbylaw:9.1}
+\begin{enumerate}
+  \item Generalforsamlingen \r{a}pnes av CEO, eller av CTO etter \hyperref[nbylaw:12.3]{\S\,12.3}. Den som \r{a}pner møtet, leder valget av ordstyrer.
+  \item Inntil tellekorpset er valgt, telles stemmene av den som leder møtet.
+  \item N\r{a}r ordstyreren er valgt, overtar ordstyreren ledelsen av møtet og gjennomfører de gjenst\r{a}ende punktene i konstitueringen.
+  \item Ved godkjenning av innkallingen vurderer generalforsamlingen om innkallingen og saksdokumentene oppfyller \hyperref[nbylaw:8.3]{\S\,8.3}. Blir innkallingen ikke godkjent, kan generalforsamlingen ikke treffe vedtak.
+\end{enumerate}
+
+\textbf{\S 9.2 Ordstyrer (Meeting Chair).}\label{nbylaw:9.2}
+\begin{enumerate}
+  \item Ordstyreren leder generalforsamlingen i samsvar med vedtektene og den godkjente sakslisten, og skal sørge for en ordnet og nøytral møteavvikling.
+  \item Ordstyreren fører talelisten, gir ordet, og kan ta ordet fra en taler dersom taletiden overskrides eller innlegget ikke gjelder saken.
+  \item Ordstyreren kan fastsette taletid for innlegg og replikker.
+  \item Ordstyreren avgjør spørsm\r{a}l om møtets gjennomføring. Avgjørelsen kan bringes inn for generalforsamlingen, som avgjør spørsm\r{a}let med simpelt flertall.
+  \item Ordstyreren deltar ikke i debatten. Ønsker ordstyreren \r{a} delta i debatten i en sak, overlates møteledelsen i den saken til en person valgt av generalforsamlingen.
+  \item Ordstyreren bør ikke være styremedlem.
+\end{enumerate}
+
+\textbf{\S 9.3 Tellekorps (Vote Counters).}\label{nbylaw:9.3}
+\begin{enumerate}
+  \item Tellekorpset best\r{a}r av to medlemmer, som skal være nøytrale i de sakene de teller.
+  \item Tellekorpset registrerer antallet stemmeberettigede som er til stede ved konstitueringen, og holder antallet oppdatert gjennom møtet.
+  \item Tellekorpset deler ut og samler inn stemmesedler, kontrollerer at bare stemmeberettigede avgir stemme, teller stemmene og rapporterer resultatet til ordstyreren.
+  \item Tellekorpset teller stemmer i saker, og i valg som ikke gjennomføres av valg- og kontrollkomiteen, jf.\ \hyperref[nbylaw:11.5]{\S\,11.5}.
+  \item Stemmesedlene oppbevares av tellekorpset til protokollen er signert, og makuleres deretter.
+\end{enumerate}
+
+\textbf{\S 9.4 Presentasjon og diskusjon av saker (presentation and discussion of Cases).}\label{nbylaw:9.4}
+\begin{enumerate}
+  \item Hver sak presenteres av forslagsstilleren eller styret, og diskuteres før neste sak presenteres.
+  \item Under diskusjonen gis ordet i den rekkefølgen det er bedt om.
+  \item Etter et innlegg kan det gis replikk. Den som holdt innlegget, har rett til \r{a} svare med replikk.
+  \item Innlegg til forretningsorden har prioritet foran talelisten.
+  \item Ordstyreren, eller enhver stemmeberettiget, kan foresl\r{a} strek p\r{a} talelisten. Generalforsamlingen avgjør forslaget med simpelt flertall.
+\end{enumerate}
+
+\textbf{\S 9.5 Endringsforslag (Amendments).}\label{nbylaw:9.5} Et endringsforslag til en sak p\r{a} sakslisten m\r{a} leveres skriftlig før voteringen over saker begynner.
+
+\textbf{\S 9.6 Stemming over saker (voting on Cases).}\label{nbylaw:9.6}
+\begin{enumerate}
+  \item Før voteringen legger ordstyreren fram en voteringsorden, som godkjennes av generalforsamlingen.
+  \item Endringsforslag voteres over før det opprinnelige forslaget. Er det flere endringsforslag til samme punkt, voteres det mest omfattende forslaget over først.
+  \item Det stemmes ved h\r{a}ndsopprekning, med mindre minst \'en stemmeberettiget krever skriftlig og hemmelig votering.
+  \item N\r{a}r voteringen er i gang, gis ordet bare til spørsm\r{a}l om selve voteringen.
+  \item Blanke stemmer regnes som ikke avgitt.
+  \item Ved stemmelikhet anses forslaget som ikke vedtatt.
+\end{enumerate}
+
+\textbf{\S 9.7 Eventuelt (other business).}\label{nbylaw:9.7}
+\begin{enumerate}
+  \item Saker til eventuelt m\r{a} leveres skriftlig før voteringen over saker begynner.
+  \item Under eventuelt behandles bare saker levert etter nr.\ 1.
+  \item Det kan ikke treffes vedtak om vedtektsendringer, valg, økonomiske disposisjoner eller oppløsning under eventuelt.
+\end{enumerate}
+
+\textbf{\S 9.8 Referent og protokoll (Secretary and protocol).}\label{nbylaw:9.8}
+\begin{enumerate}
+  \item Referenten fører protokollen for generalforsamlingen.
+  \item Protokollen skal minst inneholde: (1) tid og sted for møtet; (2) antall stemmeberettigede til stede; (3) hvem som ble valgt under konstitueringen; (4) alle forslag som er fremmet, med forslagsstiller; (5) vedtak med stemmetall; (6) resultatet av alle valg; (7) protokolltilførsler.
+  \item Enhver stemmeberettiget kan kreve en kort protokolltilførsel inntatt i protokollen.
+  \item Protokollen skal signeres av protokollunderskriverne og gjøres tilgjengelig for medlemmene senest to uker etter generalforsamlingen.
+\end{enumerate}
+
+\textbf{\S 9.9 Protokollunderskrivere (Protocol Signers).}\label{nbylaw:9.9}
+\begin{enumerate}
+  \item Generalforsamlingen velger to protokollunderskrivere blant de medlemmene som er til stede.
+  \item Protokollunderskriverne kontrollerer at protokollen gir en korrekt framstilling av generalforsamlingen, og signerer den. De kan kreve rettelser før de signerer.
+\end{enumerate}
+
+\vsubsection{\S 10 Tillitsverv (Offices)}\label{nbylaw:10}
+\textbf{\S 10.1 Vervperiode (term of office).}\label{nbylaw:10.1} Alle verv i foreningen, herunder alle styreverv, løper fra 1.\ august til 31.\ juli \r{a}ret etter. Valg- og kontrollkomiteen er unntatt fra dette, jf.\ \hyperref[nbylaw:13.1]{\S\,13.1}.
+
+\textbf{\S 10.2 Overlapp og erfaringsoverføring (overlap and experience transfer).}\label{nbylaw:10.2} Perioden fra valggeneralforsamlingen til 1.\ august er en overlappsperiode der p\r{a}troppende og avtroppende vervinnehaver fungerer samtidig. I denne perioden har den p\r{a}troppende vervinnehaveren beslutningsmyndighet og stemmerett, mens den avtroppende har en r\r{a}dgivende funksjon.
+
+Den avtroppende vervinnehaveren skal i overlappsperioden sørge for full erfaringsoverføring, herunder overlevering av dokumentasjon, tilganger, løpende saker og kontaktpunkter, og skal være tilgjengelig for styret og sin etterfølger.
+
+\textbf{\S 10.3 Ledige verv (vacant offices).}\label{nbylaw:10.3}
+\begin{enumerate}
+  \item Trer en vervinnehaver av før vervperioden er utløpt, kan styret med simpelt flertall konstituere et medlem i vervet til det blir fylt p\r{a} en ordinær generalforsamling.
+  \item Blir et verv ikke fylt p\r{a} generalforsamlingen, kan styret konstituere et medlem i vervet til neste generalforsamling.
+  \item Nr.\ 1 og 2 gjelder tilsvarende for valg- og kontrollkomiteen. Blir ingen valgt til komiteen, kan styret oppnevne en midlertidig komit\'e til neste generalforsamling.
+\end{enumerate}
+
+\vsubsection{\S 11 Valg (Elections)}\label{nbylaw:11}
+\textbf{\S 11.1 Virkeomr\r{a}de (scope).}\label{nbylaw:11.1} Denne paragrafen gjelder alle valg som holdes p\r{a} generalforsamlingen, herunder valg av ordstyrer, referent, tellekorps, protokollunderskrivere, styremedlemmer og medlemmer av valg- og kontrollkomiteen.
+
+\textbf{\S 11.2 Kandidater (candidates).}\label{nbylaw:11.2}
+\begin{enumerate}
+  \item Stemmerett og valgbarhet følger \hyperref[nbylaw:5.5]{\S\,5.5}.
+  \item En kandidat m\r{a} ha samtykket til kandidaturet. Kandidater som ikke kan møte, kan stille med et skriftlig kandidatur.
+\end{enumerate}
+
+\textbf{\S 11.3 Forh\r{a}ndsbenking og benkeforslag (Advance and Floor Nomination).}\label{nbylaw:11.3}
+\begin{enumerate}
+  \item Før generalforsamlingen sendes det ut en oppfordring til forh\r{a}ndsbenking. Valg- og kontrollkomiteen spør de foresl\r{a}tte om de ønsker \r{a} stille. De som ønsker \r{a} stille, føres opp som kandidater p\r{a} sakslisten. Fristen for forh\r{a}ndsbenking er den samme som for innsending av saker, jf.\ \hyperref[nbylaw:8.3]{\S\,8.3}.
+  \item Under generalforsamlingen kan benkeforslag bare fremmes under presentasjon og diskusjon av saker, jf.\ \hyperref[nbylaw:8.6]{\S\,8.6}.
+  \item Den som fremmer et benkeforslag, har rett til \r{a} holde en benketale.
+\end{enumerate}
+
+\textbf{\S 11.4 Forh\r{a}ndsstemming (Advance Voting).}\label{nbylaw:11.4}
+\begin{enumerate}
+  \item Aktive medlemmer med stemmerett kan avgi forh\r{a}ndsstemme i valg til verv. Forh\r{a}ndsstemming gjelder ikke for andre saker.
+  \item Forh\r{a}ndsstemmer avgis digitalt gjennom en løsning som sikrer at bare stemmeberettigede kan stemme, at hvert medlem avgir \'en stemme, og at stemmen er hemmelig.
+  \item Fristen for forh\r{a}ndsstemming er n\r{a}r stemmegivningen i det aktuelle valget \r{a}pner p\r{a} generalforsamlingen.
+  \item Et medlem som har avgitt forh\r{a}ndsstemme, kan ikke stemme p\r{a} nytt i samme valg.
+  \item Valg- og kontrollkomiteen administrerer forh\r{a}ndsstemmene og teller dem sammen med stemmene avgitt p\r{a} generalforsamlingen.
+  \item En forh\r{a}ndsstemme gjelder den kandidaten den er avgitt for, ogs\r{a} dersom nye kandidater kommer til ved benkeforslag p\r{a} generalforsamlingen.
+  \item I en andre valgrunde teller forh\r{a}ndsstemmen dersom kandidaten den er avgitt for, deltar i runden. Ellers teller den ikke.
+\end{enumerate}
+
+\textbf{\S 11.5 Gjennomføring (conduct).}\label{nbylaw:11.5}
+\begin{enumerate}
+  \item Ved valg til verv leder valg- og kontrollkomiteen valget og presenterer vervet og kandidatene. Andre valg ledes av ordstyreren, med unntak av valget av ordstyrer selv, jf.\ \hyperref[nbylaw:9.1]{\S\,9.1}.
+  \item Kandidatene gis anledning til \r{a} presentere seg, og salen anledning til \r{a} stille spørsm\r{a}l.
+  \item Valget gjennomføres skriftlig n\r{a}r det er mer enn \'en kandidat til et verv, eller n\r{a}r minst \'en stemmeberettiget krever det. Ellers kan valget gjennomføres ved h\r{a}ndsopprekning.
+  \item Ved valg til verv teller valg- og kontrollkomiteen stemmene og rapporterer resultatet til ordstyreren. Ved andre valg telles stemmene etter \hyperref[nbylaw:9.1]{\S\,9.1} og \hyperref[nbylaw:9.3]{\S\,9.3}. Resultatet føres inn i protokollen.
+\end{enumerate}
+
+\textbf{\S 11.6 Avstemningsrunder (voting rounds).}\label{nbylaw:11.6}
+\begin{enumerate}
+  \item Første valgrunde gjennomføres med blank stemme som alternativ.
+  \item Den kandidaten som f\r{a}r flest stemmer, er valgt.
+  \item F\r{a}r blankt-alternativet flest stemmer, gjennomføres en andre valgrunde mellom de to kandidatene med flest stemmer, uten blankt-alternativ.
+  \item St\r{a}r to eller flere kandidater likt med flest stemmer, gjennomføres en andre valgrunde mellom disse kandidatene, uten blankt-alternativ.
+  \item Er det bare \'en kandidat til vervet, er kandidaten valgt ogs\r{a} dersom blankt-alternativet f\r{a}r flest stemmer.
+  \item Blir ingen kandidat valgt i den andre valgrunden, gjentas den til en kandidat er valgt.
+\end{enumerate}
+
+\vsubsection{\S 12 Styret (The Board)}\label{nbylaw:12}
+\textbf{\S 12.1 Sammensetning (composition).}\label{nbylaw:12.1} Styret best\r{a}r av fire medlemmer:
+\begin{enumerate}
+  \item CEO: Chief Executive Officer
+  \item CTO: Chief Technical Officer
+  \item CBO: Chief Business Officer
+  \item CPO: Chief People Officer
+\end{enumerate}
+Alle styremedlemmer velges av generalforsamlingen, jf.\ \hyperref[nbylaw:11]{\S\,11}, for vervperioden i \hyperref[nbylaw:10.1]{\S\,10.1}.
+
+\textbf{\S 12.2 CEO.}\label{nbylaw:12.2} CEO har den overordnede administrative ledelsen av foreningen og representerer foreningen utad. CEO har det øverste ansvaret for at foreningen driver innenfor norsk lov og universitetets regelverk, og for strategisk planlegging, organisasjonskultur, HMS-protokoller og koordinering mellom de andre styrerollene. CEOs fullmakt og delegasjonsplikt følger \hyperref[nbylaw:14]{\S\,14}.
+
+\textbf{\S 12.3 CTO.}\label{nbylaw:12.3} CTO har det overordnede ansvaret for foreningens tekniske prosjekter, herunder systemintegrasjon, teknisk sikkerhet og teknisk framdrift. CTO skal sørge for at den tekniske utviklingen følger fastsatte tidslinjer og milepæler, jf.\ \hyperref[nbylaw:16]{\S\,16}, og er ansvarlig for ressursforvaltning og logistikk knyttet til teknisk utstyr og verkstedsareal. CTO innkaller til tekniske statusmøter.
+
+CTO er foreningens nestleder og overtar CEOs ansvar n\r{a}r CEO er utilgjengelig. Ut over dette har CTO ikke større myndighet enn de øvrige styremedlemmene.
+
+\textbf{\S 12.4 CBO.}\label{nbylaw:12.4} CBO er ansvarlig for foreningens økonomi, jf.\ \hyperref[nbylaw:15]{\S\,15}. Dette omfatter økonomisk planlegging, bokføring, budsjettkontroll, revisjon, forsikring og h\r{a}ndtering av økonomisk risiko. CBO har videre ansvaret for sponsorrelasjoner, samarbeidsavtaler, profilering og ekstern kommunikasjon, herunder innhold og vedlikehold av foreningens digitale plattformer.
+
+\textbf{\S 12.5 CPO.}\label{nbylaw:12.5} CPO er ansvarlig for foreningens medlemmer og interne organisasjon, herunder rekruttering, opptaksprosessen, medlemsoppfølging og administrasjon av medlemsniv\r{a}er, jf.\ \hyperref[nbylaw:5]{\S\,5}. CPO har videre ansvaret for intern kommunikasjon, organisasjonskultur og oppfølging av HMS, i samarbeid med CEO, og for saksbehandling av varsler, jf.\ \hyperref[nbylaw:6]{\S\,6}.
+
+\textbf{\S 12.6 Styremøter (Board meetings).}\label{nbylaw:12.6} Styret er vedtaksført n\r{a}r minst tre av styrets medlemmer, inkludert konstituerte medlemmer, er til stede. Vedtak treffes med ordinært flertall av de avgitte stemmene, med mindre disse vedtektene bestemmer noe annet. Alle styremøter skal protokollføres.
+
+\textbf{\S 12.7 Stemmegivning i styret (voting on the Board).}\label{nbylaw:12.7}
+\begin{enumerate}
+  \item Hvert styremedlem har \'en stemme. CEOs stemme teller som 1,5 stemmer i alle styresaker.
+  \item N\r{a}r CTO har overtatt CEOs ansvar etter \hyperref[nbylaw:12.3]{\S\,12.3}, teller CTOs stemme som 1,5 stemmer. Tilleggsvekten p\r{a} 0,5 kan ikke tilfalle andre styremedlemmer.
+  \item Et konstituert styremedlem har stemmerett, jf.\ \hyperref[nbylaw:10.3]{\S\,10.3}.
+  \item Ved stemmelikhet anses forslaget som ikke vedtatt.
+  \item Der disse vedtektene krever 2/3 flertall i styret, beregnes flertallet av den samlede stemmevekten til de styremedlemmene som deltar i voteringen.
+\end{enumerate}
+
+\textbf{\S 12.8 Lojalitetsplikt (duty of loyalty).}\label{nbylaw:12.8} Styrets medlemmer, herunder CEO, skal i styresaker sette foreningens samlede interesser foran andre hensyn.
+
+\textbf{\S 12.9 Team (teams).}\label{nbylaw:12.9}
+\begin{enumerate}
+  \item Team opprettes av det styremedlemmet som er ansvarlig for fagomr\r{a}det, og g\r{a}r p\r{a} tvers av flere prosjekter.
+  \item Styremedlemmet utpeker en teamleder for teamet.
+\end{enumerate}
+
+\vsubsection{\S 13 Valg- og kontrollkomiteen (The Election and Control Committee)}\label{nbylaw:13}
+\textbf{\S 13.1 Sammensetning og vervperiode (composition and term).}\label{nbylaw:13.1}
+\begin{enumerate}
+  \item Valg- og kontrollkomiteen best\r{a}r av tre medlemmer: en leder og to medlemmer.
+  \item Leder og medlemmer velges p\r{a} suppleringsgeneralforsamlingen i høstsemesteret.
+  \item Vervperioden løper fra 1.\ januar etter suppleringsgeneralforsamlingen til 31.\ desember samme \r{a}r.
+  \item Styremedlemmer kan ikke være medlemmer av komiteen.
+\end{enumerate}
+
+\textbf{\S 13.2 Oppgaver (tasks).}\label{nbylaw:13.2}
+\begin{enumerate}
+  \item Komiteen skal finne egnede kandidater til valg, administrere forh\r{a}ndsstemmer og gjennomføre valg til verv, jf.\ \hyperref[nbylaw:11]{\S\,11}.
+  \item Komiteen skal føre tilsyn med at vedtektene følges, og skal rapportere til generalforsamlingen.
+\end{enumerate}
+
+\textbf{\S 13.3 Taushetsplikt og valgbarhet (confidentiality and eligibility).}\label{nbylaw:13.3}
+\begin{enumerate}
+  \item Komiteens medlemmer har taushetsplikt.
+  \item Medlemmer av komiteen kan ikke stille til valg.
+\end{enumerate}
+
+\vsubsection{\S 14 Fullmakt, delegasjon og signaturrett (Mandate, delegation and Signature Right)}\label{nbylaw:14}
+\textbf{\S 14.1 Utgangspunkt (starting point).}\label{nbylaw:14.1} CEO innehar foreningens overordnede fullmakt innenfor de rammene generalforsamlingen og styret setter, og kan inng\r{a} bindende avtaler p\r{a} foreningens vegne innenfor disse rammene, jf.\ \hyperref[nbylaw:14.7]{\S\,14.7} og \hyperref[nbylaw:14.8]{\S\,14.8}.
+
+\textbf{\S 14.2 Delegasjonsplikt (duty to delegate).}\label{nbylaw:14.2} CEO skal delegere fullmakt til de øvrige styremedlemmene innenfor deres respektive ansvarsomr\r{a}der, jf.\ \hyperref[nbylaw:12.3]{\S\,12.3}--\hyperref[nbylaw:12.5]{\S\,12.5}. Delegasjonen skal legges fram for, og godkjennes av, generalforsamlingen. Myndigheten over foreningens økonomi tilligger CBO direkte, jf.\ \hyperref[nbylaw:15.2]{\S\,15.2}, og omfattes ikke av delegasjonen. Delegasjon av signaturrett følger \hyperref[nbylaw:14.9]{\S\,14.9}.
+
+\textbf{\S 14.3 Form og innhold (form and content).}\label{nbylaw:14.3} Delegasjonen skal være skriftlig og skal angi hvilke ansvarsomr\r{a}der, beslutningstyper og eventuelle økonomiske grenser den omfatter. Delegasjonen gjelder for vervperioden, jf.\ \hyperref[nbylaw:10.1]{\S\,10.1}, med mindre noe annet er bestemt, og skal føres inn i generalforsamlingens protokoll.
+
+\textbf{\S 14.4 Ansvar (responsibility).}\label{nbylaw:14.4} Delegasjon fritar ikke CEO for det overordnede ansvaret for foreningens virksomhet.
+
+\textbf{\S 14.5 Endring og tilbakekalling (change and withdrawal).}\label{nbylaw:14.5} Endring eller tilbakekalling av delegert fullmakt behandles av generalforsamlingen. Der forholdene ikke kan vente p\r{a} en ordinær generalforsamling, kan styret med 2/3 flertall midlertidig suspendere en delegert fullmakt til neste generalforsamling.
+
+\textbf{\S 14.6 Videredelegering (onward delegation).}\label{nbylaw:14.6} Et styremedlem kan videredelegere avgrensede deler av sin fullmakt til en prosjektleder eller teamleder for bestemte oppgaver. Videredelegering skal være skriftlig og meldes til styret, og fritar ikke styremedlemmet for ansvar.
+
+\textbf{\S 14.7 Signaturrett (Signature Right).}\label{nbylaw:14.7} CEO innehar foreningens signaturrett.
+
+\textbf{\S 14.8 Vilk\r{a}r for signering (conditions for signing).}\label{nbylaw:14.8} Signering av en bindende avtale forutsetter et forutg\r{a}ende styrevedtak.
+
+\textbf{\S 14.9 Delegasjon av signaturrett (delegation of Signature Right).}\label{nbylaw:14.9} CEO kan delegere signaturrett direkte til de øvrige styremedlemmene, uten behandling i generalforsamlingen. Delegasjonen skal dokumenteres skriftlig og fritar ikke CEO for ansvar, jf.\ \hyperref[nbylaw:14.4]{\S\,14.4}.
+
+\textbf{\S 14.10 Ansvar for kontrakter (responsibility for contracts).}\label{nbylaw:14.10} Det sittende styret er ansvarlig for alle avtaler som er i kraft.
+
+\textbf{\S 14.11 Digital oppbevaring (digital storage).}\label{nbylaw:14.11} Alle foreningens dokumenter, herunder avtaler og kontrakter som er signert p\r{a} papir, skal ogs\r{a} lagres digitalt. Et dokument som er signert p\r{a} papir, skal skannes eller p\r{a} annen m\r{a}te gjengis i digital form uten ugrunnet opphold; den fysiske signaturen fritar ikke dokumentet fra dette kravet.
+
+\vsection{Del IV: Drift (Part IV: Operations)}
+
+\vsubsection{\S 15 Økonomi (Economy)}\label{nbylaw:15}
+\textbf{\S 15.1 Bruk av midler (use of funds).}\label{nbylaw:15.1} Foreningens midler skal bare brukes i samsvar med foreningens form\r{a}l, jf.\ \hyperref[nbylaw:2]{\S\,2}.
+
+\textbf{\S 15.2 Myndighet over økonomien (authority over the economy).}\label{nbylaw:15.2} CBO har full myndighet over foreningens økonomi. Denne myndigheten følger direkte av disse vedtektene og er ikke delegert fra CEO, jf.\ \hyperref[nbylaw:14.2]{\S\,14.2}.
+
+\textbf{\S 15.3 Budsjett og regnskap (budget and accounts).}\label{nbylaw:15.3} Det skal til enhver tid foreligge budsjett og regnskap for foreningens midler, med tilhørende bilag. Budsjett og regnskap gjennomg\r{a}s og godkjennes av generalforsamlingen, jf.\ \hyperref[nbylaw:8.6]{\S\,8.6}.
+
+\textbf{\S 15.4 Godkjenning av utbetalinger (approval of payments).}\label{nbylaw:15.4} Utbetalinger godkjennes av CBO.
+
+\textbf{\S 15.5 Økonomiske investeringer (financial investments).}\label{nbylaw:15.5} Vedtak om økonomiske investeringer krever 2/3 flertall i styret, jf.\ \hyperref[nbylaw:12.7]{\S\,12.7} nr.\ 5.
+
+\textbf{\S 15.6 Frie midler (Free Funds).}\label{nbylaw:15.6}
+\begin{enumerate}
+  \item Midler foreningen tjener som ikke er øremerket ved mottak, skal plasseres p\r{a} en egen konto for frie midler.
+  \item Medlemmer kan søke om støtte fra frie midler til prosjekter. Søknaden rettes til CBO.
+  \item CBO vurderer søknadene og avgjør hvilke som legges fram for styret. Styret vedtar tildelingen.
+\end{enumerate}
+
+\textbf{\S 15.7 Rapportering (reporting).}\label{nbylaw:15.7} CBO skal følge opp alle økonomiske forhold og holde styret løpende informert om foreningens økonomiske disposisjoner.
+
+\vsubsection{\S 16 Prosjektgjennomføring (Project execution)}\label{nbylaw:16}
+\textbf{\S 16.1 Oppstart av prosjekt (starting a project).}\label{nbylaw:16.1} Alle større prosjekter skal godkjennes av styret før oppstart. For \r{a} starte et prosjekt skal det leveres en MCR og en SRR til styret. Styret vurderer prosjektet mot foreningens form\r{a}l, ressurssituasjon og gjennomførbarhet, og godkjenner eller avsl\r{a}r det i det møtet der MCR og SRR legges fram.
+
+\textbf{\S 16.2 Prosjektorganisering (project organisation).}\label{nbylaw:16.2} Styret utpeker en prosjektleder for hvert prosjekt. Prosjektlederen rapporterer til CTO i tekniske prosjekter, og ellers til det styremedlemmet som er ansvarlig for fagomr\r{a}det.
+
+\textbf{\S 16.3 Prosjektmodell (project model).}\label{nbylaw:16.3} Prosjekter gjennomføres etter en modifisert versjon av NASA Project Life Cycle. Faseinndeling, portgjennomganger og dokumentasjonskrav er fastsatt i foreningens styringsdokumenter.
+
+\textbf{\S 16.4 Avvik (deviations).}\label{nbylaw:16.4} Vesentlige avvik fra en godkjent plan, herunder endringer i krav, budsjett, tidslinje eller sikkerhetsrelevante forutsetninger, skal legges fram for styret.
+
+\textbf{\S 16.5 Avslutning og dokumentasjon (closure and documentation).}\label{nbylaw:16.5} Et prosjekt avsluttes med en sluttrapport til styret. Prosjektdokumentasjonen skal arkiveres slik at senere medlemmer kan bygge videre p\r{a} arbeidet, jf.\ \hyperref[nbylaw:2.5]{\S\,2.5}.
+
+\vsection{Del V: Styringsdokumenter og opphør (Part V: Governance Documents and Dissolution)}
+
+\vsubsection{\S 17 Vedtektsendringer og styringsdokumenter (Bylaw Amendments and governance documents)}\label{nbylaw:17}
+\textbf{\S 17.1 Vedtektsendringer (Bylaw Amendments).}\label{nbylaw:17.1} Vedtektsendringer kan bare skje n\r{a}r (1) minst 2/3 av foreningens medlemmer er til stede p\r{a} generalforsamlingen p\r{a} voteringstidspunktet, og (2) minst 2/3 av de tilstedeværende medlemmene stemmer for endringen. Et forslag til vedtektsendring m\r{a} sendes inn innen fristen i \hyperref[nbylaw:8.3]{\S\,8.3}.
+
+\textbf{\S 17.2 Ikrafttredelse (entry into force).}\label{nbylaw:17.2} Vedtektsendringer trer i kraft n\r{a}r protokollen fra generalforsamlingen er signert, med mindre generalforsamlingen bestemmer noe annet.
+
+\textbf{\S 17.3 Spr\r{a}kversjoner (language versions).}\label{nbylaw:17.3} Ved motstrid mellom spr\r{a}kversjoner av vedtektene g\r{a}r den versjonen generalforsamlingen har vedtatt, foran, jf.\ \hyperref[nbylaw:3.3]{\S\,3.3}.
+
+\textbf{\S 17.4 Føringsorden (Standing Orders).}\label{nbylaw:17.4} Styret kan vedta en føringsorden som et tillegg til vedtektene. En føringsorden kan ikke være i strid med vedtektene, og faller bort ved styreskifte.
+
+\vsubsection{\S 18 Opphør (Dissolution)}\label{nbylaw:18}
+\textbf{\S 18.1 Oppløsning (dissolution).}\label{nbylaw:18.1} Foreningen kan oppløses dersom 2/3 av de stemmeberettigede medlemmene p\r{a} generalforsamlingen stemmer for oppløsning. En sak om oppløsning skal sendes inn innen fristen i \hyperref[nbylaw:8.3]{\S\,8.3}.
+
+\textbf{\S 18.2 Disponering av eiendeler (disposal of assets).}\label{nbylaw:18.2} Ved oppløsning overføres foreningens midler og eiendom til en annen egnet studentforening med samme form\r{a}l, valgt av generalforsamlingen. Ingen medlemmer har krav p\r{a} foreningens midler eller noen andel av dem, jf.\ \hyperref[nbylaw:3.2]{\S\,3.2}.
+
+\end{document}

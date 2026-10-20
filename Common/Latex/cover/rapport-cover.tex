@@ -3,11 +3,10 @@
 %
 % Usage (after \documentclass{rapport} and before \begin{document}):
 %   \input{../cover/rapport-cover}
-%   \missionpatch{path/to/patch}      % optional circular mission/team patch;
-%                                     % without it, the org logo is shown large
-%                                     % at the top instead
 %   \coverkind{Vedtekter}             % optional small line above the name
 %   \reportsubtitle{Optional subtitle line}
+%   \coverphoto{path/to/photo}        % optional photo, centred in the middle of
+%   \coverphoto[9cm]{path/to/photo}   % the page; width defaults to 12cm
 %   \orgname{Eclipse NMBU}{Norwegian University of Life Sciences, Norway}
 %   \reportlocation{Ås, Norge}
 %   \date{3. oktober 2022}            % optional, defaults to \today
@@ -23,14 +22,16 @@
 % ---------------------------------------------------------------------------
 
 \makeatletter
-\def\@missionpatch{}
-\newcommand{\missionpatch}[1]{\def\@missionpatch{#1}}
-
 \def\@coverkind{}
 \newcommand{\coverkind}[1]{\def\@coverkind{#1}}
 
 \def\@reportsubtitle{}
 \newcommand{\reportsubtitle}[1]{\def\@reportsubtitle{#1}}
+
+\def\@coverphoto{}
+\def\@coverphotowidth{12cm}
+\newcommand{\coverphoto}[2][12cm]{%
+  \def\@coverphotowidth{#1}\def\@coverphoto{#2}}
 
 \def\@orgnameone{}
 \def\@orgnametwo{}
@@ -46,11 +47,7 @@
   \begingroup
   \thispagestyle{empty}
   \begin{center}
-  \ifx\@missionpatch\@empty
-    \includegraphics[width=10cm]{\@orglogo}\par
-  \else
-    \includegraphics[width=6.5cm]{\@missionpatch}\par
-  \fi
+  \includegraphics[width=10cm]{\@orglogo}\par
   \vspace{3.4cm}
   \ifx\@coverkind\@empty
     {\sffamily\Huge\bfseries \@reporttitle \par}
@@ -62,10 +59,10 @@
     \vspace{1.6cm}
     {\sffamily\bfseries \@reportsubtitle \par}
   \fi
-  \vspace{2cm}
-  \ifx\@missionpatch\@empty\else
-    \includegraphics[height=1.3cm]{\@orglogo}\par
-    \vspace{0.6cm}
+  \vfill
+  \ifx\@coverphoto\@empty\else
+    \includegraphics[width=\@coverphotowidth]{\@coverphoto}\par
+    \vfill
   \fi
   \@orgnameone \\
   \@orgnametwo \par
@@ -76,8 +73,8 @@
     \@reportlocation, \@date
   \fi
   \par
-  \vfill
   \ifx\@contactinfo\@empty\else
+    \vspace{0.8cm}
     {\small \@contactinfo \par}
   \fi
   \end{center}
